@@ -12,4 +12,4 @@ This BWCE service does the following:
 
 ## This BWCE service Returns following:
 
-[//]: # (<iframe src="https://tibco-hub-backstage.github.io/make-doc-poc-1/" title="docs"></iframe>)
+<iframe src="https://tibco-hub-backstage.github.io/make-doc-poc-1/" title="docs"></iframe>
