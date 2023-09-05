@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "make-doc-poc-1"
+  description: "Repository to display BW Documentation"
+  links:
+    - title: TIBCO Cloud Home
+      url: https://cloud.tibco.com/
+    - title: Documentation
+      url: https://eu.integration.cloud.tibco.com/docs/index.html
+    - title: TIBCO Cloud Integration
+      url: https://eu.integration.cloud.tibco.com/applications
+  annotations:
+    github.com/project-slug: TIBCO-Hub-Backstage/make-doc-poc-1
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: make-doc-poc-1
+    jenkins.io/job-full-name: Build_BWCE_EAR
+spec:
+  type: service
+  lifecycle: development
+  owner: "group:default/acme"
