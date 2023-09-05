@@ -2,7 +2,7 @@ site_name: "make-doc-poc-1"
 site_description: "Repository to display BW Documentation"
 
 nav:
-  - Introduction: 'md_doc/index.md'
+  - Introduction: 'index.md'
 
 plugins:
   - techdocs-core
