@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta content="concept" name="DC.Type" />
+<meta name="DC.Title" content="GetDate" />
+<meta scheme="URI" name="DC.Relation" content="../../../../../projects/Benefits/common/process.html" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="ProcessMain" name="DC.Identifier" />
+<meta content="en-us" name="DC.Language" />
+<link href="../../../../../css/commonltr.css" type="text/css" rel="stylesheet" />
+<script src="../../../../../js/jquery-1.12.2.min.js" type="text/javascript">/* */</script><script src="../../../../../js/jquery-ui.min.js" type="text/javascript">/* */</script><script src="../../../../../js/functions.js" type="text/javascript">/* */</script><script src="../../../../../js/TabbedForm.js" type="text/javascript">/* */</script><script src="../../../../../js/image-resizer.js" type="text/javascript">/* */</script><script src="../../../../../js/page-title.js" type="text/javascript">/* */</script><link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/jquery-ui.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/jquery-ui.structure.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/jquery-ui.theme.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/page.css" /><!--[if lte IE 6]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/page-ie6.css" /><![endif]-->
+    <!--[if IE 7]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/page-ie7.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../images/favicon.ico" /><title>GetDate</title>
+</head>
+<body onload="javascript:TabbedFormImages(); javascript:showPageTitle(); javascript:checkImages(); javascript:mappingsHidding();" id="ProcessMain"><a name="ProcessMain"><!-- --></a>
+
+<h1 class="topictitle1">GetDate</h1>
+<div><p class="nomargin">License for TIBCO Software Use Only! </p>
+<p class="nomargin">
+							Section contains description of Process "
+							GetDate.process
+							" .
+						</p>
+<p class="nomargin">
+								Modification time:
+								2023/08/23 13:10:11</p>
+</div>
+<div />
+<div class="nested1" xml:lang="en-us" id="FolderDescription"><a name="FolderDescription"><!-- --></a><h2 class="topictitle2">Folder description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" width="30%" id="N10071">Folder</th>
+<th class="cellrowborder" valign="top" width="70%" id="N10078">Description</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/PantherBW/ProcessDefinitions/BusinessLogic</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">The folder that contain the main procedures....</td>
+</tr>
+ </tbody>
+</table>
+</div>
+</div>
+<div />
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDescription"><a name="ProcessDescription"><!-- --></a><h2 class="topictitle2">Process description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><tbody><tr><td class="cellrowborder" valign="top">The process gets current date from the system....</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDefinition"><a name="ProcessDefinition"><!-- --></a><h2 class="topictitle2">Process definition:</h2>
+<div><p class="nomargin">
+					Full process path:
+					PantherBW/ProcessDefinitions/BusinessLogic/GetDate.process</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Diagram"><a name="Diagram"><!-- --></a><h2 class="topictitle2">Diagram:</h2>
+<div><div class="imageMapBox"><img usemap="#N100F8" border="0" alt="" src="GetDate.process.png" />
+<map id="N100F8" name="N100F8">
+<area href="#Starter" alt="Start" title="Start" shape="circle" coords="109&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;75&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#EndActivity" alt="End" title="End" shape="circle" coords="457&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;75&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#SetDate" alt="SetDate" title="SetDate" shape="circle" coords="271&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;75&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Null" alt="Null" title="Null" shape="circle" coords="367&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;145&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Transitions__Start_SetDate" alt="From: Start To: SetDate" title="From: Start To: SetDate" shape="poly" coords="139&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;73&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;229&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;73&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;229&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;63&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;139&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;63" />
+<area href="#Transitions__SetDate_End" alt="From: SetDate To: End" title="From: SetDate To: End" shape="poly" coords="301&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;73&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;415&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;73&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;415&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;63&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;301&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;63" />
+<area href="#Transitions__SetDate_Null" alt="From: SetDate To: Null" title="From: SetDate To: Null" shape="poly" coords="290&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;96&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;329&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;113&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;339&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;103&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;300&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;86" />
+<area href="#Transitions__Null_End" alt="From: Null To: End" title="From: Null To: End" shape="poly" coords="395&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;119&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;430&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;104&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;420&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;94&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;385&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;109" />
+</map></div></div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Starter"><a name="Starter"><!-- --></a><h2 class="topictitle2">Process starter activity:</h2>
+<div><p class="nomargin">
+			Name:
+			Start</p>
+<p class="nomargin">
+			Description:
+			<em>The beginning of the process.</em></p>
+<p class="nomargin">Input Parameters:</p>
+<div class="nomargin"><ul><li>
+					-
+					GetInformationRequest
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="EndActivity"><a name="EndActivity"><!-- --></a><h2 class="topictitle2">Process end activity:</h2>
+<div><p class="nomargin">
+			Name:
+			End</p>
+<p class="nomargin">Output Parameters:</p>
+<div class="nomargin"><ul><li>
+					-
+					GetInformationResponse
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</div>
+<div class="p">
+								Return bindings:
+								<ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10246">Target</th>
+<th class="cellrowborder" valign="top" id="N1024C">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10246 N1024C "><em>/[WHEN]&lt;$_error&gt;</em><strong>/GetInformationResponse</strong><strong>/ResultCode</strong></td>
+<td class="cellrowborder" valign="top" headers="N10246 N1024C "> -1</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10246 N1024C "><em>/[WHEN]&lt;$_error&gt;</em><strong>/GetInformationResponse</strong><em>/[IF]&lt;$_error/ns:ErrorReport/StackTrace&gt;</em><strong>/ResultMessage</strong></td>
+<td class="cellrowborder" valign="top" headers="N10246 N1024C "> $_error/ns:ErrorReport/StackTrace</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10246 N1024C "><em>/[OTHERWISE]</em><strong>/GetInformationResponse</strong><strong>/ResultCode</strong></td>
+<td class="cellrowborder" valign="top" headers="N10246 N1024C "> 0</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10246 N1024C "><em>/[OTHERWISE]</em><strong>/GetInformationResponse</strong><em>/[IF]&lt;$SetDate/root/DateTime&gt;</em><strong>/DateTime</strong></td>
+<td class="cellrowborder" valign="top" headers="N10246 N1024C "> $SetDate/root/DateTime</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N102F6">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N102F6 "><pre>
+<em>[CHOOSE] </em>
+ <em>[WHEN] </em>&lt; $_error &gt;
+  <strong>GetInformationResponse</strong>
+   <strong>ResultCode</strong> = -1
+   <em>[IF] </em>&lt; $_error/ns:ErrorReport/StackTrace &gt;
+    <strong>ResultMessage</strong> = $_error/ns:ErrorReport/StackTrace
+ <em>[OTHERWISE] </em>
+  <strong>GetInformationResponse</strong>
+   <strong>ResultCode</strong> = 0
+   <em>[IF] </em>&lt; $SetDate/root/DateTime &gt;
+    <strong>DateTime</strong> = $SetDate/root/DateTime</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1036F">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1036F "><pre>
+        &lt;xsl:choose xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx="http://www.tibco.com/schemas/pantherbw/PantherBW/ProcessDefinitions/Schema/Schema.xsd" xmlns:ns="http://www.tibco.com/pe/EngineTypes"&gt;
+            &lt;xsl:when test="$_error"&gt;
+                &lt;pfx:GetInformationResponse&gt;
+                    &lt;pfx:ResultCode&gt;
+                        &lt;xsl:value-of select="-1"/&gt;
+                    &lt;/pfx:ResultCode&gt;
+                    &lt;xsl:if test="$_error/ns:ErrorReport/StackTrace"&gt;
+                        &lt;pfx:ResultMessage&gt;
+                            &lt;xsl:value-of select="$_error/ns:ErrorReport/StackTrace"/&gt;
+                        &lt;/pfx:ResultMessage&gt;
+                    &lt;/xsl:if&gt;
+                &lt;/pfx:GetInformationResponse&gt;
+            &lt;/xsl:when&gt;
+            &lt;xsl:otherwise&gt;
+                &lt;pfx:GetInformationResponse&gt;
+                    &lt;pfx:ResultCode&gt;
+                        &lt;xsl:value-of select="0"/&gt;
+                    &lt;/pfx:ResultCode&gt;
+                    &lt;xsl:if test="$SetDate/root/DateTime"&gt;
+                        &lt;pfx:DateTime&gt;
+                            &lt;xsl:value-of select="$SetDate/root/DateTime"/&gt;
+                        &lt;/pfx:DateTime&gt;
+                    &lt;/xsl:if&gt;
+                &lt;/pfx:GetInformationResponse&gt;
+            &lt;/xsl:otherwise&gt;
+        &lt;/xsl:choose&gt;
+    </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Activities"><a name="Activities"><!-- --></a><h2 class="topictitle2">Activities:</h2>
+<div class="nested2" id="Null"><a name="Null"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Null</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.timer.NullActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.null</em></li>
+<li>
+										Description:
+										<em>The error branch.</em></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="SetDate"><a name="SetDate"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>SetDate</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.mapper.MapperActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.MapperActivity</em></li>
+<li>
+										Description:
+										<em>The component where we get the current date.</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>
+					+
+					root
+					(Complex Type,
+					required
+					)
+					<ul><li>
+					-
+					DateTime(xsd:date,required)</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1046C">Target</th>
+<th class="cellrowborder" valign="top" id="N10472">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1046C N10472 "><strong>/root</strong><strong>/DateTime</strong></td>
+<td class="cellrowborder" valign="top" headers="N1046C N10472 "> current-date()</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N104B3">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N104B3 "><pre>
+<strong>root</strong>
+ <strong>DateTime</strong> = current-date()</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N104F6">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N104F6 "><pre>
+            &lt;root xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx="http://www.tibco.com/schemas/pantherbw/PantherBW/ProcessDefinitions/Schema/Schema.xsd" xmlns:ns="http://www.tibco.com/pe/EngineTypes"&gt;
+                &lt;DateTime&gt;
+                    &lt;xsl:value-of select="current-date()"/&gt;
+                &lt;/DateTime&gt;
+            &lt;/root&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Transitions"><a name="Transitions"><!-- --></a><h2 class="topictitle2">Transitions:</h2>
+<div><a name="Transitions__Null_End"><!-- --></a><ul id="Transitions__Null_End"><li>
+								From:
+								<strong><em>Null</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__SetDate_End"><!-- --></a><ul id="Transitions__SetDate_End"><li>
+								From:
+								<strong><em>SetDate</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__SetDate_Null"><!-- --></a><ul id="Transitions__SetDate_Null"><li>
+								From:
+								<strong><em>SetDate</em></strong>
+								-To:
+								<strong><em>Null</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Error</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Start_SetDate"><!-- --></a><ul id="Transitions__Start_SetDate"><li>
+								From:
+								<strong><em>Start</em></strong>
+								-To:
+								<strong><em>SetDate</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="../../../../../projects/Benefits/common/process.html">Processes</a><img alt="parent-topic-arrow" src="../../../../../images/parent-topic-arrow.png" /></div>
+</div>
+
+</body>
+</html>

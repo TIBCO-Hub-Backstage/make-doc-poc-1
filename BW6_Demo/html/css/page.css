@@ -1,0 +1,215 @@
+body
+{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    margin: 0px;
+	padding: 0px 15px 15px 15px;
+}
+h1
+{
+	display: none;
+}
+ul
+{
+	list-style-type: circle;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+ul li
+{
+	list-style-image: url("../images/li-level-1.png");
+}
+ul ul li
+{
+	list-style-image: url("../images/li-level-2.png");
+}
+ul ul ul li
+{
+	list-style-image: url("../images/li-level-3.png");
+}
+ul ul ul ul li
+{
+	list-style-image: url("../images/li-level-4.png");
+}
+ul ul ul ul ul li
+{
+	list-style-image: url("../images/li-level-5.png");
+}
+ul ul ul ul ul ul li
+{
+	list-style-image: url("../images/li-level-6.png");
+}
+ul.ullinks li.ulchildlink
+{
+	list-style: none;
+	padding-left: 21px;
+}
+ul.ullinks li.ulchildlink strong
+{
+	margin-left: -21px;
+}
+ul.ullinks li.ulchildlink a
+{
+	text-decoration: none;
+}
+ul.ullinks li.ulchildlink a img
+{
+	margin-right: 10px;
+	border: none;
+}
+ul.ullinks li.ulchildlink a span
+{
+	font-size: 110%;
+	font-weight: bold;
+	text-decoration: underline;
+	color: black;
+}
+h2, h3, h4, h5, h6
+{
+	color: #01A0C8;
+}
+div.familylinks
+{
+	margin-top: 25px;
+}
+div.parentlink
+{
+	height: 21px;
+	line-height: 21px;
+	font-size: 110%;
+	color: #283C78;
+	margin-top : -15px;
+}
+div.parentlink strong, div.parentlink a
+{
+	display: block;
+	float: left;
+	height: 21px;
+	line-height: 21px;
+	padding-right: 7px;
+	border-bottom: 1px solid black;
+}
+div.parentlink strong
+{
+	padding-left: 5px;
+}
+div.parentlink a
+{
+	text-decoration: none;
+	padding-right: 10px;
+}
+div.parentlink img
+{
+	border: none;
+	border-right: 1px solid teal;
+	border-bottom: 1px solid black;
+}
+.cell-border
+{
+    border: 0;
+    border-right: 1px solid black;
+}
+table,
+table tr,
+table th,
+table td,
+table th.cellrowborder,
+table td.cellrowborder
+{
+	border: none;
+}
+table
+{
+	border: 1px solid #808080;
+	border-right: 2px groove black;
+	border-bottom: 2px groove black;
+}
+table thead tr, table thead tr th
+{
+	background-color: #BEE6E6;
+}
+div.imageBox a
+{
+	display: block;
+	padding: 18px 21px;
+    background: #E6E6E6 url("../images/zoom_in.png") 100% 70% no-repeat;
+}
+div.imageBox a:hover
+{
+	cursor: -moz-zoom-in; 
+}
+div.imageBox img
+{ 
+	border: none;
+}
+div.image-zoom {
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    cursor: pointer;
+}
+div.image-zoom-in 
+{
+    background-image: url("../images/zoom_in.png");
+}
+div.image-zoom-out 
+{
+    background-image: url("../images/zoom_out.png");
+}
+div.imageMapOdkaz
+{
+	background-color: #E6E6E6;
+	width: 40px;
+	height: 22px;
+	cursor: pointer;
+}
+div.imageMapBox img.map
+{
+    border: 5px solid #E6E6E6;
+    border-top: 2px solid #E6E6E6;
+}
+
+/*Repository analytics - styles of highlighted elements*/
+.repositoryAnalyticsAdded 
+{
+    background-color: #99FF99;
+}
+
+.repositoryAnalyticsRemoved 
+{
+    background-color: #FF9999;
+}
+
+.repositoryAnalyticsChanged 
+{
+    background-color: #FFFF99;
+}
+
+ul.mappings p.caption {
+	cursor: pointer;
+	padding-left: 20px;
+}
+
+ul.mappings p.arrow {
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+ul.mappings p.arrow-right {
+	background-image: url("../images/arrow_right.png");
+}
+
+ul.mappings p.arrow-down {
+	background-image: url("../images/arrow_down.png");
+}
+
+div.propertyinfo {
+	margin: 5px;
+	margin-left: 10px;
+	padding: 3px;
+	border: 1px solid #EEEEEE;
+}
+
+div.propertyinfo b {
+	display: block !important;
+	background: #EEEEEE;
+}

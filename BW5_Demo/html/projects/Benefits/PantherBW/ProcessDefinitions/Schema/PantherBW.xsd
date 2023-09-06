@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.tibco.com/schemas/pantherbw/PantherBW/ProcessDefinitions/Schema/Schema.xsd"
+	 targetNamespace="http://www.tibco.com/schemas/pantherbw/PantherBW/ProcessDefinitions/Schema/Schema.xsd"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="GetInformationRequest" nillable="true">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Input"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetInformationResponse">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Results">
+					<xs:sequence>
+						<xs:element name="DateTime" type="xs:date" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SendEmailRequest">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Input">
+					<xs:sequence>
+						<xs:element name="message" type="xs:string"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SendEmailResponse">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Results"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="Results">
+		<xs:sequence>
+			<xs:element name="ResultCode" type="xs:int"/>
+			<xs:element name="ResultMessage" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="TriggerCourtProcessRequest">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Input">
+					<xs:sequence>
+						<xs:element name="message" type="xs:string"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TriggerCourtProcessResponse">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Results"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="Input">
+		<xs:sequence>
+			<xs:element name="SW_CASENUM" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta content="concept" name="DC.Type" />
+<meta name="DC.Title" content="HTMLOutput" />
+<meta scheme="URI" name="DC.Relation" content="../../../../projects/GrantingCredit/common/process.html" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="ProcessMain" name="DC.Identifier" />
+<meta content="en-us" name="DC.Language" />
+<link href="../../../../css/commonltr.css" type="text/css" rel="stylesheet" />
+<script src="../../../../js/jquery-1.12.2.min.js" type="text/javascript">/* */</script><script src="../../../../js/jquery-ui.min.js" type="text/javascript">/* */</script><script src="../../../../js/functions.js" type="text/javascript">/* */</script><script src="../../../../js/TabbedForm.js" type="text/javascript">/* */</script><script src="../../../../js/image-resizer.js" type="text/javascript">/* */</script><script src="../../../../js/page-title.js" type="text/javascript">/* */</script><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.structure.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.theme.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page.css" /><!--[if lte IE 6]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie6.css" /><![endif]-->
+    <!--[if IE 7]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie7.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../images/favicon.ico" /><title>HTMLOutput</title>
+</head>
+<body onload="javascript:TabbedFormImages(); javascript:showPageTitle(); javascript:checkImages(); javascript:mappingsHidding();" id="ProcessMain"><a name="ProcessMain"><!-- --></a>
+
+<h1 class="topictitle1">HTMLOutput</h1>
+<div><p class="nomargin">License for TIBCO Software Use Only! </p>
+<p class="nomargin">
+							Section contains description of Process "
+							HTMLOutput.process
+							" .
+						</p>
+<p class="nomargin">
+								Modification time:
+								2023/08/23 13:10:11</p>
+</div>
+<div />
+<div class="nested1" xml:lang="en-us" id="FolderDescription"><a name="FolderDescription"><!-- --></a><h2 class="topictitle2">Folder description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" width="30%" id="N10071">Folder</th>
+<th class="cellrowborder" valign="top" width="70%" id="N10078">Description</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">GrantingCredit</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">The application Granting credit provides resolution whether a credit (or mortgage) can be granded to a user. Information about user is the input of the application.</td>
+</tr>
+ <tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/ProcessDefinitions</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">All process definitions</td>
+</tr>
+ </tbody>
+</table>
+</div>
+</div>
+<div />
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDescription"><a name="ProcessDescription"><!-- --></a><h2 class="topictitle2">Process description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><tbody><tr><td class="cellrowborder" valign="top">
+											No description
+										</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDefinition"><a name="ProcessDefinition"><!-- --></a><h2 class="topictitle2">Process definition:</h2>
+<div><p class="nomargin">
+					Full process path:
+					ProcessDefinitions/Output/HTMLOutput.process</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Diagram"><a name="Diagram"><!-- --></a><h2 class="topictitle2">Diagram:</h2>
+<div><div class="imageMapBox"><img usemap="#N10109" border="0" alt="" src="HTMLOutput.process.png" />
+<map id="N10109" name="N10109">
+<area href="#Starter" alt="Result JMSQueueReceiver" title="Result JMSQueueReceiver" shape="circle" coords="81&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;62&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#EndActivity" alt="End" title="End" shape="circle" coords="476&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;54&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Result_SendHTTPResponse" alt="Result SendHTTPResponse" title="Result SendHTTPResponse" shape="circle" coords="353&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;62&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Wait_for_HTTP_Request" alt="Wait for HTTP Request" title="Wait for HTTP Request" shape="circle" coords="214&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;62&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Transitions__Result_SendHTTPResponse_End" alt="From: Result SendHTTPResponse To: End" title="From: Result SendHTTPResponse To: End" shape="poly" coords="383&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;434&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;434&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;383&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42" />
+<area href="#Transitions__Wait_for_HTTP_Request_Result_SendHTTPResponse" alt="From: Wait for HTTP Request To: Result SendHTTPResponse" title="From: Wait for HTTP Request To: Result SendHTTPResponse" shape="poly" coords="244&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;311&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;311&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;244&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42" />
+<area href="#Transitions__Result_JMSQueueReceiver_Wait_for_HTTP_Request" alt="From: Result JMSQueueReceiver To: Wait for HTTP Request" title="From: Result JMSQueueReceiver To: Wait for HTTP Request" shape="poly" coords="111&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;172&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;172&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;111&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42" />
+</map></div></div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Starter"><a name="Starter"><!-- --></a><h2 class="topictitle2">Process starter activity:</h2>
+<div><p class="nomargin">
+									Name:
+									Result JMSQueueReceiver</p>
+<ul><li>
+										Property Name:
+										<strong><em>Result JMSQueueReceiver</em></strong><div class="nomargin"><ul><li>
+													Type:
+													<em>com.tibco.plugin.jms.JMSQueueEventSource</em></li>
+<li>
+													Resource Type:
+													<em>ae.activities.JMSQueueEventSource</em></li>
+<li>
+													Description:
+													</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>PermittedMessageType
+							=
+							XML Text</li>
+<li>SessionAttributes<ul><li>transacted
+							=
+							false</li>
+<li>acknowledgeMode
+							=
+							1
+									(Auto)
+								</li>
+<li>maxSessions
+							=
+							1</li>
+<li>destination
+							=
+							%%JMSQueueName%%</li>
+<li>selector
+							=
+							Part='Result'</li>
+</ul>
+</li>
+<li>ConfigurableHeaders<ul><li>JMSDeliveryMode
+							=
+							PERSISTENT</li>
+<li>JMSExpiration
+							=
+							0</li>
+<li>JMSPriority
+							=
+							4</li>
+</ul>
+</li>
+<li>ConnectionReference
+			=
+			<a href="./../../SharedConnections/EMSConnection.sharedjmscon.html">/SharedConnections/EMSConnection.sharedjmscon</a>
+</li>
+<li>ApplicationProperties
+							=
+							/SharedResources/JMSApplicationProperties.sharedjmsapp</li>
+<li>OutDataxsdString<ul><li>
+					-
+					GrantingCreditResult
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="EndActivity"><a name="EndActivity"><!-- --></a><h2 class="topictitle2">Process end activity:</h2>
+<div><p class="nomargin">
+			Name:
+			End</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Activities"><a name="Activities"><!-- --></a><h2 class="topictitle2">Activities:</h2>
+<div class="nested2" id="Result_SendHTTPResponse"><a name="Result_SendHTTPResponse"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Result SendHTTPResponse</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.http.HTTPResponseActivity</em></li>
+<li>
+										Resource Type:
+										<em>httppalette.httpWebResponse</em></li>
+<li>
+										Description:
+										</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>closeConnection
+							=
+							true</li>
+<li>eventSource
+							=
+							Wait for HTTP Request</li>
+<li>Headers<ul><li>
+					+
+					root
+					(Complex Type,
+					required
+					)
+					<ul><li>
+					-
+					StatusLine(xsd:string,optional)</li>
+<li>
+					-
+					Content-Type(xsd:string,optional)</li>
+<li>
+					-
+					Set-Cookie(xsd:string,optional)</li>
+<li>
+					-
+					Pragma(xsd:string,optional)</li>
+<li>
+					-
+					Location(xsd:string,optional)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1034A">Target</th>
+<th class="cellrowborder" valign="top" id="N10350">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1034A N10350 "><strong>/ResponseActivityInput</strong><strong>/asciiContent</strong></td>
+<td class="cellrowborder" valign="top" headers="N1034A N10350 "> concat("&lt;H1&gt;Granting Credit Result&lt;/H1&gt;&lt;B&gt;Name: &lt;/B&gt;", $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Name, 
+"&lt;BR&gt;&lt;B&gt;Value: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Value,
+"&lt;BR&gt;&lt;B&gt;Refund: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Refund,
+"&lt;BR&gt;&lt;B&gt;Pawn: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Pawn,
+"&lt;BR&gt;&lt;B&gt;Realty detail: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/RealtyDetail,
+"&lt;BR&gt;&lt;B&gt;Realty value: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/RealtyValue,
+"&lt;BR&gt;&lt;B&gt;Interest: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Interest,
+"&lt;BR&gt;&lt;H2&gt;Result: &lt;FONT COLOR=RED&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/State, "&lt;/H2&gt;&lt;/FONT&gt;")</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10391">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10391 "><pre>
+<strong>ResponseActivityInput</strong>
+ <strong>asciiContent</strong> = concat("&lt;H1&gt;Granting Credit Result&lt;/H1&gt;&lt;B&gt;Name: &lt;/B&gt;", $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Name, 
+"&lt;BR&gt;&lt;B&gt;Value: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Value,
+"&lt;BR&gt;&lt;B&gt;Refund: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Refund,
+"&lt;BR&gt;&lt;B&gt;Pawn: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Pawn,
+"&lt;BR&gt;&lt;B&gt;Realty detail: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/RealtyDetail,
+"&lt;BR&gt;&lt;B&gt;Realty value: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/RealtyValue,
+"&lt;BR&gt;&lt;B&gt;Interest: &lt;/B&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Interest,
+"&lt;BR&gt;&lt;H2&gt;Result: &lt;FONT COLOR=RED&gt;",  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/State, "&lt;/H2&gt;&lt;/FONT&gt;")</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N103D4">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N103D4 "><pre>
+            &lt;ResponseActivityInput xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/pe/SignalInActivitySchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/GrantingCreditAESchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+                &lt;asciiContent&gt;
+                    &lt;xsl:value-of select="concat(&amp;quot;&amp;lt;H1&amp;gt;Granting Credit Result&amp;lt;/H1&amp;gt;&amp;lt;B&amp;gt;Name: &amp;lt;/B&amp;gt;&amp;quot;, $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Name, &amp;#10;&amp;quot;&amp;lt;BR&amp;gt;&amp;lt;B&amp;gt;Value: &amp;lt;/B&amp;gt;&amp;quot;,  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Value,&amp;#10;&amp;quot;&amp;lt;BR&amp;gt;&amp;lt;B&amp;gt;Refund: &amp;lt;/B&amp;gt;&amp;quot;,  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Refund,&amp;#10;&amp;quot;&amp;lt;BR&amp;gt;&amp;lt;B&amp;gt;Pawn: &amp;lt;/B&amp;gt;&amp;quot;,  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Pawn,&amp;#10;&amp;quot;&amp;lt;BR&amp;gt;&amp;lt;B&amp;gt;Realty detail: &amp;lt;/B&amp;gt;&amp;quot;,  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/RealtyDetail,&amp;#10;&amp;quot;&amp;lt;BR&amp;gt;&amp;lt;B&amp;gt;Realty value: &amp;lt;/B&amp;gt;&amp;quot;,  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/RealtyValue,&amp;#10;&amp;quot;&amp;lt;BR&amp;gt;&amp;lt;B&amp;gt;Interest: &amp;lt;/B&amp;gt;&amp;quot;,  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/Interest,&amp;#10;&amp;quot;&amp;lt;BR&amp;gt;&amp;lt;H2&amp;gt;Result: &amp;lt;FONT COLOR=RED&amp;gt;&amp;quot;,  $Result-JMSQueueReceiver/ns1:ActivityOutput/Body/pfx:GrantingCreditResult/State, &amp;quot;&amp;lt;/H2&amp;gt;&amp;lt;/FONT&amp;gt;&amp;quot;)"/&gt;
+                &lt;/asciiContent&gt;
+            &lt;/ResponseActivityInput&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="Wait_for_HTTP_Request"><a name="Wait_for_HTTP_Request"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Wait for HTTP Request</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.http.HTTPSignalInActivity</em></li>
+<li>
+										Resource Type:
+										<em>httppalette.httpSignalIn</em></li>
+<li>
+										Description:
+										</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>_eventTimeout
+							=
+							60000</li>
+<li>outputMode
+							=
+							String</li>
+<li>defaultEncoding
+							=
+							ISO8859_1</li>
+<li>inputOutputVersion
+							=
+							5.3.0</li>
+<li>newMimeSupport
+							=
+							true</li>
+<li>sharedChannel
+			=
+			<a href="./../../SharedConnections/OutputHTTPConnection.sharedhttp.html">/SharedConnections/OutputHTTPConnection.sharedhttp</a>
+</li>
+<li>Headers<ul><li>
+					+
+					root
+					(Complex Type,
+					required
+					)
+					<ul><li>
+					-
+					Accept(xsd:string,optional)</li>
+<li>
+					-
+					Accept-Charset(xsd:string,optional)</li>
+<li>
+					-
+					Accept-Encoding(xsd:string,optional)</li>
+<li>
+					-
+					Content-Type(xsd:string,optional)</li>
+<li>
+					-
+					Content-Length(xsd:string,optional)</li>
+<li>
+					-
+					Connection(xsd:string,optional)</li>
+<li>
+					-
+					Cookie(xsd:string,optional)</li>
+<li>
+					-
+					Pragma(xsd:string,optional)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Transitions"><a name="Transitions"><!-- --></a><h2 class="topictitle2">Transitions:</h2>
+<div><a name="Transitions__Result_JMSQueueReceiver_Wait_for_HTTP_Request"><!-- --></a><ul id="Transitions__Result_JMSQueueReceiver_Wait_for_HTTP_Request"><li>
+								From:
+								<strong><em>Result JMSQueueReceiver</em></strong>
+								-To:
+								<strong><em>Wait for HTTP Request</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Result_SendHTTPResponse_End"><!-- --></a><ul id="Transitions__Result_SendHTTPResponse_End"><li>
+								From:
+								<strong><em>Result SendHTTPResponse</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Wait_for_HTTP_Request_Result_SendHTTPResponse"><!-- --></a><ul id="Transitions__Wait_for_HTTP_Request_Result_SendHTTPResponse"><li>
+								From:
+								<strong><em>Wait for HTTP Request</em></strong>
+								-To:
+								<strong><em>Result SendHTTPResponse</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="../../../../projects/GrantingCredit/common/process.html">Processes</a><img alt="parent-topic-arrow" src="../../../../images/parent-topic-arrow.png" /></div>
+</div>
+
+</body>
+</html>

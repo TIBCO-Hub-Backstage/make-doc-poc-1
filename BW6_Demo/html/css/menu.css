@@ -1,0 +1,123 @@
+body
+{
+	/*width: 296px;*/
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+div#menuBox
+{
+	/*width: 290px;*/
+	min-width: 325px;
+	margin: 0 auto;
+	background-color: #C3E6F0;
+	background-image: url("../images/small-makedoc-logos-menu.png");
+	background-repeat: no-repeat;
+	background-position: 85% 96%;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+div#menuBox div#menuInnerBox
+{
+	overflow: auto;
+	margin: 3px;
+	border: 1px solid #6EC8D7;
+}
+div#menuBox div#menuInnerBox div#expandCollapseButtonsBox
+{
+	clear: both;
+	margin: 15px 10px;
+}
+div#menuBox div#menuInnerBox div#expandCollapseButtonsBox img
+{
+	cursor: pointer;
+	margin: 1px;
+}
+div#menuBox div#menuInnerBox ul#menu, 
+div#menuBox div#menuInnerBox ul#menu ul,
+div#menuBox div#menuInnerBox ul#menu ul li
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+div#menuBox div#menuInnerBox ul#menu
+{
+	margin: 10px;
+	border-top: 1px solid #647DA5;
+}
+div#menuBox div#menuInnerBox ul#menu ul.submenu
+{
+	margin: 3px auto 3px 15px;
+}
+div#menuBox div#menuInnerBox ul#menu li div.liInfoBox
+{
+	padding-left: 5px;
+}
+div#menuBox div#menuInnerBox ul#menu li div.liInfoBox.selected
+{
+	background-color: #96CDD7;
+}
+div#menuBox div#menuInnerBox ul#menu li div.liInfoBox.selected span
+{
+	color: #EB231E;
+}
+div#menuBox div#menuInnerBox ul#menu li div.liInfoBox div.buttonBox
+{
+	height: 23px;
+	float: left;
+	margin-right: 5px;
+}
+div#menuBox div#menuInnerBox ul#menu li div.liInfoBox div.buttonBox img
+{
+	margin-top: 6px;
+}
+div#menuBox div#menuInnerBox ul#menu li div.liInfoBox div.linkBox
+{
+	width: auto;
+	height: 23px;
+	line-height: 23px;
+	white-space: nowrap;
+}
+div#menuBox div#menuInnerBox ul#menu li.mainItem
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #647DA5;
+}
+div#menuBox div#menuInnerBox ul#menu a
+{
+	text-decoration: none;
+}
+div#menuBox div#menuInnerBox ul#menu a:hover span
+{
+	text-decoration: underline;
+}
+div#menuBox div#menuInnerBox ul#menu span
+{
+	font-size: 13px;
+	font-weight: bold;
+	color: #003C7D;
+}
+div#menuBox div#menuInnerBox ul#menu li.mainItem span
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+div#menuBox div#menuInnerBox ul#menu li.mainItem li span
+{
+	font-family: Tahoma;
+}
+div#menuBox div#menuInnerBox ul#menu li li.notFolder span
+{
+	font-weight: normal;
+}
+div#menuBox div#menuInnerBox ul#menu img
+{
+	vertical-align: middle;
+	border: none;
+}
+div#menuBox div#menuInnerBox ul#menu ul.submenu
+{
+}

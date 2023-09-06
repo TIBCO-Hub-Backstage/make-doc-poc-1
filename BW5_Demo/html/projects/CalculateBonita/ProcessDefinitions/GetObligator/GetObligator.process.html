@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta content="concept" name="DC.Type" />
+<meta name="DC.Title" content="GetObligator" />
+<meta scheme="URI" name="DC.Relation" content="../../../../projects/CalculateBonita/common/process.html" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="ProcessMain" name="DC.Identifier" />
+<meta content="en-us" name="DC.Language" />
+<link href="../../../../css/commonltr.css" type="text/css" rel="stylesheet" />
+<script src="../../../../js/jquery-1.12.2.min.js" type="text/javascript">/* */</script><script src="../../../../js/jquery-ui.min.js" type="text/javascript">/* */</script><script src="../../../../js/functions.js" type="text/javascript">/* */</script><script src="../../../../js/TabbedForm.js" type="text/javascript">/* */</script><script src="../../../../js/image-resizer.js" type="text/javascript">/* */</script><script src="../../../../js/page-title.js" type="text/javascript">/* */</script><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.structure.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.theme.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page.css" /><!--[if lte IE 6]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie6.css" /><![endif]-->
+    <!--[if IE 7]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie7.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../images/favicon.ico" /><title>GetObligator</title>
+</head>
+<body onload="javascript:TabbedFormImages(); javascript:showPageTitle(); javascript:checkImages(); javascript:mappingsHidding();" id="ProcessMain"><a name="ProcessMain"><!-- --></a>
+
+<h1 class="topictitle1">GetObligator</h1>
+<div><p class="nomargin">License for TIBCO Software Use Only! </p>
+<p class="nomargin">
+							Section contains description of Process "
+							GetObligator.process
+							" .
+						</p>
+<p class="nomargin">
+								Modification time:
+								2023/08/23 13:10:11</p>
+</div>
+<div />
+<div class="nested1" xml:lang="en-us" id="FolderDescription"><a name="FolderDescription"><!-- --></a><h2 class="topictitle2">Folder description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" width="30%" id="N10071">Folder</th>
+<th class="cellrowborder" valign="top" width="70%" id="N10078">Description</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">CalculateBonita</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">Design Time Library which serves for calculating pretender bonita. This library using EMS for communication.</td>
+</tr>
+ <tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/ProcessDefinitions</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">All process definitions</td>
+</tr>
+ <tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/ProcessDefinitions/GetObligator</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">Processes for obtaining informations about loan of  obligator.</td>
+</tr>
+ </tbody>
+</table>
+</div>
+</div>
+<div />
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDescription"><a name="ProcessDescription"><!-- --></a><h2 class="topictitle2">Process description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><tbody><tr><td class="cellrowborder" valign="top">Read informations about obligator loan from xml file</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDefinition"><a name="ProcessDefinition"><!-- --></a><h2 class="topictitle2">Process definition:</h2>
+<div><p class="nomargin">
+					Full process path:
+					ProcessDefinitions/GetObligator/GetObligator.process</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Diagram"><a name="Diagram"><!-- --></a><h2 class="topictitle2">Diagram:</h2>
+<div><div class="imageMapBox"><img usemap="#N1011A" border="0" alt="" src="GetObligator.process.png" />
+<map id="N1011A" name="N1011A">
+<area href="#Starter" alt="Start" title="Start" shape="circle" coords="27&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;45&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#EndActivity" alt="End" title="End" shape="circle" coords="840&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;61&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#ParseXML_ObligatorsList" alt="ParseXML ObligatorsList" title="ParseXML ObligatorsList" shape="circle" coords="225&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#ReadFile_ObligatorsRegistr" alt="ReadFile ObligatorsRegistr" title="ReadFile ObligatorsRegistr" shape="circle" coords="121&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Assign_NullObligator" alt="Assign NullObligator" title="Assign NullObligator" shape="circle" coords="331&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Assign_ActualObligator" alt="Assign ActualObligator" title="Assign ActualObligator" shape="circle" coords="500&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;164&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Null" alt="Null" title="Null" shape="circle" coords="566&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;58&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#UpdateCustomerDB" alt="UpdateCustomerDB" title="UpdateCustomerDB" shape="circle" coords="612&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;160&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Transitions__start_Null" alt="From: start To: Null" title="From: start To: Null" shape="poly" coords="420&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;121&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;533&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;75&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;523&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;65&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;410&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;111" />
+<area href="#Transitions__start_Assign_ActualObligator" alt="From: start To: Assign ActualObligator" title="From: start To: Assign ActualObligator" shape="poly" coords="410&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;121&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;457&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;136&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;467&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;126&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;420&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;111" />
+<area href="#Transitions__Null_end" alt="From: Null To: end" title="From: Null To: end" shape="poly" coords="587&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;74&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;675&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;116&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;685&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;106&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;597&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;64" />
+<area href="#Transitions__UpdateCustomerDB_end" alt="From: UpdateCustomerDB To: end" title="From: UpdateCustomerDB To: end" shape="poly" coords="644&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;141&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;685&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;126&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;675&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;116&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;634&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;131" />
+<area href="#Transitions__Assign_ActualObligator_UpdateCustomerDB" alt="From: Assign ActualObligator To: UpdateCustomerDB" title="From: Assign ActualObligator To: UpdateCustomerDB" shape="poly" coords="524&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;155&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;567&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;157&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;577&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;147&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;534&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;145" />
+<area href="#Transitions__Start_ReadFile_ObligatorsRegistr" alt="From: Start To: ReadFile ObligatorsRegistr" title="From: Start To: ReadFile ObligatorsRegistr" shape="poly" coords="61&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;43&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;86&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;76&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;51&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;33" />
+<area href="#Transitions__ReadFile_ObligatorsRegistr_ParseXML_ObligatorsList" alt="From: ReadFile ObligatorsRegistr To: ParseXML ObligatorsList" title="From: ReadFile ObligatorsRegistr To: ParseXML ObligatorsList" shape="poly" coords="151&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;183&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;183&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;151&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32" />
+<area href="#Transitions__CycleGroup_End" alt="From: CycleGroup To: End" title="From: CycleGroup To: End" shape="poly" coords="710&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;98&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;805&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;69&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;795&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;59&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;700&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;88" />
+<area href="#Transitions__ParseXML_ObligatorsList_Assign_NullObligator" alt="From: ParseXML ObligatorsList To: Assign NullObligator" title="From: ParseXML ObligatorsList To: Assign NullObligator" shape="poly" coords="255&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;289&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;289&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;255&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32" />
+<area href="#Transitions__Assign_NullObligator_CycleGroup" alt="From: Assign NullObligator To: CycleGroup" title="From: Assign NullObligator To: CycleGroup" shape="poly" coords="354&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;55&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;389&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;79&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;399&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;69&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;364&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;45" />
+</map></div></div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Starter"><a name="Starter"><!-- --></a><h2 class="topictitle2">Process starter activity:</h2>
+<div><p class="nomargin">
+			Name:
+			Start</p>
+<p class="nomargin">
+			Description:
+			<em>Start process with parameter Name (Pretender's name) </em></p>
+<p class="nomargin">Input Parameters:</p>
+<div class="nomargin"><ul><li>
+					+
+					root
+					(Complex Type,
+					required
+					)
+					<ul><li>
+					-
+					cust_id(xsd:int,required)</li>
+<li>
+					-
+					Name
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="EndActivity"><a name="EndActivity"><!-- --></a><h2 class="topictitle2">Process end activity:</h2>
+<div><p class="nomargin">
+			Name:
+			End</p>
+<p class="nomargin">Output Parameters:</p>
+<div class="nomargin"><ul><li>
+					-
+					Obligator
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</div>
+<div class="p">
+								Return bindings:
+								<ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1035C">Target</th>
+<th class="cellrowborder" valign="top" id="N10362">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1035C N10362 ">&nbsp;</td>
+<td class="cellrowborder" valign="top" headers="N1035C N10362 "><em> [COPY-OF] &lt; $Schema0/pfx:Obligator &gt;</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1039D">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1039D "><pre><strong>
+Obligator</strong> = <em>[COPY-OF] </em>&lt; $Schema0/pfx:Obligator &gt;</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N103DF">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N103DF "><pre>
+        &lt;xsl:copy-of xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:pfx="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd" xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/file/v2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" select="$Schema0/pfx:Obligator"/&gt;
+    </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessVariables"><a name="ProcessVariables"><!-- --></a><h2 class="topictitle2">Process variables:</h2>
+<div><p class="nomargin">
+			Schema:
+			Schema0</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Activities"><a name="Activities"><!-- --></a><h2 class="topictitle2">Activities:</h2>
+<div class="nested2" id="Assign_ActualObligator"><a name="Assign_ActualObligator"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Assign ActualObligator</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.pe.core.AssignActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.assignActivity</em></li>
+<li>
+										Description:
+										<em>Assign Obligator data when the Obligator name and input name are same</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>variableName
+							=
+							Schema0</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N104A6">Target</th>
+<th class="cellrowborder" valign="top" id="N104AC">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N104A6 N104AC ">&nbsp;</td>
+<td class="cellrowborder" valign="top" headers="N104A6 N104AC "><em> [COPY-OF] &lt; $ParseXML-ObligatorsList/pfx:ObligatorsList/pfx:Obligator[$ObligatorIndex] &gt;</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N104E7">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N104E7 "><pre><strong>
+Obligator[$ObligatorIndex]</strong> = <em>[COPY-OF] </em>&lt; $ParseXML-ObligatorsList/pfx:ObligatorsList/pfx:Obligator[$ObligatorIndex] &gt;</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10529">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10529 "><pre>
+                &lt;xsl:copy-of xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:pfx="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd" xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/file/v2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" select="$ParseXML-ObligatorsList/pfx:ObligatorsList/pfx:Obligator[$ObligatorIndex]"/&gt;
+            </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="Assign_NullObligator"><a name="Assign_NullObligator"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Assign NullObligator</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.pe.core.AssignActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.assignActivity</em></li>
+<li>
+										Description:
+										<em>Set default result as null Obligator strucure</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>variableName
+							=
+							Schema0</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N105CA">Target</th>
+<th class="cellrowborder" valign="top" id="N105D0">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N105CA N105D0 "><strong>/Obligator</strong><strong>/Name</strong></td>
+<td class="cellrowborder" valign="top" headers="N105CA N105D0 "> ""</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N105CA N105D0 "><strong>/Obligator</strong><strong>/Value</strong></td>
+<td class="cellrowborder" valign="top" headers="N105CA N105D0 "> 0</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N105CA N105D0 "><strong>/Obligator</strong><strong>/Problem</strong></td>
+<td class="cellrowborder" valign="top" headers="N105CA N105D0 "> 0</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N105CA N105D0 "><strong>/Obligator</strong><strong>/Refund</strong></td>
+<td class="cellrowborder" valign="top" headers="N105CA N105D0 "> 0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1065C">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1065C "><pre>
+<strong>Obligator</strong>
+ <strong>Name</strong> = ""
+ <strong>Value</strong> = 0
+ <strong>Problem</strong> = 0
+ <strong>Refund</strong> = 0</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N106B1">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N106B1 "><pre>
+            &lt;pfx:Obligator xmlns:pfx="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/file/v2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                &lt;pfx:Name&gt;
+                    &lt;xsl:value-of select="&amp;quot;&amp;quot;"/&gt;
+                &lt;/pfx:Name&gt;
+                &lt;pfx:Value&gt;
+                    &lt;xsl:value-of select="0"/&gt;
+                &lt;/pfx:Value&gt;
+                &lt;pfx:Problem&gt;
+                    &lt;xsl:value-of select="0"/&gt;
+                &lt;/pfx:Problem&gt;
+                &lt;pfx:Refund&gt;
+                    &lt;xsl:value-of select="0"/&gt;
+                &lt;/pfx:Refund&gt;
+            &lt;/pfx:Obligator&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="Null"><a name="Null"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Null</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.timer.NullActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.null</em></li>
+<li>
+										Description:
+										<em>Do nothing</em></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="ParseXML_ObligatorsList"><a name="ParseXML_ObligatorsList"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>ParseXML ObligatorsList</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.xml.XMLParseActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.XMLParseActivity</em></li>
+<li>
+										Description:
+										<em>Parse text input to xml according to ObligatorRegistr xsd schema</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>inputStyle
+							=
+							text</li>
+<li>xsdVersion
+							=
+							default</li>
+<li>validateOutput
+							=
+							true</li>
+<li>term<ul><li>
+					-
+					ObligatorsList
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N107AF">Target</th>
+<th class="cellrowborder" valign="top" id="N107B5">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N107AF N107B5 "><strong>/xmlString</strong></td>
+<td class="cellrowborder" valign="top" headers="N107AF N107B5 "> $ReadFile-ObligatorsRegistr/ns1:ReadActivityOutputTextClass/fileContent/textContent</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N107F1">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N107F1 "><pre>
+<strong>xmlString</strong> = $ReadFile-ObligatorsRegistr/ns1:ReadActivityOutputTextClass/fileContent/textContent</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1082E">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1082E "><pre>
+            &lt;xmlString xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:pfx="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd" xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/file/v2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                &lt;xsl:value-of select="$ReadFile-ObligatorsRegistr/ns1:ReadActivityOutputTextClass/fileContent/textContent"/&gt;
+            &lt;/xmlString&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="ReadFile_ObligatorsRegistr"><a name="ReadFile_ObligatorsRegistr"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>ReadFile ObligatorsRegistr</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.file.FileReadActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.FileReadActivity</em></li>
+<li>
+										Description:
+										<em>Read file as text.</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>encoding
+							=
+							text</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N108CF">Target</th>
+<th class="cellrowborder" valign="top" id="N108D5">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N108CF N108D5 "><strong>/ReadActivityInputClass</strong><strong>/fileName</strong></td>
+<td class="cellrowborder" valign="top" headers="N108CF N108D5 "> $_globalVariables/ns:GlobalVariables/DefaultObligatorsRegistrFile</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10916">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10916 "><pre>
+<strong>ReadActivityInputClass</strong>
+ <strong>fileName</strong> = $_globalVariables/ns:GlobalVariables/DefaultObligatorsRegistrFile</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10959">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10959 "><pre>
+            &lt;ns2:ReadActivityInputClass xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/file/v2" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:pfx="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                &lt;fileName&gt;
+                    &lt;xsl:value-of select="$_globalVariables/ns:GlobalVariables/DefaultObligatorsRegistrFile"/&gt;
+                &lt;/fileName&gt;
+            &lt;/ns2:ReadActivityInputClass&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="UpdateCustomerDB"><a name="UpdateCustomerDB"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>UpdateCustomerDB</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.jdbc.JDBCUpdateActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.JDBCUpdateActivity</em></li>
+<li>
+										Description:
+										</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>timeout
+							=
+							10</li>
+<li>commit
+							=
+							false</li>
+<li>emptyStrAsNil
+							=
+							false</li>
+<li>jdbcSharedConfig
+			=
+			<a href="./../../SharedConnections/SharedTibco.sharedjdbc.html">/SharedConnections/SharedTibco.sharedjdbc</a>
+</li>
+<li>statement
+							=
+							UPDATE CUSTOMER
+SET OBLIGATOR = ?
+WHERE CUST_ID = ?
+</li>
+<li>Prepared_Param_DataType<ul><li>parameter<ul><li>parameterName
+							=
+							obligator_name</li>
+<li>dataType
+							=
+							VARCHAR</li>
+</ul>
+</li>
+<li>parameter<ul><li>parameterName
+							=
+							customer_id</li>
+<li>dataType
+							=
+							INTEGER</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10A40">Target</th>
+<th class="cellrowborder" valign="top" id="N10A46">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10A40 N10A46 "><strong>/jdbcUpdateActivityInput</strong><strong>/obligator_name</strong></td>
+<td class="cellrowborder" valign="top" headers="N10A40 N10A46 "> $ParseXML-ObligatorsList/pfx:ObligatorsList/pfx:Obligator[$ObligatorIndex]/pfx:Name</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10A40 N10A46 "><strong>/jdbcUpdateActivityInput</strong><strong>/customer_id</strong></td>
+<td class="cellrowborder" valign="top" headers="N10A40 N10A46 "> $Start/root/cust_id</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10AA0">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10AA0 "><pre>
+<strong>jdbcUpdateActivityInput</strong>
+ <strong>obligator_name</strong> = $ParseXML-ObligatorsList/pfx:ObligatorsList/pfx:Obligator[$ObligatorIndex]/pfx:Name
+ <strong>customer_id</strong> = $Start/root/cust_id</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10AE9">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10AE9 "><pre>
+                &lt;jdbcUpdateActivityInput xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:pfx="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd" xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/file/v2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                    &lt;obligator_name&gt;
+                        &lt;xsl:value-of select="$ParseXML-ObligatorsList/pfx:ObligatorsList/pfx:Obligator[$ObligatorIndex]/pfx:Name"/&gt;
+                    &lt;/obligator_name&gt;
+                    &lt;customer_id&gt;
+                        &lt;xsl:value-of select="$Start/root/cust_id"/&gt;
+                    &lt;/customer_id&gt;
+                &lt;/jdbcUpdateActivityInput&gt;
+            </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Transitions"><a name="Transitions"><!-- --></a><h2 class="topictitle2">Transitions:</h2>
+<div><a name="Transitions__Assign_ActualObligator_UpdateCustomerDB"><!-- --></a><ul id="Transitions__Assign_ActualObligator_UpdateCustomerDB"><li>
+								From:
+								<strong><em>Assign ActualObligator</em></strong>
+								-To:
+								<strong><em>UpdateCustomerDB</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Assign_NullObligator_CycleGroup"><!-- --></a><ul id="Transitions__Assign_NullObligator_CycleGroup"><li>
+								From:
+								<strong><em>Assign NullObligator</em></strong>
+								-To:
+								<strong><em>CycleGroup</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__CycleGroup_End"><!-- --></a><ul id="Transitions__CycleGroup_End"><li>
+								From:
+								<strong><em>CycleGroup</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Null_end"><!-- --></a><ul id="Transitions__Null_end"><li>
+								From:
+								<strong><em>Null</em></strong>
+								-To:
+								<strong><em>end</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__ParseXML_ObligatorsList_Assign_NullObligator"><!-- --></a><ul id="Transitions__ParseXML_ObligatorsList_Assign_NullObligator"><li>
+								From:
+								<strong><em>ParseXML ObligatorsList</em></strong>
+								-To:
+								<strong><em>Assign NullObligator</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__ReadFile_ObligatorsRegistr_ParseXML_ObligatorsList"><!-- --></a><ul id="Transitions__ReadFile_ObligatorsRegistr_ParseXML_ObligatorsList"><li>
+								From:
+								<strong><em>ReadFile ObligatorsRegistr</em></strong>
+								-To:
+								<strong><em>ParseXML ObligatorsList</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__start_Assign_ActualObligator"><!-- --></a><ul id="Transitions__start_Assign_ActualObligator"><li>
+								From:
+								<strong><em>start</em></strong>
+								-To:
+								<strong><em>Assign ActualObligator</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>$Start/pfx:Name = $ParseXML-ObligatorsList/pfx:ObligatorsList/pfx:Obligator[$ObligatorIndex]/pfx:Name</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__start_Null"><!-- --></a><ul id="Transitions__start_Null"><li>
+								From:
+								<strong><em>start</em></strong>
+								-To:
+								<strong><em>Null</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Start_ReadFile_ObligatorsRegistr"><!-- --></a><ul id="Transitions__Start_ReadFile_ObligatorsRegistr"><li>
+								From:
+								<strong><em>Start</em></strong>
+								-To:
+								<strong><em>ReadFile ObligatorsRegistr</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__UpdateCustomerDB_end"><!-- --></a><ul id="Transitions__UpdateCustomerDB_end"><li>
+								From:
+								<strong><em>UpdateCustomerDB</em></strong>
+								-To:
+								<strong><em>end</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Groups"><a name="Groups"><!-- --></a><h2 class="topictitle2">Groups:</h2>
+<div><ul><li>
+								Name:
+								<strong><em>CycleGroup</em></strong><div class="nomargin"><ul><li>
+											Type:
+											<em>com.tibco.pe.core.LoopGroup</em></li>
+<li>
+											Resource Type:
+											<em>ae.process.group</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>groupType
+							=
+							repeat</li>
+<li>serializable
+							=
+							false</li>
+<li>indexSlot
+							=
+							ObligatorIndex</li>
+<li>activityOutputName
+							=
+							</li>
+<li>repeatCondition
+							=
+							($ObligatorIndex &gt;= $ParseXML-ObligatorsList/pfx:ObligatorsList/@Count) or 
+($ParseXML-ObligatorsList/pfx:ObligatorsList/pfx:Obligator[$ObligatorIndex]/pfx:Name =$Start/pfx:Name)</li>
+<li>accumulateOutput
+							=
+							false</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="../../../../projects/CalculateBonita/common/process.html">Processes</a><img alt="parent-topic-arrow" src="../../../../images/parent-topic-arrow.png" /></div>
+</div>
+
+</body>
+</html>

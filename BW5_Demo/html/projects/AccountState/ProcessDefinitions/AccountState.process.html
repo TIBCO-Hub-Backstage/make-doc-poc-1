@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta content="concept" name="DC.Type" />
+<meta name="DC.Title" content="AccountState" />
+<meta scheme="URI" name="DC.Relation" content="../../../projects/AccountState/common/process.html" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="ProcessMain" name="DC.Identifier" />
+<meta content="en-us" name="DC.Language" />
+<link href="../../../css/commonltr.css" type="text/css" rel="stylesheet" />
+<script src="../../../js/jquery-1.12.2.min.js" type="text/javascript">/* */</script><script src="../../../js/jquery-ui.min.js" type="text/javascript">/* */</script><script src="../../../js/functions.js" type="text/javascript">/* */</script><script src="../../../js/TabbedForm.js" type="text/javascript">/* */</script><script src="../../../js/image-resizer.js" type="text/javascript">/* */</script><script src="../../../js/page-title.js" type="text/javascript">/* */</script><link media="screen" rel="stylesheet" type="text/css" href="../../../css/jquery-ui.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../css/jquery-ui.structure.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../css/jquery-ui.theme.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../css/page.css" /><!--[if lte IE 6]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../css/page-ie6.css" /><![endif]-->
+    <!--[if IE 7]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../css/page-ie7.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../../images/favicon.ico" /><title>AccountState</title>
+</head>
+<body onload="javascript:TabbedFormImages(); javascript:showPageTitle(); javascript:checkImages(); javascript:mappingsHidding();" id="ProcessMain"><a name="ProcessMain"><!-- --></a>
+
+<h1 class="topictitle1">AccountState</h1>
+<div><p class="nomargin">License for TIBCO Software Use Only! </p>
+<p class="nomargin">
+							Section contains description of Process "
+							AccountState.process
+							" .
+						</p>
+<p class="nomargin">
+								Modification time:
+								2023/08/23 13:10:11</p>
+</div>
+<div />
+<div class="nested1" xml:lang="en-us" id="FolderDescription"><a name="FolderDescription"><!-- --></a><h2 class="topictitle2">Folder description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" width="30%" id="N10071">Folder</th>
+<th class="cellrowborder" valign="top" width="70%" id="N10078">Description</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">AccountState</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">This application simulate get bank account state process which using rating of client bonita.</td>
+</tr>
+ <tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/ProcessDefinitions</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">All process definitions</td>
+</tr>
+ </tbody>
+</table>
+</div>
+</div>
+<div />
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDescription"><a name="ProcessDescription"><!-- --></a><h2 class="topictitle2">Process description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><tbody><tr><td class="cellrowborder" valign="top">Main communication process. Receive input parameters. Call CalculateBonita process and at the end send result.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDefinition"><a name="ProcessDefinition"><!-- --></a><h2 class="topictitle2">Process definition:</h2>
+<div><p class="nomargin">
+					Full process path:
+					ProcessDefinitions/AccountState.process</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Diagram"><a name="Diagram"><!-- --></a><h2 class="topictitle2">Diagram:</h2>
+<div><div class="imageMapBox"><img usemap="#N10109" border="0" alt="" src="AccountState.process.png" />
+<map id="N10109" name="N10109">
+<area href="#Starter" alt="Autentification HTTPReceiver" title="Autentification HTTPReceiver" shape="circle" coords="66&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;62&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#EndActivity" alt="End" title="End" shape="circle" coords="726&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;54&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#AccountState_SOAPRequestReply" alt="AccountState SOAPRequestReply" title="AccountState SOAPRequestReply" shape="circle" coords="200&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;62&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Bonita_JMSQueueRequestor" alt="Bonita JMSQueueRequestor" title="Bonita JMSQueueRequestor" shape="circle" coords="384&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;43&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#AccountState_SendHTTPResponse" alt="AccountState SendHTTPResponse" title="AccountState SendHTTPResponse" shape="circle" coords="543&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;62&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#FailedAutentification_SendHTTPResponse" alt="FailedAutentification SendHTTPResponse" title="FailedAutentification SendHTTPResponse" shape="circle" coords="553&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;152&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Transitions__Autentification_HTTPReceiver_AccountState_SOAPRequestReply" alt="From: Autentification HTTPReceiver To: AccountState SOAPRequestReply" title="From: Autentification HTTPReceiver To: AccountState SOAPRequestReply" shape="poly" coords="96&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;158&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;158&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;96&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42" />
+<area href="#Transitions__AccountState_SOAPRequestReply_Bonita_JMSQueueRequestor" alt="From: AccountState SOAPRequestReply To: Bonita JMSQueueRequestor" title="From: AccountState SOAPRequestReply To: Bonita JMSQueueRequestor" shape="poly" coords="234&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;48&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;349&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;38&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;339&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;28&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;224&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;38" />
+<area href="#Transitions__Bonita_JMSQueueRequestor_AccountState_SendHTTPResponse" alt="From: Bonita JMSQueueRequestor To: AccountState SendHTTPResponse" title="From: Bonita JMSQueueRequestor To: AccountState SendHTTPResponse" shape="poly" coords="408&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;37&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;498&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;47&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;508&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;37&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;418&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;27" />
+<area href="#Transitions__AccountState_SendHTTPResponse_End" alt="From: AccountState SendHTTPResponse To: End" title="From: AccountState SendHTTPResponse To: End" shape="poly" coords="573&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;684&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;684&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;573&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42" />
+<area href="#Transitions__FailedAutentification_SendHTTPResponse_End" alt="From: FailedAutentification SendHTTPResponse To: End" title="From: FailedAutentification SendHTTPResponse To: End" shape="poly" coords="584&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;124&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;695&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;75&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;685&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;65&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;574&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;114" />
+<area href="#Transitions__AccountState_SOAPRequestReply_FailedAutentification_SendHTTPResponse" alt="From: AccountState SOAPRequestReply To: FailedAutentification SendHTTPResponse" title="From: AccountState SOAPRequestReply To: FailedAutentification SendHTTPResponse" shape="poly" coords="224&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;61&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;508&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;131&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;518&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;121&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;234&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;51" />
+</map></div></div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Starter"><a name="Starter"><!-- --></a><h2 class="topictitle2">Process starter activity:</h2>
+<div><p class="nomargin">
+									Name:
+									Autentification HTTPReceiver</p>
+<ul><li>
+										Property Name:
+										<strong><em>Autentification HTTPReceiver</em></strong><div class="nomargin"><ul><li>
+													Type:
+													<em>com.tibco.plugin.http.HTTPEventSource</em></li>
+<li>
+													Resource Type:
+													<em>httppalette.httpEventSource</em></li>
+<li>
+													Description:
+													<em>Receive input client autentification information from HTTP</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>outputMode
+							=
+							String</li>
+<li>defaultEncoding
+							=
+							ISO8859_1</li>
+<li>inputOutputVersion
+							=
+							5.3.0</li>
+<li>newMimeSupport
+							=
+							true</li>
+<li>sharedChannel
+			=
+			<a href="./../SharedConnections/IOHTTPConnection.sharedhttp.html">/SharedConnections/IOHTTPConnection.sharedhttp</a>
+</li>
+<li>customField<ul><li>row<ul><li>attribute
+							=
+							Name</li>
+<li>attributeType
+							=
+							string</li>
+<li>attributeCard
+							=
+							required</li>
+</ul>
+</li>
+<li>row<ul><li>attribute
+							=
+							Password</li>
+<li>attributeType
+							=
+							string</li>
+<li>attributeCard
+							=
+							required</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Headers<ul><li>
+					+
+					root
+					(Complex Type,
+					required
+					)
+					<ul><li>
+					-
+					Accept(xsd:string,optional)</li>
+<li>
+					-
+					Accept-Charset(xsd:string,optional)</li>
+<li>
+					-
+					Accept-Encoding(xsd:string,optional)</li>
+<li>
+					-
+					Content-Type(xsd:string,optional)</li>
+<li>
+					-
+					Content-Length(xsd:string,optional)</li>
+<li>
+					-
+					Connection(xsd:string,optional)</li>
+<li>
+					-
+					Cookie(xsd:string,optional)</li>
+<li>
+					-
+					Pragma(xsd:string,optional)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="EndActivity"><a name="EndActivity"><!-- --></a><h2 class="topictitle2">Process end activity:</h2>
+<div><p class="nomargin">
+			Name:
+			End</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Activities"><a name="Activities"><!-- --></a><h2 class="topictitle2">Activities:</h2>
+<div class="nested2" id="AccountState_SendHTTPResponse"><a name="AccountState_SendHTTPResponse"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>AccountState SendHTTPResponse</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.http.HTTPResponseActivity</em></li>
+<li>
+										Resource Type:
+										<em>httppalette.httpWebResponse</em></li>
+<li>
+										Description:
+										<em>Send result as HTTP</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>closeConnection
+							=
+							true</li>
+<li>eventSource
+							=
+							Autentification HTTPReceiver</li>
+<li>Headers<ul><li>
+					+
+					root
+					(Complex Type,
+					required
+					)
+					<ul><li>
+					-
+					StatusLine(xsd:string,optional)</li>
+<li>
+					-
+					Content-Type(xsd:string,optional)</li>
+<li>
+					-
+					Set-Cookie(xsd:string,optional)</li>
+<li>
+					-
+					Pragma(xsd:string,optional)</li>
+<li>
+					-
+					Location(xsd:string,optional)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N103FC">Target</th>
+<th class="cellrowborder" valign="top" id="N10402">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N103FC N10402 "><strong>/ResponseActivityInput</strong><strong>/asciiContent</strong></td>
+<td class="cellrowborder" valign="top" headers="N103FC N10402 "> concat("&lt;H1&gt;Account state&lt;/H1&gt;&lt;B&gt;Account no: &lt;/B&gt;",$AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Number,
+"&lt;BR&gt;&lt;B&gt;Name: &lt;/B&gt;", $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Name,
+"&lt;BR&gt;&lt;B&gt;Value: &lt;/B&gt;", $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Value,
+"&lt;BR&gt;&lt;B&gt;Account status: &lt;/B&gt;",
+(if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita &lt;= 0) then "Basic" else
+if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita = 1) then "Normal" else
+if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita = 2) then "Bronze" else
+if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita = 3) then "Silver" else
+"Gold"))</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10443">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10443 "><pre>
+<strong>ResponseActivityInput</strong>
+ <strong>asciiContent</strong> = concat("&lt;H1&gt;Account state&lt;/H1&gt;&lt;B&gt;Account no: &lt;/B&gt;",$AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Number,
+"&lt;BR&gt;&lt;B&gt;Name: &lt;/B&gt;", $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Name,
+"&lt;BR&gt;&lt;B&gt;Value: &lt;/B&gt;", $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Value,
+"&lt;BR&gt;&lt;B&gt;Account status: &lt;/B&gt;",
+(if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita &lt;= 0) then "Basic" else
+if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita = 1) then "Normal" else
+if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita = 2) then "Bronze" else
+if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita = 3) then "Silver" else
+"Gold"))</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10486">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10486 "><pre>
+            &lt;ResponseActivityInput xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pfx="http://xmlns.example.com/1171610171437/GetAccountStateOperationImpl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx2="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/CalculateBonitaAESchema" xmlns:ns="http://www.tibco.com/schemas/AccountState/SharedResources/Schema.xsd" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pfx3="http://xmlns.example.com/1171360277608/GetObligatorServiceOperationImpl"&gt;
+                &lt;asciiContent&gt;
+                    &lt;xsl:value-of select="concat(&amp;quot;&amp;lt;H1&amp;gt;Account state&amp;lt;/H1&amp;gt;&amp;lt;B&amp;gt;Account no: &amp;lt;/B&amp;gt;&amp;quot;,$AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Number,&amp;#10;&amp;quot;&amp;lt;BR&amp;gt;&amp;lt;B&amp;gt;Name: &amp;lt;/B&amp;gt;&amp;quot;, $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Name,&amp;#10;&amp;quot;&amp;lt;BR&amp;gt;&amp;lt;B&amp;gt;Value: &amp;lt;/B&amp;gt;&amp;quot;, $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Value,&amp;#10;&amp;quot;&amp;lt;BR&amp;gt;&amp;lt;B&amp;gt;Account status: &amp;lt;/B&amp;gt;&amp;quot;,&amp;#10;(if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita &amp;lt;= 0) then &amp;quot;Basic&amp;quot; else&amp;#10;if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita = 1) then &amp;quot;Normal&amp;quot; else&amp;#10;if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita = 2) then &amp;quot;Bronze&amp;quot; else&amp;#10;if($Bonita-JMSQueueRequestor/ns2:ActivityOutput/Body/pfx2:PretenderBonita/Bonita = 3) then &amp;quot;Silver&amp;quot; else&amp;#10;&amp;quot;Gold&amp;quot;))"/&gt;
+                &lt;/asciiContent&gt;
+            &lt;/ResponseActivityInput&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="AccountState_SOAPRequestReply"><a name="AccountState_SOAPRequestReply"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>AccountState SOAPRequestReply</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.soap.SOAPSendReceiveActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.SOAPSendReceiveUI</em></li>
+<li>
+										Description:
+										<em>SOAPRequest on GetAccountState process and get reply with result</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>timeout
+							=
+							0</li>
+<li>service
+							=
+							pfx:GetAccountStateService</li>
+<li>servicePort
+							=
+							UserName_sp_SOAPEventSource</li>
+<li>operation
+							=
+							GetAccountStateOperation</li>
+<li>soapAction
+							=
+							/ProcessDefinitions/GetAccountState/GetAccountStateService</li>
+<li>endpointURL
+							=
+							%%AccountStateServiceEndpointURL%%</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10540">Target</th>
+<th class="cellrowborder" valign="top" id="N10546">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10540 N10546 "><strong>/inputMessage</strong><strong>/Name</strong></td>
+<td class="cellrowborder" valign="top" headers="N10540 N10546 "> $Autentification-HTTPReceiver/ProcessStarterOutput/parameters/Name</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10587">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10587 "><pre>
+<strong>inputMessage</strong>
+ <strong>Name</strong> = $Autentification-HTTPReceiver/ProcessStarterOutput/parameters/Name</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N105CA">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N105CA "><pre>
+            &lt;inputMessage xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pfx="http://xmlns.example.com/1171610171437/GetAccountStateOperationImpl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx2="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/CalculateBonitaAESchema" xmlns:ns="http://www.tibco.com/schemas/AccountState/SharedResources/Schema.xsd" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pfx3="http://xmlns.example.com/1171360277608/GetObligatorServiceOperationImpl"&gt;
+                &lt;ns:Name&gt;
+                    &lt;xsl:value-of select="$Autentification-HTTPReceiver/ProcessStarterOutput/parameters/Name"/&gt;
+                &lt;/ns:Name&gt;
+            &lt;/inputMessage&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="Bonita_JMSQueueRequestor"><a name="Bonita_JMSQueueRequestor"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Bonita JMSQueueRequestor</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.jms.JMSQueueRequestReplyActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.JMSQueueRequestReplyActivity</em></li>
+<li>
+										Description:
+										<em>JMS request on CalculateBonita process and get reply with result</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>PermittedMessageType
+							=
+							XML Text</li>
+<li>SessionAttributes<ul><li>transacted
+							=
+							false</li>
+<li>acknowledgeMode
+							=
+							1</li>
+<li>maxSessions
+							=
+							1</li>
+<li>destination
+							=
+							%%ENV%%.%%CalculateBonitaJMSQueueName%%</li>
+</ul>
+</li>
+<li>ConfigurableHeaders<ul><li>JMSDeliveryMode
+							=
+							PERSISTENT</li>
+<li>JMSExpiration
+							=
+							0</li>
+<li>JMSPriority
+							=
+							4</li>
+</ul>
+</li>
+<li>ConnectionReference
+			=
+			<a href="./../../../unresolved_links.html">/SharedConnections/CalculateBonitaEMSConnection.sharedjmscon</a>
+</li>
+<li>ApplicationProperties
+							=
+							/SharedResources/JMSApplicationProperties.sharedjmsapp</li>
+<li>InDataxsdString<ul><li>
+					-
+					InputParameters
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+<li>OutDataxsdString<ul><li>
+					-
+					PretenderBonita
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N106CE">Target</th>
+<th class="cellrowborder" valign="top" id="N106D4">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N106CE N106D4 "><strong>/ActivityInput</strong><strong>/replyToQueue</strong></td>
+<td class="cellrowborder" valign="top" headers="N106CE N106D4 "> concat($_globalVariables/ns1:GlobalVariables/ENV,$_globalVariables/ns1:GlobalVariables/AccountStateJMSQueueName)</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N106CE N106D4 "><strong>/ActivityInput</strong><strong>/OtherProperties</strong><strong>/Part</strong></td>
+<td class="cellrowborder" valign="top" headers="N106CE N106D4 "> "CalculateBonita"</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N106CE N106D4 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><strong>/Name</strong></td>
+<td class="cellrowborder" valign="top" headers="N106CE N106D4 "> $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Name</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N106CE N106D4 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><strong>/Value</strong></td>
+<td class="cellrowborder" valign="top" headers="N106CE N106D4 "> $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Value</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N106CE N106D4 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><strong>/MonthIncrement</strong></td>
+<td class="cellrowborder" valign="top" headers="N106CE N106D4 "> $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:MonthIncrement</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N106CE N106D4 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><strong>/RealtyValue</strong></td>
+<td class="cellrowborder" valign="top" headers="N106CE N106D4 "> 0</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N106CE N106D4 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><strong>/Refund</strong></td>
+<td class="cellrowborder" valign="top" headers="N106CE N106D4 "> 0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N107E2">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N107E2 "><pre>
+<strong>ActivityInput</strong>
+ <strong>replyToQueue</strong> = concat($_globalVariables/ns1:GlobalVariables/ENV,$_globalVariables/ns1:GlobalVariables/AccountStateJMSQueueName)
+ <strong>OtherProperties</strong>
+  <strong>Part</strong> = "CalculateBonita"
+ <strong>Body</strong>
+  <strong>InputParameters</strong>
+   <strong>Name</strong> = $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Name
+   <strong>Value</strong> = $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Value
+   <strong>MonthIncrement</strong> = $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:MonthIncrement
+   <strong>RealtyValue</strong> = 0
+   <strong>Refund</strong> = 0</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1085B">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1085B "><pre>
+            &lt;ns2:ActivityInput xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pfx="http://xmlns.example.com/1171610171437/GetAccountStateOperationImpl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx2="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/CalculateBonitaAESchema" xmlns:ns="http://www.tibco.com/schemas/AccountState/SharedResources/Schema.xsd" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pfx3="http://xmlns.example.com/1171360277608/GetObligatorServiceOperationImpl"&gt;
+                &lt;replyToQueue&gt;
+                    &lt;xsl:value-of select="concat($_globalVariables/ns1:GlobalVariables/ENV,$_globalVariables/ns1:GlobalVariables/AccountStateJMSQueueName)"/&gt;
+                &lt;/replyToQueue&gt;
+                &lt;OtherProperties&gt;
+                    &lt;Part&gt;
+                        &lt;xsl:value-of select="&amp;quot;CalculateBonita&amp;quot;"/&gt;
+                    &lt;/Part&gt;
+                &lt;/OtherProperties&gt;
+                &lt;Body&gt;
+                    &lt;pfx2:InputParameters&gt;
+                        &lt;Name&gt;
+                            &lt;xsl:value-of select="$AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Name"/&gt;
+                        &lt;/Name&gt;
+                        &lt;Value&gt;
+                            &lt;xsl:value-of select="$AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Value"/&gt;
+                        &lt;/Value&gt;
+                        &lt;MonthIncrement&gt;
+                            &lt;xsl:value-of select="$AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:MonthIncrement"/&gt;
+                        &lt;/MonthIncrement&gt;
+                        &lt;RealtyValue&gt;
+                            &lt;xsl:value-of select="0"/&gt;
+                        &lt;/RealtyValue&gt;
+                        &lt;Refund&gt;
+                            &lt;xsl:value-of select="0"/&gt;
+                        &lt;/Refund&gt;
+                    &lt;/pfx2:InputParameters&gt;
+                &lt;/Body&gt;
+            &lt;/ns2:ActivityInput&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="FailedAutentification_SendHTTPResponse"><a name="FailedAutentification_SendHTTPResponse"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>FailedAutentification SendHTTPResponse</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.http.HTTPResponseActivity</em></li>
+<li>
+										Resource Type:
+										<em>httppalette.httpWebResponse</em></li>
+<li>
+										Description:
+										<em>Send message about failed autentification as HTTP</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>closeConnection
+							=
+							true</li>
+<li>eventSource
+							=
+							Autentification HTTPReceiver</li>
+<li>Headers<ul><li>
+					+
+					root
+					(Complex Type,
+					required
+					)
+					<ul><li>
+					-
+					StatusLine(xsd:string,optional)</li>
+<li>
+					-
+					Content-Type(xsd:string,optional)</li>
+<li>
+					-
+					Set-Cookie(xsd:string,optional)</li>
+<li>
+					-
+					Pragma(xsd:string,optional)</li>
+<li>
+					-
+					Location(xsd:string,optional)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1092C">Target</th>
+<th class="cellrowborder" valign="top" id="N10932">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1092C N10932 "><strong>/ResponseActivityInput</strong><strong>/asciiContent</strong></td>
+<td class="cellrowborder" valign="top" headers="N1092C N10932 "> "&lt;H1&gt;Autentification data failed&lt;/H1&gt;"</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10973">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10973 "><pre>
+<strong>ResponseActivityInput</strong>
+ <strong>asciiContent</strong> = "&lt;H1&gt;Autentification data failed&lt;/H1&gt;"</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N109B6">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N109B6 "><pre>
+            &lt;ResponseActivityInput xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pfx="http://xmlns.example.com/1171610171437/GetAccountStateOperationImpl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx2="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/CalculateBonitaAESchema" xmlns:ns="http://www.tibco.com/schemas/AccountState/SharedResources/Schema.xsd" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pfx3="http://xmlns.example.com/1171360277608/GetObligatorServiceOperationImpl"&gt;
+                &lt;asciiContent&gt;
+                    &lt;xsl:value-of select="&amp;quot;&amp;lt;H1&amp;gt;Autentification data failed&amp;lt;/H1&amp;gt;&amp;quot;"/&gt;
+                &lt;/asciiContent&gt;
+            &lt;/ResponseActivityInput&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Transitions"><a name="Transitions"><!-- --></a><h2 class="topictitle2">Transitions:</h2>
+<div><a name="Transitions__AccountState_SendHTTPResponse_End"><!-- --></a><ul id="Transitions__AccountState_SendHTTPResponse_End"><li>
+								From:
+								<strong><em>AccountState SendHTTPResponse</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__AccountState_SOAPRequestReply_Bonita_JMSQueueRequestor"><!-- --></a><ul id="Transitions__AccountState_SOAPRequestReply_Bonita_JMSQueueRequestor"><li>
+								From:
+								<strong><em>AccountState SOAPRequestReply</em></strong>
+								-To:
+								<strong><em>Bonita JMSQueueRequestor</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>($Autentification-HTTPReceiver/ProcessStarterOutput/parameters/Name = $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Name) and
+($Autentification-HTTPReceiver/ProcessStarterOutput/parameters/Password = $AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Password)</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__AccountState_SOAPRequestReply_FailedAutentification_SendHTTPResponse"><!-- --></a><ul id="Transitions__AccountState_SOAPRequestReply_FailedAutentification_SendHTTPResponse"><li>
+								From:
+								<strong><em>AccountState SOAPRequestReply</em></strong>
+								-To:
+								<strong><em>FailedAutentification SendHTTPResponse</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>($Autentification-HTTPReceiver/ProcessStarterOutput/parameters/Name !=$AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Name) or
+($Autentification-HTTPReceiver/ProcessStarterOutput/parameters/Password !=$AccountState-SOAPRequestReply/outputMessage/ns:Account/ns:Password)</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Autentification_HTTPReceiver_AccountState_SOAPRequestReply"><!-- --></a><ul id="Transitions__Autentification_HTTPReceiver_AccountState_SOAPRequestReply"><li>
+								From:
+								<strong><em>Autentification HTTPReceiver</em></strong>
+								-To:
+								<strong><em>AccountState SOAPRequestReply</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Bonita_JMSQueueRequestor_AccountState_SendHTTPResponse"><!-- --></a><ul id="Transitions__Bonita_JMSQueueRequestor_AccountState_SendHTTPResponse"><li>
+								From:
+								<strong><em>Bonita JMSQueueRequestor</em></strong>
+								-To:
+								<strong><em>AccountState SendHTTPResponse</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__FailedAutentification_SendHTTPResponse_End"><!-- --></a><ul id="Transitions__FailedAutentification_SendHTTPResponse_End"><li>
+								From:
+								<strong><em>FailedAutentification SendHTTPResponse</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="../../../projects/AccountState/common/process.html">Processes</a><img alt="parent-topic-arrow" src="../../../images/parent-topic-arrow.png" /></div>
+</div>
+
+</body>
+</html>

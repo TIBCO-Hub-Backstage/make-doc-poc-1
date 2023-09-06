@@ -1,0 +1,145 @@
+  [taskdef] Could not load definitions from resource net/sf/antcontrib/antcontrib.properties. It could not be found.
+  [taskdef] Could not load definitions from resource net/sf/antcontrib/antcontrib.properties. It could not be found.
+Processing started...
+Initialize log directory and file name...
+Validate and init input arguments...
+  [echo] *****************************************************************
+  [echo] * basedir = /home/behaim/server/bin/plugins/com.pike.packages_4.3.0.v1673871347000/packages/dita/bat
+  [echo] * dita.dir = /home/behaim/server/bin/plugins/com.pike.packages_4.3.0.v1673871347000/packages/dita/dita
+  [echo] * input = /home/behaim/server/storage/default/1693912695040/dita/output.ditamap
+  [echo] * transtype = xhtml
+  [echo] * tempdir = /home/behaim/server/storage/default/1693912695040/tmp/html
+  [echo] * outputdir = /home/behaim/server/storage/default/1693912695040/html
+  [echo] * extname = .xml
+  [echo] * clean.temp = ${clean.temp}
+  [echo] * xslt.parser = XALAN
+  [echo] * xslt.processor = trax
+  [echo] * ant.java.version = 1.7
+  [echo] *****************************************************************
+Preprocessing started...
+Clean temp directory...
+  [pipeline] Using XERCES.
+  [pipeline] [Error] :177:444: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+  [pipeline] [Error] :196:121: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+  [pipeline] [Error] :207:135: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+  [pipeline] [Error] :219:122: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+  [pipeline] [Error] :203:1528: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+  [pipeline] [Error] :248:150: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+  [pipeline] [Fatal Error] :7:307: XML document structures must start and end within the same entity.
+  [pipeline] [DOTJ013E][ERROR] Failed to parse the referenced file 'projects/tibco.bw.sample.binding.rest.Basic/META-INF/module.bwm.dita' due to below exception. Please correct the reference base on the exception message.
+  [pipeline] org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 307; XML document structures must start and end within the same entity.
+Generate file list...
+Debug input files...
+  [pipeline] [Error] books.bwp.dita:177:444: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+  [pipeline] [Error] books.bwp.dita:196:121: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+  [pipeline] [Error] books.bwp.dita:207:135: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+  [pipeline] [Error] books.bwp.dita:219:122: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+  [pipeline] [Error] BooksFile.bwp.dita:203:1528: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+  [pipeline] [Error] BooksFile.bwp.dita:248:150: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+Debug and filter input files...
+Set debug-filter properties...
+Copy image files...
+  [copy] Copying 14 files to /home/behaim/server/storage/default/1693912695040/html
+Copy html files...
+Copy flag files...
+Copy generated files...
+  [copy] Copying 2 files to /home/behaim/server/storage/default/1693912695040/html
+Move index entries...
+Resolve conref in input files...
+Pull the navtitle and topicmeta from topics to ditamap using sax...
+  [pike-preproc] log4j:WARN No appenders could be found for logger (com.pikeelectronic.dita.map.MapHandlerRoot).
+  [pike-preproc] log4j:WARN Please initialize the log4j system properly.
+  [copy] Copying 1 file to /home/behaim/server/storage/default/1693912695040/tmp/html
+Find and generate related link information...
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/output.ditamap to /home/behaim/server/storage/default/1693912695040/tmp/html/maplinks.unordered
+  [xslt] Loading stylesheet /home/behaim/server/bin/plugins/com.pike.packages_4.3.0.v1673871347000/packages/dita/dita/xsl/preprocess/maplink.xsl
+Move the related link information to topics...
+Skipping pull metadata for link and xref element...
+Copy CSS files...
+  [mkdir] Created dir: /home/behaim/server/storage/default/1693912695040/html/css
+  [copy] Copying 2 files to /home/behaim/server/storage/default/1693912695040/html/css
+  [taskdef] Could not load definitions from resource net/sf/antcontrib/antcontrib.properties. It could not be found.
+Build XHTML output from dita topics...
+  [xslt] Transforming into /home/behaim/server/storage/default/1693912695040/html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/cross.xml to /home/behaim/server/storage/default/1693912695040/html/cross/cross.html
+  [xslt] Loading stylesheet /home/behaim/server/bin/plugins/com.pike.packages_4.3.0.v1673871347000/packages/dita/md_internal/xsl/dita2xhtml.xsl
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dataflow/dataflow.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dataflow/dataflow.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/dependencies.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/dependencies.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/processes/cross_tibco.bw.sample.binding.rest.basic.BooksFile.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/processes/cross_tibco.bw.sample.binding.rest.basic.BooksFile.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/processes/cross_tibco.bw.sample.binding.rest.basic.Client.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/processes/cross_tibco.bw.sample.binding.rest.basic.Client.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/processes/cross_tibco.bw.sample.binding.rest.basic.books.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/processes/cross_tibco.bw.sample.binding.rest.basic.books.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/processes/processes.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/processes/processes.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/resources/cross_tibco.bw.sample.binding.rest.basic.HttpClientResource.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/resources/cross_tibco.bw.sample.binding.rest.basic.HttpClientResource.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/resources/resources.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/resources/resources.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/wsdls/cross_http___tns.tibco.com_bw_REST__WSDL.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/wsdls/cross_http___tns.tibco.com_bw_REST__WSDL.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/wsdls/cross_http___www.example.org_Books_REST_1412072511308__WSDL.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/wsdls/cross_http___www.example.org_Books_REST_1412072511308__WSDL.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/wsdls/cross_http___www.example.org_Books__WSDL.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/wsdls/cross_http___www.example.org_Books__WSDL.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/wsdls/cross_http___xmlns.example.com_20140930153240__WSDL.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/wsdls/cross_http___xmlns.example.com_20140930153240__WSDL.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/wsdls/wsdls.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/wsdls/wsdls.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/xsds/cross_http___www.example.org_Books__XSD.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/xsds/cross_http___www.example.org_Books__XSD.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/cross/dependencies/xsds/xsds.xml to /home/behaim/server/storage/default/1693912695040/html/cross/dependencies/xsds/xsds.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/intro.xml to /home/behaim/server/storage/default/1693912695040/html/intro.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/projects.xml to /home/behaim/server/storage/default/1693912695040/html/projects/projects.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic.application/META-INF/TIBCO.application.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic.application/META-INF/TIBCO.application.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic.application/META-INF/UnixProfile.substvar.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic.application/META-INF/UnixProfile.substvar.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic.application/META-INF/WindowsProfile.substvar.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic.application/META-INF/WindowsProfile.substvar.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic.application/META-INF/default.substvar.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic.application/META-INF/default.substvar.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic.application/common/application.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic.application/common/application.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic.application/common/substvar.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic.application/common/substvar.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic.application/tibco.bw.sample.binding.rest.Basic.application.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic.application/tibco.bw.sample.binding.rest.Basic.application.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/META-INF/default.substvar.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/META-INF/default.substvar.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/META-INF/module.jsv.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/META-INF/module.jsv.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/META-INF/module.msv.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/META-INF/module.msv.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/Processes/tibco/bw/sample/binding/rest/basic/BooksFile.bwp.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/Processes/tibco/bw/sample/binding/rest/basic/BooksFile.bwp.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/Processes/tibco/bw/sample/binding/rest/basic/Client.bwp.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/Processes/tibco/bw/sample/binding/rest/basic/Client.bwp.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/Processes/tibco/bw/sample/binding/rest/basic/books.bwp.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/Processes/tibco/bw/sample/binding/rest/basic/books.bwp.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/Resources/tibco/bw/sample/binding/rest/basic/HttpClientResource.httpClientResource.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/Resources/tibco/bw/sample/binding/rest/basic/HttpClientResource.httpClientResource.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/Resources/tibco/bw/sample/binding/rest/basic/books.httpConnResource.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/Resources/tibco/bw/sample/binding/rest/basic/books.httpConnResource.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/Schemas/Books.xsd.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/Schemas/Books.xsd.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/Schemas/RESTSchema.xsd.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/Schemas/RESTSchema.xsd.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/Service_Descriptors/BooksFileService.wsdl.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/Service_Descriptors/BooksFileService.wsdl.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/Service_Descriptors/books.wsdl.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/Service_Descriptors/books.wsdl.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/common/httpClientConfiguration.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/common/httpClientConfiguration.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/common/httpConnector.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/common/httpConnector.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/common/jobsharedvariable.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/common/jobsharedvariable.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/common/moduleDescriptor.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/common/moduleDescriptor.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/common/process.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/common/process.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/common/sharedvariable.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/common/sharedvariable.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/common/substvar.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/common/substvar.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/common/wsdl.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/common/wsdl.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/common/xsd.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/common/xsd.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/projects/tibco.bw.sample.binding.rest.Basic/tibco.bw.sample.binding.rest.Basic.xml to /home/behaim/server/storage/default/1693912695040/html/projects/tibco.bw.sample.binding.rest.Basic/tibco.bw.sample.binding.rest.Basic.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/common/invalidQARule.xml to /home/behaim/server/storage/default/1693912695040/html/qa/common/invalidQARule.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/common/violationsByProjects.xml to /home/behaim/server/storage/default/1693912695040/html/qa/common/violationsByProjects.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/common/violationsByRules.xml to /home/behaim/server/storage/default/1693912695040/html/qa/common/violationsByRules.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic.application.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic.application.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic.application/violation1.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic.application/violation1.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic.application/violation2.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic.application/violation2.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic.application/violation3.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic.application/violation3.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic.application/violation4.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic.application/violation4.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation1.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation1.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation10.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation10.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation2.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation2.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation3.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation3.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation4.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation4.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation5.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation5.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation6.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation6.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation7.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation7.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation8.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation8.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation9.xml to /home/behaim/server/storage/default/1693912695040/html/qa/projects/tibco.bw.sample.binding.rest.Basic/violation9.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/qa.xml to /home/behaim/server/storage/default/1693912695040/html/qa/qa.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/rules/INFO_-_Value_Contains.xml to /home/behaim/server/storage/default/1693912695040/html/qa/rules/INFO_-_Value_Contains.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/rules/Incorrect_description/violation1.xml to /home/behaim/server/storage/default/1693912695040/html/qa/rules/Incorrect_description/violation1.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/rules/Incorrect_directory_structure/violation1.xml to /home/behaim/server/storage/default/1693912695040/html/qa/rules/Incorrect_directory_structure/violation1.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/rules/Incorrect_directory_structure/violation2.xml to /home/behaim/server/storage/default/1693912695040/html/qa/rules/Incorrect_directory_structure/violation2.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/rules/Missing_XSD_Annotation/violation1.xml to /home/behaim/server/storage/default/1693912695040/html/qa/rules/Missing_XSD_Annotation/violation1.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/rules/Value_Contains/violation1.xml to /home/behaim/server/storage/default/1693912695040/html/qa/rules/Value_Contains/violation1.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/rules/Value_Contains/violation2.xml to /home/behaim/server/storage/default/1693912695040/html/qa/rules/Value_Contains/violation2.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/rules/WARNING_-_Incorrect_description.xml to /home/behaim/server/storage/default/1693912695040/html/qa/rules/WARNING_-_Incorrect_description.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/rules/WARNING_-_Incorrect_directory_structure.xml to /home/behaim/server/storage/default/1693912695040/html/qa/rules/WARNING_-_Incorrect_directory_structure.html
+  [xslt] Processing /home/behaim/server/storage/default/1693912695040/tmp/html/qa/rules/WARNING_-_Missing_XSD_Annotation.xml to /home/behaim/server/storage/default/1693912695040/html/qa/rules/WARNING_-_Missing_XSD_Annotation.html
+Processing ended.
+
+BUILD SUCCESSFUL
+Total time: 5 seconds

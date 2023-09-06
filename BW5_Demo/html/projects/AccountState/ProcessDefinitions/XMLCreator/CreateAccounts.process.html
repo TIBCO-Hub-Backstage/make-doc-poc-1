@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta content="concept" name="DC.Type" />
+<meta name="DC.Title" content="CreateAccounts" />
+<meta scheme="URI" name="DC.Relation" content="../../../../projects/AccountState/common/process.html" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="ProcessMain" name="DC.Identifier" />
+<meta content="en-us" name="DC.Language" />
+<link href="../../../../css/commonltr.css" type="text/css" rel="stylesheet" />
+<script src="../../../../js/jquery-1.12.2.min.js" type="text/javascript">/* */</script><script src="../../../../js/jquery-ui.min.js" type="text/javascript">/* */</script><script src="../../../../js/functions.js" type="text/javascript">/* */</script><script src="../../../../js/TabbedForm.js" type="text/javascript">/* */</script><script src="../../../../js/image-resizer.js" type="text/javascript">/* */</script><script src="../../../../js/page-title.js" type="text/javascript">/* */</script><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.structure.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.theme.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page.css" /><!--[if lte IE 6]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie6.css" /><![endif]-->
+    <!--[if IE 7]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie7.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../images/favicon.ico" /><title>CreateAccounts</title>
+</head>
+<body onload="javascript:TabbedFormImages(); javascript:showPageTitle(); javascript:checkImages(); javascript:mappingsHidding();" id="ProcessMain"><a name="ProcessMain"><!-- --></a>
+
+<h1 class="topictitle1">CreateAccounts</h1>
+<div><p class="nomargin">License for TIBCO Software Use Only! </p>
+<p class="nomargin">
+							Section contains description of Process "
+							CreateAccounts.process
+							" .
+						</p>
+<p class="nomargin">
+								Modification time:
+								2023/08/23 13:10:11</p>
+</div>
+<div />
+<div class="nested1" xml:lang="en-us" id="FolderDescription"><a name="FolderDescription"><!-- --></a><h2 class="topictitle2">Folder description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" width="30%" id="N10071">Folder</th>
+<th class="cellrowborder" valign="top" width="70%" id="N10078">Description</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">AccountState</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">This application simulate get bank account state process which using rating of client bonita.</td>
+</tr>
+ <tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/ProcessDefinitions</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">All process definitions</td>
+</tr>
+ <tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/ProcessDefinitions/XMLCreator</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">Processes for creating default xml files</td>
+</tr>
+ </tbody>
+</table>
+</div>
+</div>
+<div />
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDescription"><a name="ProcessDescription"><!-- --></a><h2 class="topictitle2">Process description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><tbody><tr><td class="cellrowborder" valign="top">Create default basic Accounts xml file</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDefinition"><a name="ProcessDefinition"><!-- --></a><h2 class="topictitle2">Process definition:</h2>
+<div><p class="nomargin">
+					Full process path:
+					ProcessDefinitions/XMLCreator/CreateAccounts.process</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Diagram"><a name="Diagram"><!-- --></a><h2 class="topictitle2">Diagram:</h2>
+<div><div class="imageMapBox"><img usemap="#N1011A" border="0" alt="" src="CreateAccounts.process.png" />
+<map id="N1011A" name="N1011A">
+<area href="#Starter" alt="Start" title="Start" shape="circle" coords="46&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;44&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#EndActivity" alt="End" title="End" shape="circle" coords="436&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;44&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#WriteFile_Accounts" alt="WriteFile Accounts" title="WriteFile Accounts" shape="circle" coords="318&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;44&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#RenderXML_Accounts" alt="RenderXML Accounts" title="RenderXML Accounts" shape="circle" coords="166&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;44&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Transitions__Start_RenderXML_Accounts" alt="From: Start To: RenderXML Accounts" title="From: Start To: RenderXML Accounts" shape="poly" coords="76&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;124&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;124&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;76&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32" />
+<area href="#Transitions__RenderXML_Accounts_WriteFile_Accounts" alt="From: RenderXML Accounts To: WriteFile Accounts" title="From: RenderXML Accounts To: WriteFile Accounts" shape="poly" coords="196&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;276&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;276&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;196&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32" />
+<area href="#Transitions__WriteFile_Accounts_End" alt="From: WriteFile Accounts To: End" title="From: WriteFile Accounts To: End" shape="poly" coords="348&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;394&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;394&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;348&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32" />
+</map></div></div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Starter"><a name="Starter"><!-- --></a><h2 class="topictitle2">Process starter activity:</h2>
+<div><p class="nomargin">
+			Name:
+			Start</p>
+<p class="nomargin">
+			Description:
+			</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="EndActivity"><a name="EndActivity"><!-- --></a><h2 class="topictitle2">Process end activity:</h2>
+<div><p class="nomargin">
+			Name:
+			End</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Activities"><a name="Activities"><!-- --></a><h2 class="topictitle2">Activities:</h2>
+<div class="nested2" id="RenderXML_Accounts"><a name="RenderXML_Accounts"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>RenderXML Accounts</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.xml.XMLRendererActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.XMLRendererActivity</em></li>
+<li>
+										Description:
+										</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>renderAsText
+							=
+							text</li>
+<li>validateInput
+							=
+							true</li>
+<li>renderDefaultPrefix
+							=
+							true</li>
+<li>textEncoding
+							=
+							UTF-8</li>
+<li>term<ul><li>
+					-
+					AccountsList
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N102A9">Target</th>
+<th class="cellrowborder" valign="top" id="N102AF">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N102A9 N102AF "><strong>/AccountsList</strong><strong>/@Count</strong></td>
+<td class="cellrowborder" valign="top" headers="N102A9 N102AF ">  1</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N102A9 N102AF "><strong>/AccountsList</strong><strong>/Account</strong><strong>/Number</strong></td>
+<td class="cellrowborder" valign="top" headers="N102A9 N102AF "> 123456789</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N102A9 N102AF "><strong>/AccountsList</strong><strong>/Account</strong><strong>/Name</strong></td>
+<td class="cellrowborder" valign="top" headers="N102A9 N102AF "> "Jan Novak"</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N102A9 N102AF "><strong>/AccountsList</strong><strong>/Account</strong><strong>/Value</strong></td>
+<td class="cellrowborder" valign="top" headers="N102A9 N102AF "> 1545738</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N102A9 N102AF "><strong>/AccountsList</strong><strong>/Account</strong><strong>/MonthIncrement</strong></td>
+<td class="cellrowborder" valign="top" headers="N102A9 N102AF "> 75000</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N102A9 N102AF "><strong>/AccountsList</strong><strong>/Account</strong><strong>/Password</strong></td>
+<td class="cellrowborder" valign="top" headers="N102A9 N102AF "> "key"</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10386">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10386 "><pre>
+<strong>AccountsList</strong>
+ <strong>@Count</strong> = 1
+ <strong>Account</strong>
+  <strong>Number</strong> = 123456789
+  <strong>Name</strong> = "Jan Novak"
+  <strong>Value</strong> = 1545738
+  <strong>MonthIncrement</strong> = 75000
+  <strong>Password</strong> = "key"</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N103ED">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N103ED "><pre>
+            &lt;pfx:AccountsList xmlns:pfx="http://www.tibco.com/schemas/AccountState/SharedResources/Schema.xsd" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                &lt;xsl:attribute name="Count"&gt;
+                    &lt;xsl:value-of select="1"/&gt;
+                &lt;/xsl:attribute&gt;
+                &lt;pfx:Account&gt;
+                    &lt;pfx:Number&gt;
+                        &lt;xsl:value-of select="123456789"/&gt;
+                    &lt;/pfx:Number&gt;
+                    &lt;pfx:Name&gt;
+                        &lt;xsl:value-of select="&amp;quot;Jan Novak&amp;quot;"/&gt;
+                    &lt;/pfx:Name&gt;
+                    &lt;pfx:Value&gt;
+                        &lt;xsl:value-of select="1545738"/&gt;
+                    &lt;/pfx:Value&gt;
+                    &lt;pfx:MonthIncrement&gt;
+                        &lt;xsl:value-of select="75000"/&gt;
+                    &lt;/pfx:MonthIncrement&gt;
+                    &lt;pfx:Password&gt;
+                        &lt;xsl:value-of select="&amp;quot;key&amp;quot;"/&gt;
+                    &lt;/pfx:Password&gt;
+                &lt;/pfx:Account&gt;
+            &lt;/pfx:AccountsList&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="WriteFile_Accounts"><a name="WriteFile_Accounts"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>WriteFile Accounts</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.file.FileWriteActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.FileWriteActivity</em></li>
+<li>
+										Description:
+										</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>encoding
+							=
+							text</li>
+<li>compressFile
+							=
+							None</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1048E">Target</th>
+<th class="cellrowborder" valign="top" id="N10494">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1048E N10494 "><strong>/WriteActivityInputTextClass</strong><strong>/fileName</strong></td>
+<td class="cellrowborder" valign="top" headers="N1048E N10494 "> $_globalVariables/ns:GlobalVariables/DefaultAccountsFile</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1048E N10494 "><strong>/WriteActivityInputTextClass</strong><strong>/textContent</strong></td>
+<td class="cellrowborder" valign="top" headers="N1048E N10494 "> $RenderXML-Accounts/xmlString</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N104EE">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N104EE "><pre>
+<strong>WriteActivityInputTextClass</strong>
+ <strong>fileName</strong> = $_globalVariables/ns:GlobalVariables/DefaultAccountsFile
+ <strong>textContent</strong> = $RenderXML-Accounts/xmlString</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10537">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10537 "><pre>
+            &lt;ns2:WriteActivityInputTextClass xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx="http://www.tibco.com/schemas/AccountState/SharedResources/Schema.xsd"&gt;
+                &lt;fileName&gt;
+                    &lt;xsl:value-of select="$_globalVariables/ns:GlobalVariables/DefaultAccountsFile"/&gt;
+                &lt;/fileName&gt;
+                &lt;textContent&gt;
+                    &lt;xsl:value-of select="$RenderXML-Accounts/xmlString"/&gt;
+                &lt;/textContent&gt;
+            &lt;/ns2:WriteActivityInputTextClass&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Transitions"><a name="Transitions"><!-- --></a><h2 class="topictitle2">Transitions:</h2>
+<div><a name="Transitions__RenderXML_Accounts_WriteFile_Accounts"><!-- --></a><ul id="Transitions__RenderXML_Accounts_WriteFile_Accounts"><li>
+								From:
+								<strong><em>RenderXML Accounts</em></strong>
+								-To:
+								<strong><em>WriteFile Accounts</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Start_RenderXML_Accounts"><!-- --></a><ul id="Transitions__Start_RenderXML_Accounts"><li>
+								From:
+								<strong><em>Start</em></strong>
+								-To:
+								<strong><em>RenderXML Accounts</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__WriteFile_Accounts_End"><!-- --></a><ul id="Transitions__WriteFile_Accounts_End"><li>
+								From:
+								<strong><em>WriteFile Accounts</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="../../../../projects/AccountState/common/process.html">Processes</a><img alt="parent-topic-arrow" src="../../../../images/parent-topic-arrow.png" /></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by TIBCO WSDL-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.example.com/1171295149828/LoadParametersServiceOperationImpl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns0="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema.xsd" name="Untitled" targetNamespace="http://xmlns.example.com/1171295149828/LoadParametersServiceOperationImpl">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema.xsd" targetNamespace="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+            <xs:element name="FileName" type="xs:string"/>
+            <xs:element name="InputFile">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="ns0:FileName"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="InputParameters">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="ns0:Name"/>
+                        <xs:element ref="ns0:Value"/>
+                        <xs:element ref="ns0:Refund"/>
+                        <xs:element ref="ns0:Salary"/>
+                        <xs:element ref="ns0:Pawn"/>
+                        <xs:element ref="ns0:RealtyDetail"/>
+                        <xs:element ref="ns0:RealtyValue"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Pawn" type="xs:boolean"/>
+            <xs:element name="RealtyDetail" type="xs:string"/>
+            <xs:element name="RealtyValue" type="xs:long"/>
+            <xs:element name="Refund" type="xs:long"/>
+            <xs:element name="Salary" type="xs:long"/>
+            <xs:element name="Value" type="xs:long"/>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="LoadParametersServiceInputMessage">
+        <wsdl:part name="part1" element="ns0:InputFile"/>
+    </wsdl:message>
+    <wsdl:message name="LoadParametersServiceOutputMessage">
+        <wsdl:part name="part1" element="ns0:InputParameters"/>
+    </wsdl:message>
+    <wsdl:portType name="LoadParametersServicePort">
+        <wsdl:operation name="LoadParametersServiceOperation">
+            <wsdl:input message="tns:LoadParametersServiceInputMessage"/>
+            <wsdl:output message="tns:LoadParametersServiceOutputMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="InputFileName_sp_from_sp_SOAPEventSourceBinding" type="tns:LoadParametersServicePort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="LoadParametersServiceOperation">
+            <soap:operation style="document" soapAction="/ProcessDefinitions/LoadParameters/LoadParametersService"/>
+            <wsdl:input>
+                <soap:body use="literal" parts="part1"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" parts="part1"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="LoadParametersService">
+        <wsdl:port name="InputFileName_sp_from_sp_SOAPEventSource" binding="tns:InputFileName_sp_from_sp_SOAPEventSourceBinding">
+            <soap:address location="http://localhost:9998/ProcessDefinitions/LoadParameters/LoadParametersService"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

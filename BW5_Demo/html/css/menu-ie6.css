@@ -1,0 +1,29 @@
+div#menuBox
+{
+	margin-left: 3px;
+	background: none;
+	background-color: rgb(195, 230, 240);
+	border-left: none;
+}
+div#menuBox div#menuInnerBox
+{
+	width: 100%;
+	overflow-x: auto;
+	background-color: White;
+}
+div#menuInnerBox ul#menu li div.liInfoBox
+{
+	border-top: white 1px solid;
+}
+div#menuInnerBox ul#menu li div.liInfoBox div.linkBox
+{
+	line-height: 21px;
+}
+div#menuInnerBox ul#menu li div.liInfoBox.selected
+{
+	background-color: white;
+}
+div#menuInnerBox ul#menu li div.liInfoBox.selected span
+{
+	text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.example.com/1171360277608" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd" targetNamespace="http://xmlns.example.com/1171360277608">
+    <documentation>Abstract WSDL resource for SOAP communication with GetObligator process</documentation>
+    <import namespace="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd" location="ObligatorsRegistrXSD.xsd"/>
+    <message name="GetObligatorServiceInputMessage">
+        <documentation>Input WSDL message for process GetObligatorService</documentation>
+        <part name="part1" element="ns:Name"/>
+    </message>
+    <message name="GetObligatorServiceOutputMessage">
+        <documentation>Output WSDL message for process GetObligatorService</documentation>
+        <part name="part1" element="ns:Obligator"/>
+    </message>
+    <portType name="GetObligatorServicePort">
+        <documentation>WSDL port for process GetObligatorService</documentation>
+        <operation name="GetObligatorServiceOperation">
+            <documentation>WSDL operation for GetObligatorService process</documentation>
+            <input message="tns:GetObligatorServiceInputMessage"/>
+            <output message="tns:GetObligatorServiceOutputMessage"/>
+        </operation>
+    </portType>
+</definitions>

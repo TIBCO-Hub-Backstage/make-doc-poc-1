@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta content="concept" name="DC.Type" />
+<meta name="DC.Title" content="databaseURL: jdbc:tibcosoftwareinc:oracle://10.246.4.34:1521;SID=TIBCO" />
+<meta scheme="URI" name="DC.Relation" content="../../../crossref/dest/projs/AccountState.html" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="projGetAccount" name="DC.Identifier" />
+<meta content="en-us" name="DC.Language" />
+<link href="../../../css/commonltr.css" type="text/css" rel="stylesheet" />
+<script src="../../../js/jquery-1.12.2.min.js" type="text/javascript">/* */</script><script src="../../../js/jquery-ui.min.js" type="text/javascript">/* */</script><script src="../../../js/functions.js" type="text/javascript">/* */</script><script src="../../../js/TabbedForm.js" type="text/javascript">/* */</script><script src="../../../js/image-resizer.js" type="text/javascript">/* */</script><script src="../../../js/page-title.js" type="text/javascript">/* */</script><link media="screen" rel="stylesheet" type="text/css" href="../../../css/jquery-ui.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../css/jquery-ui.structure.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../css/jquery-ui.theme.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../css/page.css" /><!--[if lte IE 6]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../css/page-ie6.css" /><![endif]-->
+    <!--[if IE 7]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../css/page-ie7.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../../images/favicon.ico" /><title>databaseURL:  jdbc:tibcosoftwareinc:oracle://10.246.4.34:1521;SID=TIBCO</title>
+</head>
+<body onload="javascript:TabbedFormImages(); javascript:showPageTitle(); javascript:checkImages(); javascript:mappingsHidding();" id="projGetAccount"><a name="projGetAccount"><!-- --></a>
+
+
+    <h1 class="topictitle1">databaseURL:  jdbc:tibcosoftwareinc:oracle://10.246.4.34:1521;SID=TIBCO</h1>
+
+    
+    <div>
+        <p class="nomargin">License for TIBCO Software Use Only! </p>
+
+        <p class="nomargin">
+            <strong>
+                <a href="../msgs/dest_Id165.html">databaseURL:  jdbc:tibcosoftwareinc:oracle://10.246.4.34:1521;SID=TIBCO</a>
+            </strong>
+        </p>
+
+        <a name="projGetAccount__activityDetailTable_164"><!-- --></a><table summary="" cellspacing="0" cellpadding="4" id="projGetAccount__activityDetailTable_164" border="0" class="simpletablenoborder">
+            <tr>
+                <td valign="top" id="N1004D"><strong>Action:</strong></td>
+
+                <td valign="top" headers="N1004D">JDBCQuery</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N1005F"><strong>Activity:</strong></td>
+
+                <td valign="top" headers="N1005F">GetAccount (JDBCCall)</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N10071"><strong>Source:</strong></td>
+
+                <td valign="top" headers="N10071">
+                    <a href="../../../projects/AccountState/ProcessDefinitions/GetAccountState/GetAccountState.process.html">/ProcessDefinitions/GetAccountState/GetAccountState</a> (BW Process)</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N1008A"><strong>Maximum rows:</strong></td>
+
+                <td valign="top" headers="N1008A">100</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N1009C"><strong>Query timeout:</strong></td>
+
+                <td valign="top" headers="N1009C">10</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N100AE"><strong>Override transaction behaviour:</strong></td>
+
+                <td valign="top" headers="N100AE">true</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N100C0"><strong>Database URL:</strong></td>
+
+                <td valign="top" headers="N100C0">jdbc:tibcosoftwareinc:oracle://%%jdbcTIBCO/database/url_port%%;SID=%%jdbcTIBCO/database/sid%%</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N100D2"><strong>SQL Statement:</strong></td>
+
+                <td valign="top" headers="N100D2">SELECT ID,  NAME,  VALUE,  MONTH_INCREMENT 
+FROM  ACCOUNTS
+WHERE ID = ?</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N100E4"><strong>User name:</strong></td>
+
+                <td valign="top" headers="N100E4">%%jdbcTIBCO/database/user%%</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N100F6"><strong>Use Shared JNDI Configuration:</strong></td>
+
+                <td valign="top" headers="N100F6">true</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N10108"><strong>JDBC Driver:</strong></td>
+
+                <td valign="top" headers="N10108">tibcosoftwareinc.jdbc.oracle.OracleDriver</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N1011A"><strong>JDBC Connection:</strong></td>
+
+                <td valign="top" headers="N1011A">/SharedConnections/Tibco.sharedjdbc</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N1012C"><strong>Password:</strong></td>
+
+                <td valign="top" headers="N1012C">%%jdbcTIBCO/database/password%%</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N1013E"><strong>JDBC Connection type:</strong></td>
+
+                <td valign="top" headers="N1013E">JDBC</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N10150"><strong>Login timeout:</strong></td>
+
+                <td valign="top" headers="N10150">0</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N10162"><strong>Maximum connections:</strong></td>
+
+                <td valign="top" headers="N10162">120</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N10174"><strong>Prepared SQL parameters:</strong></td>
+
+                <td valign="top" headers="N10174">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+                <td valign="top" id="N10185"><strong>&nbsp;</strong></td>
+
+                <td valign="top" headers="N10185">id : INTEGER</td>
+
+            </tr>
+
+        </table><hr />
+
+        <p class="nomargin" />
+
+    </div>
+
+<div />
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="../../../crossref/dest/projs/AccountState.html">AccountState</a><img alt="parent-topic-arrow" src="../../../images/parent-topic-arrow.png" /></div>
+</div>
+
+</body>
+</html>

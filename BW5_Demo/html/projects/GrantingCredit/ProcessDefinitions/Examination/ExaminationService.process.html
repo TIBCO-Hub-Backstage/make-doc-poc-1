@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta content="concept" name="DC.Type" />
+<meta name="DC.Title" content="ExaminationService" />
+<meta scheme="URI" name="DC.Relation" content="../../../../projects/GrantingCredit/common/process.html" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="ProcessMain" name="DC.Identifier" />
+<meta content="en-us" name="DC.Language" />
+<link href="../../../../css/commonltr.css" type="text/css" rel="stylesheet" />
+<script src="../../../../js/jquery-1.12.2.min.js" type="text/javascript">/* */</script><script src="../../../../js/jquery-ui.min.js" type="text/javascript">/* */</script><script src="../../../../js/functions.js" type="text/javascript">/* */</script><script src="../../../../js/TabbedForm.js" type="text/javascript">/* */</script><script src="../../../../js/image-resizer.js" type="text/javascript">/* */</script><script src="../../../../js/page-title.js" type="text/javascript">/* */</script><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.structure.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.theme.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page.css" /><!--[if lte IE 6]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie6.css" /><![endif]-->
+    <!--[if IE 7]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie7.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../images/favicon.ico" /><title>ExaminationService</title>
+</head>
+<body onload="javascript:TabbedFormImages(); javascript:showPageTitle(); javascript:checkImages(); javascript:mappingsHidding();" id="ProcessMain"><a name="ProcessMain"><!-- --></a>
+
+<h1 class="topictitle1">ExaminationService</h1>
+<div><p class="nomargin">License for TIBCO Software Use Only! </p>
+<p class="nomargin">
+							Section contains description of Process "
+							ExaminationService.process
+							" .
+						</p>
+<p class="nomargin">
+								Modification time:
+								2023/08/23 13:10:11</p>
+</div>
+<div />
+<div class="nested1" xml:lang="en-us" id="FolderDescription"><a name="FolderDescription"><!-- --></a><h2 class="topictitle2">Folder description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" width="30%" id="N10071">Folder</th>
+<th class="cellrowborder" valign="top" width="70%" id="N10078">Description</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">GrantingCredit</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">The application Granting credit provides resolution whether a credit (or mortgage) can be granded to a user. Information about user is the input of the application.</td>
+</tr>
+ <tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/ProcessDefinitions</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">All process definitions</td>
+</tr>
+ <tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/ProcessDefinitions/Examination</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">Processes for result examination about GrantingCredit</td>
+</tr>
+ </tbody>
+</table>
+</div>
+</div>
+<div />
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDescription"><a name="ProcessDescription"><!-- --></a><h2 class="topictitle2">Process description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><tbody><tr><td class="cellrowborder" valign="top">
+											No description
+										</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDefinition"><a name="ProcessDefinition"><!-- --></a><h2 class="topictitle2">Process definition:</h2>
+<div><p class="nomargin">
+					Full process path:
+					ProcessDefinitions/Examination/ExaminationService.process</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Diagram"><a name="Diagram"><!-- --></a><h2 class="topictitle2">Diagram:</h2>
+<div><div class="imageMapBox"><img usemap="#N1011A" border="0" alt="" src="ExaminationService.process.png" />
+<map id="N1011A" name="N1011A">
+<area href="#Starter" alt="InputParameters JMSQueueReceiver" title="InputParameters JMSQueueReceiver" shape="circle" coords="61&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#EndActivity" alt="End" title="End" shape="circle" coords="916&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;54&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Bonita_JMSQueueRequestor" alt="Bonita JMSQueueRequestor" title="Bonita JMSQueueRequestor" shape="circle" coords="535&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;63&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Examination" alt="Examination" title="Examination" shape="circle" coords="669&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;53&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Negate_Value" alt="Negate Value" title="Negate Value" shape="circle" coords="380&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;54&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Result_JMSQueueSender" alt="Result JMSQueueSender" title="Result JMSQueueSender" shape="circle" coords="796&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;62&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Appraisal_WaitForJMSQueueMessage" alt="Appraisal WaitForJMSQueueMessage" title="Appraisal WaitForJMSQueueMessage" shape="circle" coords="241&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;102&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Transitions__Bonita_JMSQueueRequestor_Examination" alt="From: Bonita JMSQueueRequestor To: Examination" title="From: Bonita JMSQueueRequestor To: Examination" shape="poly" coords="569&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;53&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;634&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;51&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;624&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;41&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;559&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;43" />
+<area href="#Transitions__InputParameters_JMSQueueReceiver_Negate_Value" alt="From: InputParameters JMSQueueReceiver To: Negate Value" title="From: InputParameters JMSQueueReceiver To: Negate Value" shape="poly" coords="85&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;43&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;335&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;51&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;345&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;41&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;95&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;33" />
+<area href="#Transitions__Negate_Value_Bonita_JMSQueueRequestor" alt="From: Negate Value To: Bonita JMSQueueRequestor" title="From: Negate Value To: Bonita JMSQueueRequestor" shape="poly" coords="404&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;490&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;53&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;500&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;43&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;414&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42" />
+<area href="#Transitions__Examination_Result_JMSQueueSender" alt="From: Examination To: Result JMSQueueSender" title="From: Examination To: Result JMSQueueSender" shape="poly" coords="693&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;51&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;751&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;761&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;703&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;41" />
+<area href="#Transitions__Result_JMSQueueSender_End" alt="From: Result JMSQueueSender To: End" title="From: Result JMSQueueSender To: End" shape="poly" coords="826&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;874&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;874&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;826&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42" />
+<area href="#Transitions__InputParameters_JMSQueueReceiver_Appraisal_WaitForJMSQueueMessage" alt="From: InputParameters JMSQueueReceiver To: Appraisal WaitForJMSQueueMessage" title="From: InputParameters JMSQueueReceiver To: Appraisal WaitForJMSQueueMessage" shape="poly" coords="84&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;52&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;197&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;79&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;207&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;69&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;94&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42" />
+<area href="#Transitions__Appraisal_WaitForJMSQueueMessage_Negate_Value" alt="From: Appraisal WaitForJMSQueueMessage To: Negate Value" title="From: Appraisal WaitForJMSQueueMessage To: Negate Value" shape="poly" coords="274&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;81&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;346&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;66&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;336&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;56&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;264&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;71" />
+</map></div></div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Starter"><a name="Starter"><!-- --></a><h2 class="topictitle2">Process starter activity:</h2>
+<div><p class="nomargin">
+									Name:
+									InputParameters JMSQueueReceiver</p>
+<ul><li>
+										Property Name:
+										<strong><em>InputParameters JMSQueueReceiver</em></strong><div class="nomargin"><ul><li>
+													Type:
+													<em>com.tibco.plugin.jms.JMSQueueEventSource</em></li>
+<li>
+													Resource Type:
+													<em>ae.activities.JMSQueueEventSource</em></li>
+<li>
+													Description:
+													</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>PermittedMessageType
+							=
+							XML Text</li>
+<li>SessionAttributes<ul><li>transacted
+							=
+							false</li>
+<li>acknowledgeMode
+							=
+							1
+									(Auto)
+								</li>
+<li>maxSessions
+							=
+							1</li>
+<li>destination
+							=
+							%%ENV%%.%%JMSQueueName%%</li>
+<li>selector
+							=
+							Part='InputParameters'</li>
+</ul>
+</li>
+<li>ConfigurableHeaders<ul><li>JMSDeliveryMode
+							=
+							PERSISTENT</li>
+<li>JMSExpiration
+							=
+							0</li>
+<li>JMSPriority
+							=
+							4</li>
+</ul>
+</li>
+<li>ConnectionReference
+			=
+			<a href="./../../SharedConnections/EMSConnection.sharedjmscon.html">/SharedConnections/EMSConnection.sharedjmscon</a>
+</li>
+<li>OutDataxsdString<ul><li>
+					-
+					InputParameters
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="EndActivity"><a name="EndActivity"><!-- --></a><h2 class="topictitle2">Process end activity:</h2>
+<div><p class="nomargin">
+			Name:
+			End</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Activities"><a name="Activities"><!-- --></a><h2 class="topictitle2">Activities:</h2>
+<div class="nested2" id="Appraisal_WaitForJMSQueueMessage"><a name="Appraisal_WaitForJMSQueueMessage"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Appraisal WaitForJMSQueueMessage</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.jms.JMSQueueSignalInActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.JMSQueueSignalInActivity</em></li>
+<li>
+										Description:
+										</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>_eventTimeout
+							=
+							60000</li>
+<li>PermittedMessageType
+							=
+							XML Text</li>
+<li>SessionAttributes<ul><li>transacted
+							=
+							false</li>
+<li>acknowledgeMode
+							=
+							1
+									(Auto)
+								</li>
+<li>maxSessions
+							=
+							-1</li>
+<li>destination
+							=
+							%%ENV%%.%%AppraisalJMSQueueResultName%%</li>
+</ul>
+</li>
+<li>ConfigurableHeaders<ul><li>JMSDeliveryMode
+							=
+							PERSISTENT</li>
+<li>JMSExpiration
+							=
+							0</li>
+<li>JMSPriority
+							=
+							4</li>
+</ul>
+</li>
+<li>ConnectionReference
+			=
+			<a href="./../../SharedConnections/EMSConnection.sharedjmscon.html">/SharedConnections/EMSConnection.sharedjmscon</a>
+</li>
+<li>ApplicationProperties
+							=
+							</li>
+<li>OutDataxsdString<ul><li>
+					-
+					AppraisalResult
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="Bonita_JMSQueueRequestor"><a name="Bonita_JMSQueueRequestor"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Bonita JMSQueueRequestor</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.jms.JMSQueueRequestReplyActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.JMSQueueRequestReplyActivity</em></li>
+<li>
+										Description:
+										</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>PermittedMessageType
+							=
+							XML Text</li>
+<li>SessionAttributes<ul><li>transacted
+							=
+							false</li>
+<li>acknowledgeMode
+							=
+							1</li>
+<li>maxSessions
+							=
+							1</li>
+<li>destination
+							=
+							%%ENV%%.%%CalculateBonitaJMSQueueName%%</li>
+</ul>
+</li>
+<li>ConfigurableHeaders<ul><li>JMSDeliveryMode
+							=
+							PERSISTENT</li>
+<li>JMSExpiration
+							=
+							0</li>
+<li>JMSPriority
+							=
+							4</li>
+</ul>
+</li>
+<li>ConnectionReference
+			=
+			<a href="./../../../../unresolved_links.html">/SharedConnections/CalculateBonitaEMSConnection.sharedjmscon</a>
+</li>
+<li>ApplicationProperties
+							=
+							/SharedResources/JMSApplicationProperties.sharedjmsapp</li>
+<li>InDataxsdString<ul><li>
+					-
+					InputParameters
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+<li>OutDataxsdString<ul><li>
+					-
+					PretenderBonita
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N104DB">Target</th>
+<th class="cellrowborder" valign="top" id="N104E1">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N104DB N104E1 "><strong>/ActivityInput</strong><strong>/replyToQueue</strong></td>
+<td class="cellrowborder" valign="top" headers="N104DB N104E1 "> concat($_globalVariables/ns1:GlobalVariables/ENV, $_globalVariables/ns1:GlobalVariables/ExaminationJMSQueueName)</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N104DB N104E1 "><strong>/ActivityInput</strong><strong>/OtherProperties</strong><strong>/Part</strong></td>
+<td class="cellrowborder" valign="top" headers="N104DB N104E1 "> "CalculateBonita"</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N104DB N104E1 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name&gt;</em><strong>/Name</strong></td>
+<td class="cellrowborder" valign="top" headers="N104DB N104E1 "><em> [COPY-OF] &lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N104DB N104E1 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name&gt;</em><strong>/Name</strong></td>
+<td class="cellrowborder" valign="top" headers="N104DB N104E1 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N104DB N104E1 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><strong>/Value</strong></td>
+<td class="cellrowborder" valign="top" headers="N104DB N104E1 "> $Negate-Value/Value</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N104DB N104E1 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary&gt;</em><strong>/MonthIncrement</strong></td>
+<td class="cellrowborder" valign="top" headers="N104DB N104E1 "><em> [COPY-OF] &lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N104DB N104E1 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary&gt;</em><strong>/MonthIncrement</strong></td>
+<td class="cellrowborder" valign="top" headers="N104DB N104E1 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N104DB N104E1 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><strong>/RealtyValue</strong><em>/[WHEN]&lt;exists(if($Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/customerName =   $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name) then $Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue else $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyValue)&gt;</em></td>
+<td class="cellrowborder" valign="top" headers="N104DB N104E1 "> if($Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/customerName =   $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name) then $Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue else $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyValue</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N104DB N104E1 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><strong>/RealtyValue</strong><em>/[OTHERWISE]</em></td>
+<td class="cellrowborder" valign="top" headers="N104DB N104E1 "><em> [NIL] </em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N104DB N104E1 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund&gt;</em><strong>/Refund</strong></td>
+<td class="cellrowborder" valign="top" headers="N104DB N104E1 "><em> [COPY-OF] &lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N104DB N104E1 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/InputParameters</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund&gt;</em><strong>/Refund</strong></td>
+<td class="cellrowborder" valign="top" headers="N104DB N104E1 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N106B3">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N106B3 "><pre>
+<strong>ActivityInput</strong>
+ <strong>replyToQueue</strong> = concat($_globalVariables/ns1:GlobalVariables/ENV, $_globalVariables/ns1:GlobalVariables/ExaminationJMSQueueName)
+ <strong>OtherProperties</strong>
+  <strong>Part</strong> = "CalculateBonita"
+ <strong>Body</strong>
+  <strong>InputParameters</strong>
+   <em>[IF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name &gt;
+    <strong>Name</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name<strong>
+     nil</strong> = <em>[COPY-OF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name/@xsi:nil &gt;
+   <strong>Value</strong> = $Negate-Value/Value
+   <em>[IF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary &gt;
+    <strong>MonthIncrement</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary<strong>
+     nil</strong> = <em>[COPY-OF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary/@xsi:nil &gt;
+   <strong>RealtyValue</strong>
+    <em>[CHOOSE] </em>
+     <em>[WHEN] </em>&lt; exists(if($Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/customerName =   $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name) then $Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue else $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyValue) &gt; = if($Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/customerName =   $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name) then $Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue else $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyValue
+     <em>[OTHERWISE] </em>
+      <strong>@xsi:nil</strong> = true
+   <em>[IF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund &gt;
+    <strong>Refund</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund<strong>
+     nil</strong> = <em>[COPY-OF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund/@xsi:nil &gt;</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1077A">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1077A "><pre>
+            &lt;ns:ActivityInput xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/GrantingCreditAESchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx2="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/CalculateBonitaAESchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:pfx3="http://www.tibco.com/pe/SignalInActivitySchema" xmlns:pfx4="http://www.tibco.com/xmlns/ae2xsd/2002/05/Appraisal/AppraisalAESchema"&gt;
+                &lt;replyToQueue&gt;
+                    &lt;xsl:value-of select="concat($_globalVariables/ns1:GlobalVariables/ENV, $_globalVariables/ns1:GlobalVariables/ExaminationJMSQueueName)"/&gt;
+                &lt;/replyToQueue&gt;
+                &lt;OtherProperties&gt;
+                    &lt;Part&gt;
+                        &lt;xsl:value-of select="&amp;quot;CalculateBonita&amp;quot;"/&gt;
+                    &lt;/Part&gt;
+                &lt;/OtherProperties&gt;
+                &lt;Body&gt;
+                    &lt;pfx2:InputParameters&gt;
+                        &lt;xsl:if test="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name"&gt;
+                            &lt;Name&gt;
+                                &lt;xsl:copy-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name/@xsi:nil"/&gt;
+                                &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name"/&gt;
+                            &lt;/Name&gt;
+                        &lt;/xsl:if&gt;
+                        &lt;Value&gt;
+                            &lt;xsl:value-of select="$Negate-Value/Value"/&gt;
+                        &lt;/Value&gt;
+                        &lt;xsl:if test="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary"&gt;
+                            &lt;MonthIncrement&gt;
+                                &lt;xsl:copy-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary/@xsi:nil"/&gt;
+                                &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary"/&gt;
+                            &lt;/MonthIncrement&gt;
+                        &lt;/xsl:if&gt;
+                        &lt;RealtyValue&gt;
+                            &lt;xsl:choose&gt;
+                                &lt;xsl:when test="exists(if($Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/customerName =   $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name) then $Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue else $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyValue)"&gt;
+                                    &lt;xsl:value-of select="if($Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/customerName =   $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name) then $Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue else $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyValue"/&gt;
+                                &lt;/xsl:when&gt;
+                                &lt;xsl:otherwise&gt;
+                                    &lt;xsl:attribute name="xsi:nil"&gt;true&lt;/xsl:attribute&gt;
+                                &lt;/xsl:otherwise&gt;
+                            &lt;/xsl:choose&gt;
+                        &lt;/RealtyValue&gt;
+                        &lt;xsl:if test="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund"&gt;
+                            &lt;Refund&gt;
+                                &lt;xsl:copy-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund/@xsi:nil"/&gt;
+                                &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund"/&gt;
+                            &lt;/Refund&gt;
+                        &lt;/xsl:if&gt;
+                    &lt;/pfx2:InputParameters&gt;
+                &lt;/Body&gt;
+            &lt;/ns:ActivityInput&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="Examination"><a name="Examination"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Examination</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.pe.core.CallProcessActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.process.subprocess</em></li>
+<li>
+										Description:
+										</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>processName
+			=
+			<a href="./../../ProcessDefinitions/Examination/Examination.process.html">/ProcessDefinitions/Examination/Examination.process</a>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1081E">Target</th>
+<th class="cellrowborder" valign="top" id="N10824">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1081E N10824 "><strong>/InputParameters</strong><strong>/Refund</strong></td>
+<td class="cellrowborder" valign="top" headers="N1081E N10824 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1081E N10824 "><strong>/InputParameters</strong><strong>/Salary</strong></td>
+<td class="cellrowborder" valign="top" headers="N1081E N10824 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1081E N10824 "><strong>/InputParameters</strong><strong>/Value</strong></td>
+<td class="cellrowborder" valign="top" headers="N1081E N10824 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1081E N10824 "><strong>/InputParameters</strong><strong>/Bonita</strong></td>
+<td class="cellrowborder" valign="top" headers="N1081E N10824 "> $Bonita-JMSQueueRequestor/ns:ActivityOutput/Body/pfx2:PretenderBonita/Bonita</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1081E N10824 "><strong>/InputParameters</strong><strong>/Pawn</strong></td>
+<td class="cellrowborder" valign="top" headers="N1081E N10824 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N108C9">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N108C9 "><pre>
+<strong>InputParameters</strong>
+ <strong>Refund</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund
+ <strong>Salary</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary
+ <strong>Value</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value
+ <strong>Bonita</strong> = $Bonita-JMSQueueRequestor/ns:ActivityOutput/Body/pfx2:PretenderBonita/Bonita
+ <strong>Pawn</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10924">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10924 "><pre>
+            &lt;InputParameters xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/GrantingCreditAESchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx2="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/CalculateBonitaAESchema" xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:pfx3="http://www.tibco.com/pe/SignalInActivitySchema" xmlns:pfx4="http://www.tibco.com/xmlns/ae2xsd/2002/05/Appraisal/AppraisalAESchema"&gt;
+                &lt;Refund&gt;
+                    &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund"/&gt;
+                &lt;/Refund&gt;
+                &lt;Salary&gt;
+                    &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Salary"/&gt;
+                &lt;/Salary&gt;
+                &lt;Value&gt;
+                    &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value"/&gt;
+                &lt;/Value&gt;
+                &lt;Bonita&gt;
+                    &lt;xsl:value-of select="$Bonita-JMSQueueRequestor/ns:ActivityOutput/Body/pfx2:PretenderBonita/Bonita"/&gt;
+                &lt;/Bonita&gt;
+                &lt;Pawn&gt;
+                    &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn"/&gt;
+                &lt;/Pawn&gt;
+            &lt;/InputParameters&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="Negate_Value"><a name="Negate_Value"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Negate Value</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.mapper.MapperActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.MapperActivity</em></li>
+<li>
+										Description:
+										</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>
+					-
+					Value(xsd:long,required)</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N109C0">Target</th>
+<th class="cellrowborder" valign="top" id="N109C6">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N109C0 N109C6 "><strong>/Value</strong></td>
+<td class="cellrowborder" valign="top" headers="N109C0 N109C6 "> -  $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10A02">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10A02 "><pre>
+<strong>Value</strong> = -  $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10A3F">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10A3F "><pre>
+            &lt;Value xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/GrantingCreditAESchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx2="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/CalculateBonitaAESchema" xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:pfx3="http://www.tibco.com/pe/SignalInActivitySchema" xmlns:pfx4="http://www.tibco.com/xmlns/ae2xsd/2002/05/Appraisal/AppraisalAESchema"&gt;
+                &lt;xsl:value-of select="-  $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value"/&gt;
+            &lt;/Value&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="Result_JMSQueueSender"><a name="Result_JMSQueueSender"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Result JMSQueueSender</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.jms.JMSQueueSendActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.JMSQueueSendActivity</em></li>
+<li>
+										Description:
+										</li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>PermittedMessageType
+							=
+							XML Text</li>
+<li>SessionAttributes<ul><li>transacted
+							=
+							false</li>
+<li>acknowledgeMode
+							=
+							1</li>
+<li>maxSessions
+							=
+							1</li>
+<li>destination
+							=
+							%%ENV%%.%%JMSQueueName%%</li>
+</ul>
+</li>
+<li>ConfigurableHeaders<ul><li>JMSDeliveryMode
+							=
+							PERSISTENT</li>
+<li>JMSExpiration
+							=
+							0</li>
+<li>JMSPriority
+							=
+							4</li>
+</ul>
+</li>
+<li>ConnectionReference
+			=
+			<a href="./../../SharedConnections/EMSConnection.sharedjmscon.html">/SharedConnections/EMSConnection.sharedjmscon</a>
+</li>
+<li>ApplicationProperties
+							=
+							/SharedResources/JMSApplicationProperties.sharedjmsapp</li>
+<li>InDataxsdString<ul><li>
+					-
+					GrantingCreditResult
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10B30">Target</th>
+<th class="cellrowborder" valign="top" id="N10B36">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/OtherProperties</strong><strong>/Part</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "> "Result"</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name&gt;</em><strong>/Name</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><em> [COPY-OF] &lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name&gt;</em><strong>/Name</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value&gt;</em><strong>/Value</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><em> [COPY-OF] &lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value&gt;</em><strong>/Value</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund&gt;</em><strong>/Refund</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><em> [COPY-OF] &lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund&gt;</em><strong>/Refund</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn&gt;</em><strong>/Pawn</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><em> [COPY-OF] &lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn&gt;</em><strong>/Pawn</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><strong>/Interest</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "> $Examination/ExaminationResult/Interest</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><strong>/State</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "> $Examination/ExaminationResult/State</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><strong>/RealtyValue</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><em> [COPY-OF] &lt; $Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><strong>/RealtyValue</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "> $Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyDetail&gt;</em><strong>/RealtyDetail</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><em> [COPY-OF] &lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyDetail/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10B30 N10B36 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/GrantingCreditResult</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyDetail&gt;</em><strong>/RealtyDetail</strong></td>
+<td class="cellrowborder" valign="top" headers="N10B30 N10B36 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyDetail</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10DB0">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10DB0 "><pre>
+<strong>ActivityInput</strong>
+ <strong>OtherProperties</strong>
+  <strong>Part</strong> = "Result"
+ <strong>Body</strong>
+  <strong>GrantingCreditResult</strong>
+   <em>[IF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name &gt;
+    <strong>Name</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name<strong>
+     nil</strong> = <em>[COPY-OF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name/@xsi:nil &gt;
+   <em>[IF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value &gt;
+    <strong>Value</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value<strong>
+     nil</strong> = <em>[COPY-OF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value/@xsi:nil &gt;
+   <em>[IF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund &gt;
+    <strong>Refund</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund<strong>
+     nil</strong> = <em>[COPY-OF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund/@xsi:nil &gt;
+   <em>[IF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn &gt;
+    <strong>Pawn</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn<strong>
+     nil</strong> = <em>[COPY-OF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn/@xsi:nil &gt;
+   <strong>Interest</strong> = $Examination/ExaminationResult/Interest
+   <strong>State</strong> = $Examination/ExaminationResult/State
+   <strong>RealtyValue</strong> = $Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue<strong>
+    nil</strong> = <em>[COPY-OF] </em>&lt; $Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue/@xsi:nil &gt;
+   <em>[IF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyDetail &gt;
+    <strong>RealtyDetail</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyDetail<strong>
+     nil</strong> = <em>[COPY-OF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyDetail/@xsi:nil &gt;</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10E9B">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10E9B "><pre>
+            &lt;ns:ActivityInput xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/GrantingCreditAESchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx2="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/CalculateBonitaAESchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:pfx3="http://www.tibco.com/pe/SignalInActivitySchema" xmlns:pfx4="http://www.tibco.com/xmlns/ae2xsd/2002/05/Appraisal/AppraisalAESchema"&gt;
+                &lt;OtherProperties&gt;
+                    &lt;Part&gt;
+                        &lt;xsl:value-of select="&amp;quot;Result&amp;quot;"/&gt;
+                    &lt;/Part&gt;
+                &lt;/OtherProperties&gt;
+                &lt;Body&gt;
+                    &lt;pfx:GrantingCreditResult&gt;
+                        &lt;xsl:if test="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name"&gt;
+                            &lt;Name&gt;
+                                &lt;xsl:copy-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name/@xsi:nil"/&gt;
+                                &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name"/&gt;
+                            &lt;/Name&gt;
+                        &lt;/xsl:if&gt;
+                        &lt;xsl:if test="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value"&gt;
+                            &lt;Value&gt;
+                                &lt;xsl:copy-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value/@xsi:nil"/&gt;
+                                &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value"/&gt;
+                            &lt;/Value&gt;
+                        &lt;/xsl:if&gt;
+                        &lt;xsl:if test="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund"&gt;
+                            &lt;Refund&gt;
+                                &lt;xsl:copy-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund/@xsi:nil"/&gt;
+                                &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund"/&gt;
+                            &lt;/Refund&gt;
+                        &lt;/xsl:if&gt;
+                        &lt;xsl:if test="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn"&gt;
+                            &lt;Pawn&gt;
+                                &lt;xsl:copy-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn/@xsi:nil"/&gt;
+                                &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn"/&gt;
+                            &lt;/Pawn&gt;
+                        &lt;/xsl:if&gt;
+                        &lt;Interest&gt;
+                            &lt;xsl:value-of select="$Examination/ExaminationResult/Interest"/&gt;
+                        &lt;/Interest&gt;
+                        &lt;State&gt;
+                            &lt;xsl:value-of select="$Examination/ExaminationResult/State"/&gt;
+                        &lt;/State&gt;
+                        &lt;RealtyValue&gt;
+                            &lt;xsl:copy-of select="$Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue/@xsi:nil"/&gt;
+                            &lt;xsl:value-of select="$Appraisal-WaitForJMSQueueMessage/ns:ActivityOutput/Body/pfx4:AppraisalResult/realtyValue"/&gt;
+                        &lt;/RealtyValue&gt;
+                        &lt;xsl:if test="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyDetail"&gt;
+                            &lt;RealtyDetail&gt;
+                                &lt;xsl:copy-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyDetail/@xsi:nil"/&gt;
+                                &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyDetail"/&gt;
+                            &lt;/RealtyDetail&gt;
+                        &lt;/xsl:if&gt;
+                    &lt;/pfx:GrantingCreditResult&gt;
+                &lt;/Body&gt;
+            &lt;/ns:ActivityInput&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Transitions"><a name="Transitions"><!-- --></a><h2 class="topictitle2">Transitions:</h2>
+<div><a name="Transitions__Appraisal_WaitForJMSQueueMessage_Negate_Value"><!-- --></a><ul id="Transitions__Appraisal_WaitForJMSQueueMessage_Negate_Value"><li>
+								From:
+								<strong><em>Appraisal WaitForJMSQueueMessage</em></strong>
+								-To:
+								<strong><em>Negate Value</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Bonita_JMSQueueRequestor_Examination"><!-- --></a><ul id="Transitions__Bonita_JMSQueueRequestor_Examination"><li>
+								From:
+								<strong><em>Bonita JMSQueueRequestor</em></strong>
+								-To:
+								<strong><em>Examination</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Examination_Result_JMSQueueSender"><!-- --></a><ul id="Transitions__Examination_Result_JMSQueueSender"><li>
+								From:
+								<strong><em>Examination</em></strong>
+								-To:
+								<strong><em>Result JMSQueueSender</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__InputParameters_JMSQueueReceiver_Appraisal_WaitForJMSQueueMessage"><!-- --></a><ul id="Transitions__InputParameters_JMSQueueReceiver_Appraisal_WaitForJMSQueueMessage"><li>
+								From:
+								<strong><em>InputParameters JMSQueueReceiver</em></strong>
+								-To:
+								<strong><em>Appraisal WaitForJMSQueueMessage</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn = "true"</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__InputParameters_JMSQueueReceiver_Negate_Value"><!-- --></a><ul id="Transitions__InputParameters_JMSQueueReceiver_Negate_Value"><li>
+								From:
+								<strong><em>InputParameters JMSQueueReceiver</em></strong>
+								-To:
+								<strong><em>Negate Value</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Pawn = "false"</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Negate_Value_Bonita_JMSQueueRequestor"><!-- --></a><ul id="Transitions__Negate_Value_Bonita_JMSQueueRequestor"><li>
+								From:
+								<strong><em>Negate Value</em></strong>
+								-To:
+								<strong><em>Bonita JMSQueueRequestor</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Result_JMSQueueSender_End"><!-- --></a><ul id="Transitions__Result_JMSQueueSender_End"><li>
+								From:
+								<strong><em>Result JMSQueueSender</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="../../../../projects/GrantingCredit/common/process.html">Processes</a><img alt="parent-topic-arrow" src="../../../../images/parent-topic-arrow.png" /></div>
+</div>
+
+</body>
+</html>

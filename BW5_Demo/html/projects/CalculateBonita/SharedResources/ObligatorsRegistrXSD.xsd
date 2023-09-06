@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd"
+	 targetNamespace="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="ObligatorsList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Obligator" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="Count" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Obligator">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Name"/>
+				<xs:element ref="Value"/>
+				<xs:element ref="Problem"/>
+				<xs:element ref="Refund"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Name" type="xs:string"/>
+	<xs:element name="Value" type="xs:long"/>
+	<xs:element name="Problem" type="xs:boolean"/>
+	<xs:element name="Refund" type="xs:long"/>
+</xs:schema>

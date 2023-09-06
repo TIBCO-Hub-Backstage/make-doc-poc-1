@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta content="concept" name="DC.Type" />
+<meta name="DC.Title" content="PublishAppraisalRequest" />
+<meta scheme="URI" name="DC.Relation" content="../../../../projects/Appraisal/common/process.html" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="ProcessMain" name="DC.Identifier" />
+<meta content="en-us" name="DC.Language" />
+<link href="../../../../css/commonltr.css" type="text/css" rel="stylesheet" />
+<script src="../../../../js/jquery-1.12.2.min.js" type="text/javascript">/* */</script><script src="../../../../js/jquery-ui.min.js" type="text/javascript">/* */</script><script src="../../../../js/functions.js" type="text/javascript">/* */</script><script src="../../../../js/TabbedForm.js" type="text/javascript">/* */</script><script src="../../../../js/image-resizer.js" type="text/javascript">/* */</script><script src="../../../../js/page-title.js" type="text/javascript">/* */</script><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.structure.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.theme.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page.css" /><!--[if lte IE 6]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie6.css" /><![endif]-->
+    <!--[if IE 7]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie7.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../images/favicon.ico" /><title>PublishAppraisalRequest</title>
+</head>
+<body onload="javascript:TabbedFormImages(); javascript:showPageTitle(); javascript:checkImages(); javascript:mappingsHidding();" id="ProcessMain"><a name="ProcessMain"><!-- --></a>
+
+<h1 class="topictitle1">PublishAppraisalRequest</h1>
+<div><p class="nomargin">License for TIBCO Software Use Only! </p>
+<p class="nomargin">
+							Section contains description of Process "
+							PublishAppraisalRequest.process
+							" .
+						</p>
+<p class="nomargin">
+								Modification time:
+								2023/08/23 13:10:11</p>
+</div>
+<div />
+<div class="nested1" xml:lang="en-us" id="FolderDescription"><a name="FolderDescription"><!-- --></a><h2 class="topictitle2">Folder description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" width="30%" id="N10071">Folder</th>
+<th class="cellrowborder" valign="top" width="70%" id="N10078">Description</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">Appraisal</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">This application gets information about a realty and send this information to one of appraisers (choose momentaly the least busy one). The price of the realty is then sent in EMS message.</td>
+</tr>
+ </tbody>
+</table>
+</div>
+</div>
+<div />
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDescription"><a name="ProcessDescription"><!-- --></a><h2 class="topictitle2">Process description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><tbody><tr><td class="cellrowborder" valign="top">publish appraisal request</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDefinition"><a name="ProcessDefinition"><!-- --></a><h2 class="topictitle2">Process definition:</h2>
+<div><p class="nomargin">
+					Full process path:
+					ProcessDefinitions/BankService/PublishAppraisalRequest.process</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Diagram"><a name="Diagram"><!-- --></a><h2 class="topictitle2">Diagram:</h2>
+<div><div class="imageMapBox"><img usemap="#N100F8" border="0" alt="" src="PublishAppraisalRequest.process.png" />
+<map id="N100F8" name="N100F8">
+<area href="#Starter" alt="ReceiveApprRequest" title="ReceiveApprRequest" shape="circle" coords="65&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;183&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#EndActivity" alt="End" title="End" shape="circle" coords="891&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;72&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#SendTaskConfirmation" alt="SendTaskConfirmation" title="SendTaskConfirmation" shape="circle" coords="794&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;267&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#SendApprResult" alt="SendApprResult" title="SendApprResult" shape="circle" coords="849&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;168&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#PublishRVRequest" alt="PublishRVRequest" title="PublishRVRequest" shape="circle" coords="299&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;181&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#InitMin" alt="InitMin" title="InitMin" shape="circle" coords="206&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;181&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#WaitForReply" alt="WaitForReply" title="WaitForReply" shape="circle" coords="441&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;180&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#SaveTaskMin" alt="SaveTaskMin" title="SaveTaskMin" shape="circle" coords="588&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;233&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Transitions__start_InitMin" alt="From: start To: InitMin" title="From: start To: InitMin" shape="poly" coords="147&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;178&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;161&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;179&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;171&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;169&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;157&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;168" />
+<area href="#Transitions__Choose_the_least_busy_appraiser_end" alt="From: Choose the least busy appraiser To: end" title="From: Choose the least busy appraiser To: end" shape="poly" coords="691&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;178&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;696&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;178&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;696&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;168&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;691&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;168" />
+<area href="#Transitions__PublishRVRequest_Choose_the_least_busy_appraiser" alt="From: PublishRVRequest To: Choose the least busy appraiser" title="From: PublishRVRequest To: Choose the least busy appraiser" shape="poly" coords="333&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;179&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;364&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;178&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;354&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;168&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;323&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;169" />
+<area href="#Transitions__InitMin_PublishRVRequest" alt="From: InitMin To: PublishRVRequest" title="From: InitMin To: PublishRVRequest" shape="poly" coords="236&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;179&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;257&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;179&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;257&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;169&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;236&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;169" />
+<area href="#Transitions__start_WaitForReply" alt="From: start To: WaitForReply" title="From: start To: WaitForReply" shape="poly" coords="389&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;178&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;399&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;178&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;399&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;168&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;389&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;168" />
+<area href="#Transitions__SaveTaskMin_end" alt="From: SaveTaskMin To: end" title="From: SaveTaskMin To: end" shape="poly" coords="618&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;210&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;666&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;184&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;656&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;174&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;608&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;200" />
+<area href="#Transitions__WaitForReply_end" alt="From: WaitForReply To: end" title="From: WaitForReply To: end" shape="poly" coords="471&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;178&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;659&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;178&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;659&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;168&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;471&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;168" />
+<area href="#Transitions__WaitForReply_SaveTaskMin" alt="From: WaitForReply To: SaveTaskMin" title="From: WaitForReply To: SaveTaskMin" shape="poly" coords="464&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;191&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;544&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;214&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;554&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;204&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;474&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;181" />
+<area href="#Transitions__ReceiveApprRequest_Critical_section" alt="From: ReceiveApprRequest To: Critical section" title="From: ReceiveApprRequest To: Critical section" shape="poly" coords="99&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;181&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;127&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;179&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;117&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;169&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;89&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;171" />
+<area href="#Transitions__Critical_section_SendTaskConfirmation" alt="From: Critical section To: SendTaskConfirmation" title="From: Critical section To: SendTaskConfirmation" shape="poly" coords="714&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;213&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;749&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;254&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;759&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;244&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;724&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;203" />
+<area href="#Transitions__SendTaskConfirmation_SendApprResult" alt="From: SendTaskConfirmation To: SendApprResult" title="From: SendTaskConfirmation To: SendApprResult" shape="poly" coords="813&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;231&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;835&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;210&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;825&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;200&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;803&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;221" />
+<area href="#Transitions__SendApprResult_End" alt="From: SendApprResult To: End" title="From: SendApprResult To: End" shape="poly" coords="866&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;130&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;880&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;116&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;870&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;106&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;856&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;120" />
+</map></div></div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Starter"><a name="Starter"><!-- --></a><h2 class="topictitle2">Process starter activity:</h2>
+<div><p class="nomargin">
+									Name:
+									ReceiveApprRequest</p>
+<ul><li>
+										Property Name:
+										<strong><em>ReceiveApprRequest</em></strong><div class="nomargin"><ul><li>
+													Type:
+													<em>com.tibco.be.bw.plugin.BEReceiveEvent</em></li>
+<li>
+													Resource Type:
+													<em>ae.activities.BEReceiveEvent</em></li>
+<li>
+													Description:
+													<em>receive request for appraisal</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>eventRef
+			=
+			<a href="./../../pawn/Events/appraisalRequest.event.html">/pawn/Events/appraisalRequest.event</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="EndActivity"><a name="EndActivity"><!-- --></a><h2 class="topictitle2">Process end activity:</h2>
+<div><p class="nomargin">
+			Name:
+			End</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessVariables"><a name="ProcessVariables"><!-- --></a><h2 class="topictitle2">Process variables:</h2>
+<div><p class="nomargin">
+			Schema:
+			taskMin</p>
+<div class="nomargin"><ul><li>
+					+
+					root
+					(Complex Type,
+					required
+					)
+					<ul><li>
+					-
+					confirm_subject(xsd:string,required)</li>
+<li>
+					-
+					value(xsd:int,required)</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Activities"><a name="Activities"><!-- --></a><h2 class="topictitle2">Activities:</h2>
+<div class="nested2" id="InitMin"><a name="InitMin"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>InitMin</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.pe.core.AssignActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.assignActivity</em></li>
+<li>
+										Description:
+										<em>init taskMin process variable</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>variableName
+							=
+							taskMin</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10420">Target</th>
+<th class="cellrowborder" valign="top" id="N10426">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10420 N10426 "><strong>/root</strong><strong>/confirm_subject</strong></td>
+<td class="cellrowborder" valign="top" headers="N10420 N10426 "> ""</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10420 N10426 "><strong>/root</strong><strong>/value</strong></td>
+<td class="cellrowborder" valign="top" headers="N10420 N10426 "> 1000000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10480">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10480 "><pre>
+<strong>root</strong>
+ <strong>confirm_subject</strong> = ""
+ <strong>value</strong> = 1000000</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N104C9">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N104C9 "><pre>
+                &lt;root xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns2="http://www.tibco.com/pe/SignalInActivitySchema" xmlns:ns3="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/Appraisal/AppraisalSchema" xmlns:ns1="www.tibco.com/be/ontology/BEmodule/Events/appraisalRequest" xmlns:ns4="www.tibco.com/plugin/be" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns5="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:ns6="www.tibco.com/be/ontology/pawn/Events/appraisalRequest"&gt;
+                    &lt;confirm_subject&gt;
+                        &lt;xsl:value-of select="&amp;quot;&amp;quot;"/&gt;
+                    &lt;/confirm_subject&gt;
+                    &lt;value&gt;
+                        &lt;xsl:value-of select="1000000"/&gt;
+                    &lt;/value&gt;
+                &lt;/root&gt;
+            </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="PublishRVRequest"><a name="PublishRVRequest"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>PublishRVRequest</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.tibrv.RVPubActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.rvpalette.RVPubActivity</em></li>
+<li>
+										Description:
+										<em>publish RV request for appraisal</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>wantsXMLCompliantFieldNames
+							=
+							true</li>
+<li>sharedChannel
+			=
+			<a href="./../../SharedConnections/RVTransport.rvtransport.html">/SharedConnections/RVTransport.rvtransport</a>
+</li>
+<li>subject
+							=
+							%%ENV%%.%%AppraisalRequestSubject%%</li>
+<li>xsdString<ul><li>
+					-
+					ApprRequest
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1058A">Target</th>
+<th class="cellrowborder" valign="top" id="N10590">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1058A N10590 "><strong>/ActivityInput</strong><strong>/body</strong><strong>/replySubj</strong></td>
+<td class="cellrowborder" valign="top" headers="N1058A N10590 "> concat($_globalVariables/ns:GlobalVariables/ENV,".",$_globalVariables/ns:GlobalVariables/AppraisalReplySubject)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N105D6">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N105D6 "><pre>
+<strong>ActivityInput</strong>
+ <strong>body</strong>
+  <strong>replySubj</strong> = concat($_globalVariables/ns:GlobalVariables/ENV,".",$_globalVariables/ns:GlobalVariables/AppraisalReplySubject)</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1061F">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1061F "><pre>
+                &lt;ActivityInput xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns2="http://www.tibco.com/pe/SignalInActivitySchema" xmlns:ns3="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/Appraisal/AppraisalSchema" xmlns:ns1="www.tibco.com/be/ontology/BEmodule/Events/appraisalRequest" xmlns:ns4="www.tibco.com/plugin/be" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns5="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:ns6="www.tibco.com/be/ontology/pawn/Events/appraisalRequest"&gt;
+                    &lt;body&gt;
+                        &lt;replySubj&gt;
+                            &lt;xsl:value-of select="concat($_globalVariables/ns:GlobalVariables/ENV,&amp;quot;.&amp;quot;,$_globalVariables/ns:GlobalVariables/AppraisalReplySubject)"/&gt;
+                        &lt;/replySubj&gt;
+                    &lt;/body&gt;
+                &lt;/ActivityInput&gt;
+            </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="SaveTaskMin"><a name="SaveTaskMin"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>SaveTaskMin</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.pe.core.AssignActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.assignActivity</em></li>
+<li>
+										Description:
+										<em>save appraiser with minimal task count</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>variableName
+							=
+							taskMin</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N106C0">Target</th>
+<th class="cellrowborder" valign="top" id="N106C6">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N106C0 N106C6 "><strong>/root</strong><strong>/confirm_subject</strong></td>
+<td class="cellrowborder" valign="top" headers="N106C0 N106C6 "> $WaitForReply/ActivityOutput/body/confirmSubj</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N106C0 N106C6 "><strong>/root</strong><strong>/value</strong></td>
+<td class="cellrowborder" valign="top" headers="N106C0 N106C6 "> $WaitForReply/ActivityOutput/body/tasksNumber</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10720">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10720 "><pre>
+<strong>root</strong>
+ <strong>confirm_subject</strong> = $WaitForReply/ActivityOutput/body/confirmSubj
+ <strong>value</strong> = $WaitForReply/ActivityOutput/body/tasksNumber</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10769">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10769 "><pre>
+                    &lt;root xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns2="http://www.tibco.com/pe/SignalInActivitySchema" xmlns:ns3="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/Appraisal/AppraisalSchema" xmlns:ns1="www.tibco.com/be/ontology/BEmodule/Events/appraisalRequest" xmlns:ns4="www.tibco.com/plugin/be" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns5="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:ns6="www.tibco.com/be/ontology/pawn/Events/appraisalRequest"&gt;
+                        &lt;confirm_subject&gt;
+                            &lt;xsl:value-of select="$WaitForReply/ActivityOutput/body/confirmSubj"/&gt;
+                        &lt;/confirm_subject&gt;
+                        &lt;value&gt;
+                            &lt;xsl:value-of select="$WaitForReply/ActivityOutput/body/tasksNumber"/&gt;
+                        &lt;/value&gt;
+                    &lt;/root&gt;
+                </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="SendApprResult"><a name="SendApprResult"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>SendApprResult</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.jms.JMSQueueSendActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.JMSQueueSendActivity</em></li>
+<li>
+										Description:
+										<em>send appraisal value to examination service</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>PermittedMessageType
+							=
+							XML Text</li>
+<li>SessionAttributes<ul><li>transacted
+							=
+							false</li>
+<li>acknowledgeMode
+							=
+							1</li>
+<li>maxSessions
+							=
+							1</li>
+<li>destination
+							=
+							%%ENV%%.%%QueueApprResult%%</li>
+</ul>
+</li>
+<li>ConfigurableHeaders<ul><li>JMSDeliveryMode
+							=
+							PERSISTENT</li>
+<li>JMSExpiration
+							=
+							0</li>
+<li>JMSPriority
+							=
+							4</li>
+</ul>
+</li>
+<li>ConnectionReference
+			=
+			<a href="./../../SharedJMSResources/JMSConn.sharedjmscon.html">/SharedJMSResources/JMSConn.sharedjmscon</a>
+</li>
+<li>ApplicationProperties
+							=
+							</li>
+<li>InDataxsdString<ul><li>
+					-
+					ApprResult
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1085F">Target</th>
+<th class="cellrowborder" valign="top" id="N10865">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1085F N10865 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/ApprResult</strong><em>/[IF]&lt;$SendTaskConfirmation/ActivityOutput/body/customerName&gt;</em><strong>/customerName</strong></td>
+<td class="cellrowborder" valign="top" headers="N1085F N10865 "><em> [COPY-OF] &lt; $SendTaskConfirmation/ActivityOutput/body/customerName/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1085F N10865 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/ApprResult</strong><em>/[IF]&lt;$SendTaskConfirmation/ActivityOutput/body/customerName&gt;</em><strong>/customerName</strong></td>
+<td class="cellrowborder" valign="top" headers="N1085F N10865 "> $SendTaskConfirmation/ActivityOutput/body/customerName</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1085F N10865 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/ApprResult</strong><em>/[IF]&lt;$SendTaskConfirmation/ActivityOutput/body/realtyValue&gt;</em><strong>/realtyValue</strong></td>
+<td class="cellrowborder" valign="top" headers="N1085F N10865 "><em> [COPY-OF] &lt; $SendTaskConfirmation/ActivityOutput/body/realtyValue/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1085F N10865 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/ApprResult</strong><em>/[IF]&lt;$SendTaskConfirmation/ActivityOutput/body/realtyValue&gt;</em><strong>/realtyValue</strong></td>
+<td class="cellrowborder" valign="top" headers="N1085F N10865 "> $SendTaskConfirmation/ActivityOutput/body/realtyValue</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10935">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10935 "><pre>
+<strong>ActivityInput</strong>
+ <strong>Body</strong>
+  <strong>ApprResult</strong>
+   <em>[IF] </em>&lt; $SendTaskConfirmation/ActivityOutput/body/customerName &gt;
+    <strong>customerName</strong> = $SendTaskConfirmation/ActivityOutput/body/customerName<strong>
+     nil</strong> = <em>[COPY-OF] </em>&lt; $SendTaskConfirmation/ActivityOutput/body/customerName/@xsi:nil &gt;
+   <em>[IF] </em>&lt; $SendTaskConfirmation/ActivityOutput/body/realtyValue &gt;
+    <strong>realtyValue</strong> = $SendTaskConfirmation/ActivityOutput/body/realtyValue<strong>
+     nil</strong> = <em>[COPY-OF] </em>&lt; $SendTaskConfirmation/ActivityOutput/body/realtyValue/@xsi:nil &gt;</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N109AE">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N109AE "><pre>
+            &lt;ns5:ActivityInput xmlns:ns5="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns2="http://www.tibco.com/pe/SignalInActivitySchema" xmlns:ns3="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/Appraisal/AppraisalSchema" xmlns:ns1="www.tibco.com/be/ontology/BEmodule/Events/appraisalRequest" xmlns:ns4="www.tibco.com/plugin/be" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns6="www.tibco.com/be/ontology/pawn/Events/appraisalRequest"&gt;
+                &lt;Body&gt;
+                    &lt;pfx:ApprResult&gt;
+                        &lt;xsl:if test="$SendTaskConfirmation/ActivityOutput/body/customerName"&gt;
+                            &lt;customerName&gt;
+                                &lt;xsl:copy-of select="$SendTaskConfirmation/ActivityOutput/body/customerName/@xsi:nil"/&gt;
+                                &lt;xsl:value-of select="$SendTaskConfirmation/ActivityOutput/body/customerName"/&gt;
+                            &lt;/customerName&gt;
+                        &lt;/xsl:if&gt;
+                        &lt;xsl:if test="$SendTaskConfirmation/ActivityOutput/body/realtyValue"&gt;
+                            &lt;realtyValue&gt;
+                                &lt;xsl:copy-of select="$SendTaskConfirmation/ActivityOutput/body/realtyValue/@xsi:nil"/&gt;
+                                &lt;xsl:value-of select="$SendTaskConfirmation/ActivityOutput/body/realtyValue"/&gt;
+                            &lt;/realtyValue&gt;
+                        &lt;/xsl:if&gt;
+                    &lt;/pfx:ApprResult&gt;
+                &lt;/Body&gt;
+            &lt;/ns5:ActivityInput&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="SendTaskConfirmation"><a name="SendTaskConfirmation"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>SendTaskConfirmation</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.tibrv.RVRequestActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.rvpalette.RVRequestActivity</em></li>
+<li>
+										Description:
+										<em>send confirmation and details for appraisal then wait for reply including appraisal result</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>wantsValidationForOutput
+							=
+							true</li>
+<li>wantsFiltrationForOutput
+							=
+							true</li>
+<li>wantsXMLCompliantFieldNames
+							=
+							true</li>
+<li>wantsXMLCompliantFieldNamesOutput
+							=
+							true</li>
+<li>sharedChannel
+			=
+			<a href="./../../SharedConnections/RVTransport.rvtransport.html">/SharedConnections/RVTransport.rvtransport</a>
+</li>
+<li>subject
+							=
+							<em>$taskMin/root/confirm_subject</em></li>
+<li>inputXsdString<ul><li>
+					-
+					ApprDetails
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+<li>outputXsdString<ul><li>
+					-
+					ApprResult
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10A91">Target</th>
+<th class="cellrowborder" valign="top" id="N10A97">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10A91 N10A97 "><strong>/ActivityInput</strong><strong>/subject</strong></td>
+<td class="cellrowborder" valign="top" headers="N10A91 N10A97 "> $taskMin/root/confirm_subject</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10A91 N10A97 "><strong>/ActivityInput</strong><strong>/replySubject</strong></td>
+<td class="cellrowborder" valign="top" headers="N10A91 N10A97 "> concat($_globalVariables/ns:GlobalVariables/ENV,".",$_globalVariables/ns:GlobalVariables/AppraisalResultSubject)</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10A91 N10A97 "><strong>/ActivityInput</strong><strong>/body</strong><strong>/customerName</strong><em>/[WHEN]&lt;exists($ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/customerName)&gt;</em></td>
+<td class="cellrowborder" valign="top" headers="N10A91 N10A97 "> $ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/customerName</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10A91 N10A97 "><strong>/ActivityInput</strong><strong>/body</strong><strong>/customerName</strong><em>/[OTHERWISE]</em></td>
+<td class="cellrowborder" valign="top" headers="N10A91 N10A97 "><em> [NIL] </em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10A91 N10A97 "><strong>/ActivityInput</strong><strong>/body</strong><strong>/realtyDetails</strong><em>/[WHEN]&lt;exists($ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/realtyDetails)&gt;</em></td>
+<td class="cellrowborder" valign="top" headers="N10A91 N10A97 "> $ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/realtyDetails</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10A91 N10A97 "><strong>/ActivityInput</strong><strong>/body</strong><strong>/realtyDetails</strong><em>/[OTHERWISE]</em></td>
+<td class="cellrowborder" valign="top" headers="N10A91 N10A97 "><em> [NIL] </em></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10B85">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10B85 "><pre>
+<strong>ActivityInput</strong>
+ <strong>subject</strong> = $taskMin/root/confirm_subject
+ <strong>replySubject</strong> = concat($_globalVariables/ns:GlobalVariables/ENV,".",$_globalVariables/ns:GlobalVariables/AppraisalResultSubject)
+ <strong>body</strong>
+  <strong>customerName</strong>
+   <em>[CHOOSE] </em>
+    <em>[WHEN] </em>&lt; exists($ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/customerName) &gt; = $ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/customerName
+    <em>[OTHERWISE] </em>
+     <strong>@xsi:nil</strong> = true
+  <strong>realtyDetails</strong>
+   <em>[CHOOSE] </em>
+    <em>[WHEN] </em>&lt; exists($ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/realtyDetails) &gt; = $ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/realtyDetails
+    <em>[OTHERWISE] </em>
+     <strong>@xsi:nil</strong> = true</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10C10">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10C10 "><pre>
+            &lt;ActivityInput xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns2="http://www.tibco.com/pe/SignalInActivitySchema" xmlns:ns3="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/Appraisal/AppraisalSchema" xmlns:ns1="www.tibco.com/be/ontology/BEmodule/Events/appraisalRequest" xmlns:ns4="www.tibco.com/plugin/be" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns5="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:ns6="www.tibco.com/be/ontology/pawn/Events/appraisalRequest"&gt;
+                &lt;subject&gt;
+                    &lt;xsl:value-of select="$taskMin/root/confirm_subject"/&gt;
+                &lt;/subject&gt;
+                &lt;replySubject&gt;
+                    &lt;xsl:value-of select="concat($_globalVariables/ns:GlobalVariables/ENV,&amp;quot;.&amp;quot;,$_globalVariables/ns:GlobalVariables/AppraisalResultSubject)"/&gt;
+                &lt;/replySubject&gt;
+                &lt;body&gt;
+                    &lt;customerName&gt;
+                        &lt;xsl:choose&gt;
+                            &lt;xsl:when test="exists($ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/customerName)"&gt;
+                                &lt;xsl:value-of select="$ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/customerName"/&gt;
+                            &lt;/xsl:when&gt;
+                            &lt;xsl:otherwise&gt;
+                                &lt;xsl:attribute name="xsi:nil"&gt;true&lt;/xsl:attribute&gt;
+                            &lt;/xsl:otherwise&gt;
+                        &lt;/xsl:choose&gt;
+                    &lt;/customerName&gt;
+                    &lt;realtyDetails&gt;
+                        &lt;xsl:choose&gt;
+                            &lt;xsl:when test="exists($ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/realtyDetails)"&gt;
+                                &lt;xsl:value-of select="$ReceiveApprRequest/ns4:BEReceiveEventOutput/ns6:appraisalRequest/realtyDetails"/&gt;
+                            &lt;/xsl:when&gt;
+                            &lt;xsl:otherwise&gt;
+                                &lt;xsl:attribute name="xsi:nil"&gt;true&lt;/xsl:attribute&gt;
+                            &lt;/xsl:otherwise&gt;
+                        &lt;/xsl:choose&gt;
+                    &lt;/realtyDetails&gt;
+                &lt;/body&gt;
+            &lt;/ActivityInput&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="WaitForReply"><a name="WaitForReply"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>WaitForReply</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.tibrv.RVSignalInActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.rvpalette.rvSignalInActivity</em></li>
+<li>
+										Description:
+										<em>wait for replies from appraisers</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>_eventTimeout
+							=
+							60000</li>
+<li>wantsValidationForOutput
+							=
+							true</li>
+<li>wantsFiltrationForOutput
+							=
+							true</li>
+<li>wantsXMLCompliantFieldNames
+							=
+							true</li>
+<li>subject
+							=
+							%%ENV%%.%%AppraisalReplySubject%%</li>
+<li>sharedChannel
+			=
+			<a href="./../../SharedConnections/RVTransport.rvtransport.html">/SharedConnections/RVTransport.rvtransport</a>
+</li>
+<li>xsdString<ul><li>
+					-
+					ApprReply
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Transitions"><a name="Transitions"><!-- --></a><h2 class="topictitle2">Transitions:</h2>
+<div><a name="Transitions__Choose_the_least_busy_appraiser_end"><!-- --></a><ul id="Transitions__Choose_the_least_busy_appraiser_end"><li>
+								From:
+								<strong><em>Choose the least busy appraiser</em></strong>
+								-To:
+								<strong><em>end</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Critical_section_SendTaskConfirmation"><!-- --></a><ul id="Transitions__Critical_section_SendTaskConfirmation"><li>
+								From:
+								<strong><em>Critical section</em></strong>
+								-To:
+								<strong><em>SendTaskConfirmation</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__InitMin_PublishRVRequest"><!-- --></a><ul id="Transitions__InitMin_PublishRVRequest"><li>
+								From:
+								<strong><em>InitMin</em></strong>
+								-To:
+								<strong><em>PublishRVRequest</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__PublishRVRequest_Choose_the_least_busy_appraiser"><!-- --></a><ul id="Transitions__PublishRVRequest_Choose_the_least_busy_appraiser"><li>
+								From:
+								<strong><em>PublishRVRequest</em></strong>
+								-To:
+								<strong><em>Choose the least busy appraiser</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__ReceiveApprRequest_Critical_section"><!-- --></a><ul id="Transitions__ReceiveApprRequest_Critical_section"><li>
+								From:
+								<strong><em>ReceiveApprRequest</em></strong>
+								-To:
+								<strong><em>Critical section</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__SaveTaskMin_end"><!-- --></a><ul id="Transitions__SaveTaskMin_end"><li>
+								From:
+								<strong><em>SaveTaskMin</em></strong>
+								-To:
+								<strong><em>end</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__SendApprResult_End"><!-- --></a><ul id="Transitions__SendApprResult_End"><li>
+								From:
+								<strong><em>SendApprResult</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__SendTaskConfirmation_SendApprResult"><!-- --></a><ul id="Transitions__SendTaskConfirmation_SendApprResult"><li>
+								From:
+								<strong><em>SendTaskConfirmation</em></strong>
+								-To:
+								<strong><em>SendApprResult</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__start_InitMin"><!-- --></a><ul id="Transitions__start_InitMin"><li>
+								From:
+								<strong><em>start</em></strong>
+								-To:
+								<strong><em>InitMin</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__start_WaitForReply"><!-- --></a><ul id="Transitions__start_WaitForReply"><li>
+								From:
+								<strong><em>start</em></strong>
+								-To:
+								<strong><em>WaitForReply</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__WaitForReply_end"><!-- --></a><ul id="Transitions__WaitForReply_end"><li>
+								From:
+								<strong><em>WaitForReply</em></strong>
+								-To:
+								<strong><em>end</em></strong><div class="nomargin"><ul><li>
+											Label:
+											<em>greater count of tasks</em></li>
+<li>
+											Condition:
+											<em>$WaitForReply/ActivityOutput/body/tasksNumber &gt;= $taskMin/root/value</em></li>
+<li>
+											Description:
+											<em>appraiser's count of tasks is greater than (or equal to) saved minimum</em></li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__WaitForReply_SaveTaskMin"><!-- --></a><ul id="Transitions__WaitForReply_SaveTaskMin"><li>
+								From:
+								<strong><em>WaitForReply</em></strong>
+								-To:
+								<strong><em>SaveTaskMin</em></strong><div class="nomargin"><ul><li>
+											Label:
+											<em>smaller count of tasks</em></li>
+<li>
+											Condition:
+											<em>$WaitForReply/ActivityOutput/body/tasksNumber &lt; $taskMin/root/value</em></li>
+<li>
+											Description:
+											<em>appraiser's count of tasks is smaller than saved minimum</em></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Groups"><a name="Groups"><!-- --></a><h2 class="topictitle2">Groups:</h2>
+<div><ul><li>
+								Name:
+								<strong><em>Choose the least busy appraiser</em></strong><div class="nomargin"><ul><li>
+											Type:
+											<em>com.tibco.pe.core.LoopGroup</em></li>
+<li>
+											Resource Type:
+											<em>ae.process.group</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>groupType
+							=
+							while</li>
+<li>serializable
+							=
+							false</li>
+<li>indexSlot
+							=
+							index</li>
+<li>outSlot
+							=
+							result</li>
+<li>activityOutputName
+							=
+							WaitForReply</li>
+<li>whileCondition
+							=
+							$index &lt; 5</li>
+<li>accumulateOutput
+							=
+							false</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<ul><li>
+								Name:
+								<strong><em>Critical section</em></strong><div class="nomargin"><ul><li>
+											Type:
+											<em>com.tibco.pe.core.CriticalSectionGroup</em></li>
+<li>
+											Resource Type:
+											<em>ae.process.group</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>groupType
+							=
+							criticalSection</li>
+<li>serializable
+							=
+							false</li>
+<li>scope
+							=
+							single</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="../../../../projects/Appraisal/common/process.html">Processes</a><img alt="parent-topic-arrow" src="../../../../images/parent-topic-arrow.png" /></div>
+</div>
+
+</body>
+</html>

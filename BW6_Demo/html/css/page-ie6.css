@@ -1,0 +1,10 @@
+body
+{
+    font-size: 90%;
+    padding: 15px;
+    padding-top: 0;
+}
+ul.ullinks li.ulchildlink
+{
+    list-style-image: none;
+}

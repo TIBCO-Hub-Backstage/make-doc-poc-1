@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.tibco.com/schemas/AccountState/SharedResources/Schema.xsd"
+	 targetNamespace="http://www.tibco.com/schemas/AccountState/SharedResources/Schema.xsd"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="AccountsList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Account" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="Count" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Account">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Number"/>
+				<xs:element ref="Name"/>
+				<xs:element ref="Value"/>
+				<xs:element ref="MonthIncrement"/>
+				<xs:element ref="Password"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Name" type="xs:string"/>
+	<xs:element name="Value" type="xs:long"/>
+	<xs:element name="Number" type="xs:string"/>
+	<xs:element name="MonthIncrement" type="xs:long"/>
+	<xs:element name="Password" type="xs:string"/>
+</xs:schema>

@@ -1,0 +1,9 @@
+#Wed Aug 23 14:53:34 CEST 2023
+basedir=/home/behaim/server/bin/plugins/com.pike.packages_4.3.0.v1673871347000/packages/dita/bat
+output.dir=/home/behaim/server/storage/default/1692795179168/html
+args.csspath=css
+dita.dir=/home/behaim/server/bin/plugins/com.pike.packages_4.3.0.v1673871347000/packages/dita/dita
+args.input=/home/behaim/server/storage/default/1692795179168/dita/output.ditamap
+dita.temp.dir=/home/behaim/server/storage/default/1692795179168/tmp/html
+transtype=xhtml
+args.xsl=/home/behaim/server/bin/plugins/com.pike.packages_4.3.0.v1673871347000/packages/dita/md_internal/xsl/dita2xhtml.xsl

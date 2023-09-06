@@ -1,0 +1,14 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background-image: url("../images/title-background-image.png");
+	background-repeat: repeat-x;
+}

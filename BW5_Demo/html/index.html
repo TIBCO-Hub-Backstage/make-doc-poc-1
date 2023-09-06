@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<script src="js/redirect.js" type="text/javascript"></script>		
+		<script type="text/javascript">
+		
+			function ieForceMenuResize() {
+				try {
+					// menu frame has index 3
+					window.frames[3].setMenuHeight();
+				} catch (error) {
+				}
+			}
+			window.onresize = ieForceMenuResize;
+			window.onload = setTitlePage;
+			window.onload = setPageLocationFromURL;
+			
+		</script>
+		<link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+		<title>Generated documentation by MakeDoc for TIBCO</title>
+	</head>  
+	<frameset id="main" rows="105,40,*">
+		<frame src="header.html" name="header" title="Logo, license owner" scrolling="no" frameborder="0" noresize="noresize"/>
+		<frameset id="frameTitle" cols="329,*" >
+			<frame src="title-menu.html" name="title-menu" title="Menu title" scrolling="no" frameborder="0" noresize="noresize"/>
+			<frame src="title-page.html" name="title-page" title="Page title" scrolling="no" frameborder="0" noresize="noresize"/>
+		</frameset>
+		<frameset id="frameMenu" cols="329,*">
+			<frame src="menu.html" name="menu" title="Navigation" scrolling="no" frameborder="0" />
+			<frame src="intro.html" name="page" title="Package, class and interface descriptions" scrolling="auto" frameborder="0" />
+		</frameset>
+	</frameset>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:extns="http://www.example.org/Books" xmlns:extns1="http://tns.tibco.com/bw/REST" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://www.example.org/Books/REST/1412072511308" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="books" targetNamespace="http://www.example.org/Books/REST/1412072511308">
+  <wsdl:import namespace="http://www.example.org/Books"/>
+  <wsdl:import namespace="http://tns.tibco.com/bw/REST"/>
+  <wsdl:message name="postRequest">
+    <wsdl:part element="extns:Books" name="item"/>
+    <wsdl:part element="extns1:httpHeaders" name="httpHeaders" tibex:source="bw.rest"/>
+  </wsdl:message>
+  <wsdl:message name="postResponse">
+    <wsdl:part element="extns:Books" name="item"/>
+  </wsdl:message>
+  <wsdl:message name="post4XXFaultMessage">
+    <wsdl:part element="extns1:client4XXError" name="clientError"/>
+  </wsdl:message>
+  <wsdl:message name="post5XXFaultMessage">
+    <wsdl:part element="extns1:server5XXError" name="serverError"/>
+  </wsdl:message>
+  <wsdl:message name="getRequest">
+    <wsdl:part element="extns1:httpHeaders" name="httpHeaders" tibex:source="bw.rest"/>
+  </wsdl:message>
+  <wsdl:message name="getResponse">
+    <wsdl:part element="extns:Books" name="item"/>
+  </wsdl:message>
+  <wsdl:message name="get4XXFaultMessage">
+    <wsdl:part element="extns1:client4XXError" name="clientError"/>
+  </wsdl:message>
+  <wsdl:message name="get5XXFaultMessage">
+    <wsdl:part element="extns1:server5XXError" name="serverError"/>
+  </wsdl:message>
+  <wsdl:portType name="Books" tibex:source="bw.rest">
+    <wsdl:documentation/>
+    <wsdl:operation name="post">
+      <wsdl:input message="tns:postRequest" name="postInput"/>
+      <wsdl:output message="tns:postResponse" name="postOutput"/>
+      <wsdl:fault message="tns:post4XXFaultMessage" name="clientFault"/>
+      <wsdl:fault message="tns:post5XXFaultMessage" name="serverFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <wsdl:input message="tns:getRequest" name="getInput"/>
+      <wsdl:output message="tns:getResponse" name="getOutput"/>
+      <wsdl:fault message="tns:get4XXFaultMessage" name="clientFault"/>
+      <wsdl:fault message="tns:get5XXFaultMessage" name="serverFault"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

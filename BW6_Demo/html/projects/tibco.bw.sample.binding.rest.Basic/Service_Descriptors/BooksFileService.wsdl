@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:extns="http://www.example.org/Books" xmlns:tns="http://xmlns.example.com/20140930153240" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BooksFileService" targetNamespace="http://xmlns.example.com/20140930153240">
+    <wsdl:import namespace="http://www.example.org/Books" location="../Schemas/Books.xsd"/>
+    <wsdl:types>
+    <xsd:schema elementFormDefault="unqualified" targetNamespace="http://xmlns.example.com/20140930153240">
+      <xsd:element name="PostBooksToFileRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="in" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="PostBooksToFileResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="out" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="PostBooksToFileFault">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="fault" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+            <xsd:element name="GetBooksFromFileRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="in" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+            <xsd:element name="GetBooksFromFileResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="out" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+        </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="PostBooksToFileRequest">
+    <wsdl:part element="extns:Books" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="PostBooksToFileResponse">
+    <wsdl:part element="extns:Books" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="PostBooksToFileFault">
+    <wsdl:part element="tns:PostBooksToFileFault" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="GetBooksFromFileRequest">
+    <wsdl:part element="tns:GetBooksFromFileRequest" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="GetBooksFromFileResponse">
+    <wsdl:part element="extns:Books" name="parameters"/>
+  </wsdl:message>
+    <wsdl:portType name="Service">
+    <wsdl:operation name="PostBooksToFile">
+      <wsdl:input message="tns:PostBooksToFileRequest" name="operationInput"/>
+      <wsdl:output message="tns:PostBooksToFileResponse" name="operationOutput"/>
+      <wsdl:fault message="tns:PostBooksToFileFault" name="Fault"/>
+    </wsdl:operation>
+        <wsdl:operation name="GetBooksFromFile">
+      <wsdl:input message="tns:GetBooksFromFileRequest" name="operationInput0"/>
+      <wsdl:output message="tns:GetBooksFromFileResponse" name="operationOutput0"/>
+    </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

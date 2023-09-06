@@ -1,0 +1,16 @@
+#menuTitle
+{
+	width: 100%;
+	padding-left: 15px;
+	border-left: 1px solid #00417D;
+}
+#position
+{
+	float: right;
+}
+#btnHideMenu
+{
+	cursor: pointer;
+	padding-right: 10px;
+	vertical-align: middle;
+}

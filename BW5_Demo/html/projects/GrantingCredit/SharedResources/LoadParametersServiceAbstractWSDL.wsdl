@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.example.com/1171295149828" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema.xsd" targetNamespace="http://xmlns.example.com/1171295149828">
+    <import namespace="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema.xsd" location="InputParametersXSD.xsd"/>
+    <message name="LoadParametersServiceInputMessage">
+        <part name="part1" element="ns:InputFile"/>
+    </message>
+    <message name="LoadParametersServiceOutputMessage">
+        <part name="part1" element="ns:InputParameters"/>
+    </message>
+    <portType name="LoadParametersServicePort">
+        <operation name="LoadParametersServiceOperation">
+            <input message="tns:LoadParametersServiceInputMessage"/>
+            <output message="tns:LoadParametersServiceOutputMessage"/>
+        </operation>
+    </portType>
+</definitions>

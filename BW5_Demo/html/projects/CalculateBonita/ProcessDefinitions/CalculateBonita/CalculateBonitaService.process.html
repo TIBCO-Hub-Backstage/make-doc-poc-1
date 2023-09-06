@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta content="concept" name="DC.Type" />
+<meta name="DC.Title" content="CalculateBonitaService" />
+<meta scheme="URI" name="DC.Relation" content="../../../../projects/CalculateBonita/common/process.html" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="ProcessMain" name="DC.Identifier" />
+<meta content="en-us" name="DC.Language" />
+<link href="../../../../css/commonltr.css" type="text/css" rel="stylesheet" />
+<script src="../../../../js/jquery-1.12.2.min.js" type="text/javascript">/* */</script><script src="../../../../js/jquery-ui.min.js" type="text/javascript">/* */</script><script src="../../../../js/functions.js" type="text/javascript">/* */</script><script src="../../../../js/TabbedForm.js" type="text/javascript">/* */</script><script src="../../../../js/image-resizer.js" type="text/javascript">/* */</script><script src="../../../../js/page-title.js" type="text/javascript">/* */</script><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.structure.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/jquery-ui.theme.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page.css" /><!--[if lte IE 6]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie6.css" /><![endif]-->
+    <!--[if IE 7]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../css/page-ie7.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../images/favicon.ico" /><title>CalculateBonitaService</title>
+</head>
+<body onload="javascript:TabbedFormImages(); javascript:showPageTitle(); javascript:checkImages(); javascript:mappingsHidding();" id="ProcessMain"><a name="ProcessMain"><!-- --></a>
+
+<h1 class="topictitle1">CalculateBonitaService</h1>
+<div><p class="nomargin">License for TIBCO Software Use Only! </p>
+<p class="nomargin">
+							Section contains description of Process "
+							CalculateBonitaService.process
+							" .
+						</p>
+<p class="nomargin">
+								Modification time:
+								2023/08/23 13:10:11</p>
+</div>
+<div />
+<div class="nested1" xml:lang="en-us" id="FolderDescription"><a name="FolderDescription"><!-- --></a><h2 class="topictitle2">Folder description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" width="30%" id="N10071">Folder</th>
+<th class="cellrowborder" valign="top" width="70%" id="N10078">Description</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">CalculateBonita</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">Design Time Library which serves for calculating pretender bonita. This library using EMS for communication.</td>
+</tr>
+ <tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/ProcessDefinitions</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">All process definitions</td>
+</tr>
+ <tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/ProcessDefinitions/CalculateBonita</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">Main CalculateBonita processes</td>
+</tr>
+ </tbody>
+</table>
+</div>
+</div>
+<div />
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDescription"><a name="ProcessDescription"><!-- --></a><h2 class="topictitle2">Process description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><tbody><tr><td class="cellrowborder" valign="top">Get and prepare input parameters for process CalculateBonita. Then send request with calculated bonita.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDefinition"><a name="ProcessDefinition"><!-- --></a><h2 class="topictitle2">Process definition:</h2>
+<div><p class="nomargin">
+					Full process path:
+					ProcessDefinitions/CalculateBonita/CalculateBonitaService.process</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Diagram"><a name="Diagram"><!-- --></a><h2 class="topictitle2">Diagram:</h2>
+<div><div class="imageMapBox"><img usemap="#N1011A" border="0" alt="" src="CalculateBonitaService.process.png" />
+<map id="N1011A" name="N1011A">
+<area href="#Starter" alt="InputParameters JMSQueueReceiver" title="InputParameters JMSQueueReceiver" shape="circle" coords="61&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#EndActivity" alt="End" title="End" shape="circle" coords="596&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;34&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#CalculateBonita" alt="CalculateBonita" title="CalculateBonita" shape="circle" coords="339&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;34&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Obligators_SOAPRequestReply" alt="Obligators SOAPRequestReply" title="Obligators SOAPRequestReply" shape="circle" coords="210&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Reply_to_JMS_Message" alt="Reply to JMS Message" title="Reply to JMS Message" shape="circle" coords="491&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;42&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Transitions__InputParameters_JMSQueueReceiver_Obligators_SOAPRequestReply" alt="From: InputParameters JMSQueueReceiver To: Obligators SOAPRequestReply" title="From: InputParameters JMSQueueReceiver To: Obligators SOAPRequestReply" shape="poly" coords="91&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;168&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;168&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;22&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;91&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;22" />
+<area href="#Transitions__Obligators_SOAPRequestReply_CalculateBonita" alt="From: Obligators SOAPRequestReply To: CalculateBonita" title="From: Obligators SOAPRequestReply To: CalculateBonita" shape="poly" coords="240&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;297&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;297&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;22&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;240&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;22" />
+<area href="#Transitions__CalculateBonita_Reply_to_JMS_Message" alt="From: CalculateBonita To: Reply to JMS Message" title="From: CalculateBonita To: Reply to JMS Message" shape="poly" coords="369&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;449&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;449&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;22&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;369&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;22" />
+<area href="#Transitions__Reply_to_JMS_Message_End" alt="From: Reply to JMS Message To: End" title="From: Reply to JMS Message To: End" shape="poly" coords="521&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;554&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;32&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;554&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;22&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;521&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;22" />
+</map></div></div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Starter"><a name="Starter"><!-- --></a><h2 class="topictitle2">Process starter activity:</h2>
+<div><p class="nomargin">
+									Name:
+									InputParameters JMSQueueReceiver</p>
+<ul><li>
+										Property Name:
+										<strong><em>InputParameters JMSQueueReceiver</em></strong><div class="nomargin"><ul><li>
+													Type:
+													<em>com.tibco.plugin.jms.JMSQueueEventSource</em></li>
+<li>
+													Resource Type:
+													<em>ae.activities.JMSQueueEventSource</em></li>
+<li>
+													Description:
+													<em>Get JMS message with CalculateBonita message selector and InputParameters</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>PermittedMessageType
+							=
+							XML Text</li>
+<li>SessionAttributes<ul><li>transacted
+							=
+							false</li>
+<li>acknowledgeMode
+							=
+							1
+									(Auto)
+								</li>
+<li>maxSessions
+							=
+							1</li>
+<li>destination
+							=
+							%%ENV%%.%%CalculateBonitaJMSQueueName%%</li>
+<li>selector
+							=
+							Part='CalculateBonita'</li>
+</ul>
+</li>
+<li>ConfigurableHeaders<ul><li>JMSDeliveryMode
+							=
+							PERSISTENT</li>
+<li>JMSExpiration
+							=
+							0</li>
+<li>JMSPriority
+							=
+							4</li>
+</ul>
+</li>
+<li>ConnectionReference
+			=
+			<a href="./../../SharedConnections/CalculateBonitaEMSConnection.sharedjmscon.html">/SharedConnections/CalculateBonitaEMSConnection.sharedjmscon</a>
+</li>
+<li>ApplicationProperties
+							=
+							/SharedResources/JMSApplicationProperties.sharedjmsapp</li>
+<li>OutDataxsdString<ul><li>
+					-
+					InputParameters
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="EndActivity"><a name="EndActivity"><!-- --></a><h2 class="topictitle2">Process end activity:</h2>
+<div><p class="nomargin">
+			Name:
+			End</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Activities"><a name="Activities"><!-- --></a><h2 class="topictitle2">Activities:</h2>
+<div class="nested2" id="CalculateBonita"><a name="CalculateBonita"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>CalculateBonita</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.pe.core.CallProcessActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.process.subprocess</em></li>
+<li>
+										Description:
+										<em>Calculate pretender's bonita from InputParameters and Obligator records</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>processName
+			=
+			<a href="./../../ProcessDefinitions/CalculateBonita/CalculateBonita.process.html">/ProcessDefinitions/CalculateBonita/CalculateBonita.process</a>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1036B">Target</th>
+<th class="cellrowborder" valign="top" id="N10371">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1036B N10371 "><strong>/InputParameters</strong><strong>/MonthIncrement</strong></td>
+<td class="cellrowborder" valign="top" headers="N1036B N10371 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/MonthIncrement</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1036B N10371 "><strong>/InputParameters</strong><strong>/Value</strong></td>
+<td class="cellrowborder" valign="top" headers="N1036B N10371 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1036B N10371 "><strong>/InputParameters</strong><strong>/RealtyValue</strong></td>
+<td class="cellrowborder" valign="top" headers="N1036B N10371 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyValue</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1036B N10371 "><strong>/InputParameters</strong><strong>/Problem</strong></td>
+<td class="cellrowborder" valign="top" headers="N1036B N10371 "> $Obligators-SOAPRequestReply/outputMessage/ns2:Obligator/ns2:Problem</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1036B N10371 "><strong>/InputParameters</strong><strong>/Loan</strong></td>
+<td class="cellrowborder" valign="top" headers="N1036B N10371 "> $Obligators-SOAPRequestReply/outputMessage/ns2:Obligator/ns2:Value</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N1036B N10371 "><strong>/InputParameters</strong><strong>/Refund</strong></td>
+<td class="cellrowborder" valign="top" headers="N1036B N10371 "> $Obligators-SOAPRequestReply/outputMessage/ns2:Obligator/ns2:Refund + $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1042F">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1042F "><pre>
+<strong>InputParameters</strong>
+ <strong>MonthIncrement</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/MonthIncrement
+ <strong>Value</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value
+ <strong>RealtyValue</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyValue
+ <strong>Problem</strong> = $Obligators-SOAPRequestReply/outputMessage/ns2:Obligator/ns2:Problem
+ <strong>Loan</strong> = $Obligators-SOAPRequestReply/outputMessage/ns2:Obligator/ns2:Value
+ <strong>Refund</strong> = $Obligators-SOAPRequestReply/outputMessage/ns2:Obligator/ns2:Refund + $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10490">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10490 "><pre>
+            &lt;InputParameters xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pfx2="http://xmlns.example.com/1171360277608/GetObligatorServiceOperationImpl" xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns2="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/CalculateBonitaAESchema" xmlns:pfx3="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/AESchema"&gt;
+                &lt;MonthIncrement&gt;
+                    &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/MonthIncrement"/&gt;
+                &lt;/MonthIncrement&gt;
+                &lt;Value&gt;
+                    &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Value"/&gt;
+                &lt;/Value&gt;
+                &lt;RealtyValue&gt;
+                    &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/RealtyValue"/&gt;
+                &lt;/RealtyValue&gt;
+                &lt;Problem&gt;
+                    &lt;xsl:value-of select="$Obligators-SOAPRequestReply/outputMessage/ns2:Obligator/ns2:Problem"/&gt;
+                &lt;/Problem&gt;
+                &lt;Loan&gt;
+                    &lt;xsl:value-of select="$Obligators-SOAPRequestReply/outputMessage/ns2:Obligator/ns2:Value"/&gt;
+                &lt;/Loan&gt;
+                &lt;Refund&gt;
+                    &lt;xsl:value-of select="$Obligators-SOAPRequestReply/outputMessage/ns2:Obligator/ns2:Refund + $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Refund"/&gt;
+                &lt;/Refund&gt;
+            &lt;/InputParameters&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="Obligators_SOAPRequestReply"><a name="Obligators_SOAPRequestReply"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Obligators SOAPRequestReply</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.soap.SOAPSendReceiveActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.SOAPSendReceiveUI</em></li>
+<li>
+										Description:
+										<em>SOAPRequest on GetObligator process and get reply with result</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>timeout
+							=
+							0</li>
+<li>service
+							=
+							pfx2:GetObligatorService</li>
+<li>servicePort
+							=
+							ObligatorName_sp_SOAPEventSource</li>
+<li>operation
+							=
+							GetObligatorServiceOperation</li>
+<li>soapAction
+							=
+							/ProcessDefinitions/GetObligator/GetObligatorService</li>
+<li>endpointURL
+							=
+							%%GetObligatorServiceEndpointURL%%</li>
+<li>useProxy
+							=
+							false</li>
+<li>requireBasicAuth
+							=
+							false</li>
+<li>basicHttpAuthIdentity
+							=
+							</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10559">Target</th>
+<th class="cellrowborder" valign="top" id="N1055F">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10559 N1055F "><strong>/inputMessage</strong><strong>/Name</strong></td>
+<td class="cellrowborder" valign="top" headers="N10559 N1055F "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N105A0">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N105A0 "><pre>
+<strong>inputMessage</strong>
+ <strong>Name</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N105E3">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N105E3 "><pre>
+            &lt;inputMessage xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pfx2="http://xmlns.example.com/1171360277608/GetObligatorServiceOperationImpl" xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns2="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/CalculateBonitaAESchema" xmlns:pfx3="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/AESchema"&gt;
+                &lt;ns2:Name&gt;
+                    &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name"/&gt;
+                &lt;/ns2:Name&gt;
+            &lt;/inputMessage&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="Reply_to_JMS_Message"><a name="Reply_to_JMS_Message"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Reply to JMS Message</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.jms.JMSReplyActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.JMSReplyActivity</em></li>
+<li>
+										Description:
+										<em>Send JMS reply with calculated bonita</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>PermittedMessageType
+							=
+							XML Text</li>
+<li>SessionAttributes<ul><li>transacted
+							=
+							false</li>
+<li>acknowledgeMode
+							=
+							1</li>
+<li>maxSessions
+							=
+							1</li>
+</ul>
+</li>
+<li>ConfigurableHeaders<ul><li>JMSDeliveryMode
+							=
+							PERSISTENT</li>
+<li>JMSExpiration
+							=
+							0</li>
+<li>JMSPriority
+							=
+							4</li>
+<li>EventSource
+							=
+							InputParameters JMSQueueReceiver</li>
+</ul>
+</li>
+<li>ApplicationProperties
+							=
+							/SharedResources/JMSApplicationProperties.sharedjmsapp</li>
+<li>InDataxsdString<ul><li>
+					-
+					PretenderBonita
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N106CC">Target</th>
+<th class="cellrowborder" valign="top" id="N106D2">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N106CC N106D2 "><strong>/ActivityInput</strong><strong>/OtherProperties</strong><strong>/Part</strong></td>
+<td class="cellrowborder" valign="top" headers="N106CC N106D2 "> "CalculateBonita"</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N106CC N106D2 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/PretenderBonita</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name&gt;</em><strong>/Name</strong></td>
+<td class="cellrowborder" valign="top" headers="N106CC N106D2 "><em> [COPY-OF] &lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name/@xsi:nil &gt;</em></td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N106CC N106D2 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/PretenderBonita</strong><em>/[IF]&lt;$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name&gt;</em><strong>/Name</strong></td>
+<td class="cellrowborder" valign="top" headers="N106CC N106D2 "> $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N106CC N106D2 "><strong>/ActivityInput</strong><strong>/Body</strong><strong>/PretenderBonita</strong><strong>/Bonita</strong></td>
+<td class="cellrowborder" valign="top" headers="N106CC N106D2 "> $CalculateBonita/Bonita</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N1078F">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N1078F "><pre>
+<strong>ActivityInput</strong>
+ <strong>OtherProperties</strong>
+  <strong>Part</strong> = "CalculateBonita"
+ <strong>Body</strong>
+  <strong>PretenderBonita</strong>
+   <em>[IF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name &gt;
+    <strong>Name</strong> = $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name<strong>
+     nil</strong> = <em>[COPY-OF] </em>&lt; $InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name/@xsi:nil &gt;
+   <strong>Bonita</strong> = $CalculateBonita/Bonita</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10802">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10802 "><pre>
+            &lt;ns:ActivityInput xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/jms" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pfx2="http://xmlns.example.com/1171360277608/GetObligatorServiceOperationImpl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns2="http://www.tibco.com/schemas/GrantingCredit/SharedConnections/Schema1.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:pfx="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/CalculateBonitaAESchema" xmlns:pfx3="http://www.tibco.com/xmlns/ae2xsd/2002/05/EMS/AESchema"&gt;
+                &lt;OtherProperties&gt;
+                    &lt;Part&gt;
+                        &lt;xsl:value-of select="&amp;quot;CalculateBonita&amp;quot;"/&gt;
+                    &lt;/Part&gt;
+                &lt;/OtherProperties&gt;
+                &lt;Body&gt;
+                    &lt;pfx:PretenderBonita&gt;
+                        &lt;xsl:if test="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name"&gt;
+                            &lt;Name&gt;
+                                &lt;xsl:copy-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name/@xsi:nil"/&gt;
+                                &lt;xsl:value-of select="$InputParameters-JMSQueueReceiver/ns:ActivityOutput/Body/pfx:InputParameters/Name"/&gt;
+                            &lt;/Name&gt;
+                        &lt;/xsl:if&gt;
+                        &lt;Bonita&gt;
+                            &lt;xsl:value-of select="$CalculateBonita/Bonita"/&gt;
+                        &lt;/Bonita&gt;
+                    &lt;/pfx:PretenderBonita&gt;
+                &lt;/Body&gt;
+            &lt;/ns:ActivityInput&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Transitions"><a name="Transitions"><!-- --></a><h2 class="topictitle2">Transitions:</h2>
+<div><a name="Transitions__CalculateBonita_Reply_to_JMS_Message"><!-- --></a><ul id="Transitions__CalculateBonita_Reply_to_JMS_Message"><li>
+								From:
+								<strong><em>CalculateBonita</em></strong>
+								-To:
+								<strong><em>Reply to JMS Message</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__InputParameters_JMSQueueReceiver_Obligators_SOAPRequestReply"><!-- --></a><ul id="Transitions__InputParameters_JMSQueueReceiver_Obligators_SOAPRequestReply"><li>
+								From:
+								<strong><em>InputParameters JMSQueueReceiver</em></strong>
+								-To:
+								<strong><em>Obligators SOAPRequestReply</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Obligators_SOAPRequestReply_CalculateBonita"><!-- --></a><ul id="Transitions__Obligators_SOAPRequestReply_CalculateBonita"><li>
+								From:
+								<strong><em>Obligators SOAPRequestReply</em></strong>
+								-To:
+								<strong><em>CalculateBonita</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Reply_to_JMS_Message_End"><!-- --></a><ul id="Transitions__Reply_to_JMS_Message_End"><li>
+								From:
+								<strong><em>Reply to JMS Message</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="../../../../projects/CalculateBonita/common/process.html">Processes</a><img alt="parent-topic-arrow" src="../../../../images/parent-topic-arrow.png" /></div>
+</div>
+
+</body>
+</html>

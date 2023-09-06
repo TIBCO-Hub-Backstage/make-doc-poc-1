@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta content="concept" name="DC.Type" />
+<meta name="DC.Title" content="SendEmail" />
+<meta scheme="URI" name="DC.Relation" content="../../../../../projects/Benefits/common/process.html" />
+<meta content="XHTML" name="DC.Format" />
+<meta content="ProcessMain" name="DC.Identifier" />
+<meta content="en-us" name="DC.Language" />
+<link href="../../../../../css/commonltr.css" type="text/css" rel="stylesheet" />
+<script src="../../../../../js/jquery-1.12.2.min.js" type="text/javascript">/* */</script><script src="../../../../../js/jquery-ui.min.js" type="text/javascript">/* */</script><script src="../../../../../js/functions.js" type="text/javascript">/* */</script><script src="../../../../../js/TabbedForm.js" type="text/javascript">/* */</script><script src="../../../../../js/image-resizer.js" type="text/javascript">/* */</script><script src="../../../../../js/page-title.js" type="text/javascript">/* */</script><link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/jquery-ui.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/jquery-ui.structure.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/jquery-ui.theme.min.css" /><link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/page.css" /><!--[if lte IE 6]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/page-ie6.css" /><![endif]-->
+    <!--[if IE 7]>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../../../../css/page-ie7.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../images/favicon.ico" /><title>SendEmail</title>
+</head>
+<body onload="javascript:TabbedFormImages(); javascript:showPageTitle(); javascript:checkImages(); javascript:mappingsHidding();" id="ProcessMain"><a name="ProcessMain"><!-- --></a>
+
+<h1 class="topictitle1">SendEmail</h1>
+<div><p class="nomargin">License for TIBCO Software Use Only! </p>
+<p class="nomargin">
+							Section contains description of Process "
+							SendEmail.process
+							" .
+						</p>
+<p class="nomargin">
+								Modification time:
+								2023/08/23 13:10:11</p>
+</div>
+<div />
+<div class="nested1" xml:lang="en-us" id="FolderDescription"><a name="FolderDescription"><!-- --></a><h2 class="topictitle2">Folder description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" width="30%" id="N10071">Folder</th>
+<th class="cellrowborder" valign="top" width="70%" id="N10078">Description</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="30%" headers="N10071 ">/PantherBW/ProcessDefinitions/BusinessLogic</td>
+<td class="cellrowborder" valign="top" width="70%" headers="N10078 ">The folder that contain the main procedures....</td>
+</tr>
+ </tbody>
+</table>
+</div>
+</div>
+<div />
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDescription"><a name="ProcessDescription"><!-- --></a><h2 class="topictitle2">Process description:</h2>
+<div>
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" frame="border" border="1" rules="all"><tbody><tr><td class="cellrowborder" valign="top">The process which sends emails...</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="ProcessDefinition"><a name="ProcessDefinition"><!-- --></a><h2 class="topictitle2">Process definition:</h2>
+<div><p class="nomargin">
+					Full process path:
+					PantherBW/ProcessDefinitions/BusinessLogic/SendEmail.process</p>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Diagram"><a name="Diagram"><!-- --></a><h2 class="topictitle2">Diagram:</h2>
+<div><div class="imageMapBox"><img usemap="#N100F8" border="0" alt="" src="SendEmail.process.png" />
+<map id="N100F8" name="N100F8">
+<area href="#Starter" alt="Start" title="Start" shape="circle" coords="99&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;65&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#EndActivity" alt="End" title="End" shape="circle" coords="487&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;65&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Send_Mail" alt="Send Mail" title="Send Mail" shape="circle" coords="252&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;65&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Null" alt="Null" title="Null" shape="circle" coords="367&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;165&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,40&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+<area href="#Transitions__Start_Send_Mail" alt="From: Start To: Send Mail" title="From: Start To: Send Mail" shape="poly" coords="129&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;63&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;210&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;63&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;210&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;53&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;129&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;53" />
+<area href="#Transitions__Send_Mail_End" alt="From: Send Mail To: End" title="From: Send Mail To: End" shape="poly" coords="282&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;63&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;445&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;63&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;445&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;53&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;282&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;53" />
+<area href="#Transitions__Send_Mail_Null" alt="From: Send Mail To: Null" title="From: Send Mail To: Null" shape="poly" coords="269&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;89&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;331&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;130&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;341&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;120&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;279&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;79" />
+<area href="#Transitions__Null_End" alt="From: Null To: End" title="From: Null To: End" shape="poly" coords="395&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;138&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;460&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;95&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;450&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;85&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;385&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;128" />
+</map></div></div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Starter"><a name="Starter"><!-- --></a><h2 class="topictitle2">Process starter activity:</h2>
+<div><p class="nomargin">
+			Name:
+			Start</p>
+<p class="nomargin">
+			Description:
+			<em>The beginning of the SendEmail process.
+</em></p>
+<p class="nomargin">Input Parameters:</p>
+<div class="nomargin"><ul><li>
+					-
+					SendEmailRequest
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="EndActivity"><a name="EndActivity"><!-- --></a><h2 class="topictitle2">Process end activity:</h2>
+<div><p class="nomargin">
+			Name:
+			End</p>
+<p class="nomargin">Output Parameters:</p>
+<div class="nomargin"><ul><li>
+					-
+					SendEmailResponse
+				(XML Element Reference,
+				required
+				)
+			</li>
+</ul>
+</div>
+<div class="p">
+								Return bindings:
+								<ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10246">Target</th>
+<th class="cellrowborder" valign="top" id="N1024C">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10246 N1024C "><em>/[WHEN]&lt;$_error&gt;</em><strong>/SendEmailResponse</strong><strong>/ResultCode</strong></td>
+<td class="cellrowborder" valign="top" headers="N10246 N1024C "> -1</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10246 N1024C "><em>/[WHEN]&lt;$_error&gt;</em><strong>/SendEmailResponse</strong><em>/[IF]&lt;$_error/ns3:ErrorReport/StackTrace&gt;</em><strong>/ResultMessage</strong></td>
+<td class="cellrowborder" valign="top" headers="N10246 N1024C "> $_error/ns3:ErrorReport/StackTrace</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10246 N1024C "><em>/[OTHERWISE]</em><strong>/SendEmailResponse</strong><strong>/ResultCode</strong></td>
+<td class="cellrowborder" valign="top" headers="N10246 N1024C "> 0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N102D3">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N102D3 "><pre>
+<em>[CHOOSE] </em>
+ <em>[WHEN] </em>&lt; $_error &gt;
+  <strong>SendEmailResponse</strong>
+   <strong>ResultCode</strong> = -1
+   <em>[IF] </em>&lt; $_error/ns3:ErrorReport/StackTrace &gt;
+    <strong>ResultMessage</strong> = $_error/ns3:ErrorReport/StackTrace
+ <em>[OTHERWISE] </em>
+  <strong>SendEmailResponse</strong>
+   <strong>ResultCode</strong> = 0</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10340">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10340 "><pre>
+        &lt;xsl:choose xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/mail" xmlns:pfx="http://www.tibco.com/schemas/pantherbw/PantherBW/ProcessDefinitions/Schema/Schema.xsd" xmlns:ns2="http://xmlns.tibco.com/body" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns3="http://www.tibco.com/pe/EngineTypes"&gt;
+            &lt;xsl:when test="$_error"&gt;
+                &lt;pfx:SendEmailResponse&gt;
+                    &lt;pfx:ResultCode&gt;
+                        &lt;xsl:value-of select="-1"/&gt;
+                    &lt;/pfx:ResultCode&gt;
+                    &lt;xsl:if test="$_error/ns3:ErrorReport/StackTrace"&gt;
+                        &lt;pfx:ResultMessage&gt;
+                            &lt;xsl:value-of select="$_error/ns3:ErrorReport/StackTrace"/&gt;
+                        &lt;/pfx:ResultMessage&gt;
+                    &lt;/xsl:if&gt;
+                &lt;/pfx:SendEmailResponse&gt;
+            &lt;/xsl:when&gt;
+            &lt;xsl:otherwise&gt;
+                &lt;pfx:SendEmailResponse&gt;
+                    &lt;pfx:ResultCode&gt;
+                        &lt;xsl:value-of select="0"/&gt;
+                    &lt;/pfx:ResultCode&gt;
+                &lt;/pfx:SendEmailResponse&gt;
+            &lt;/xsl:otherwise&gt;
+        &lt;/xsl:choose&gt;
+    </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Activities"><a name="Activities"><!-- --></a><h2 class="topictitle2">Activities:</h2>
+<div class="nested2" id="Null"><a name="Null"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Null</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.timer.NullActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.null</em></li>
+<li>
+										Description:
+										<em>SendEmail error branch</em></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="nested2" id="Send_Mail"><a name="Send_Mail"><!-- --></a><h3 class="topictitle3">
+							Name:
+							<strong><em>Send Mail</em></strong></h3>
+<div><div class="section"><ul><li>
+										Type:
+										<em>com.tibco.plugin.mail.MailPubActivity</em></li>
+<li>
+										Resource Type:
+										<em>ae.activities.MailActivityResource</em></li>
+<li>
+										Description:
+										<em>sending of the email.....</em></li>
+<li><em>Configuration:</em><div class="nomargin"><ul><li>newMimeSupport
+							=
+							true</li>
+<li>inputOutputVersion
+							=
+							<em>$_globalVariables/ns1:GlobalVariables/PantherBW/Shared/Email/to</em></li>
+<li>authenticate
+							=
+							false</li>
+<li>nonRFC822
+							=
+							false</li>
+<li>host
+							=
+							%%PantherBW/Shared/Email/SMTP%%</li>
+<li>InputHeaders<ul><li>
+					+
+					root
+					(Complex Type,
+					required
+					)
+					<ul><li>
+					-
+					Content-Type(xsd:string,optional)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><em>Input bindings:</em><ul class="mappings"><li class="table"><p class="caption">Mapping table</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10464">Target</th>
+<th class="cellrowborder" valign="top" id="N1046A">Source</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10464 N1046A "><strong>/mailActivityInput</strong><strong>/from</strong></td>
+<td class="cellrowborder" valign="top" headers="N10464 N1046A "> $_globalVariables/ns1:GlobalVariables/PantherBW/Shared/Email/from</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10464 N1046A "><strong>/mailActivityInput</strong><strong>/to</strong></td>
+<td class="cellrowborder" valign="top" headers="N10464 N1046A "> $_globalVariables/ns1:GlobalVariables/PantherBW/Shared/Email/to</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10464 N1046A "><strong>/mailActivityInput</strong><strong>/subject</strong></td>
+<td class="cellrowborder" valign="top" headers="N10464 N1046A "> "test"</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" headers="N10464 N1046A "><strong>/mailActivityInput</strong><strong>/bodyElement</strong><strong>/bodyText</strong></td>
+<td class="cellrowborder" valign="top" headers="N10464 N1046A "> $Start/pfx:SendEmailRequest/pfx:message</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="tree"><p class="caption">Mapping tree</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N104FB">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N104FB "><pre>
+<strong>mailActivityInput</strong>
+ <strong>from</strong> = $_globalVariables/ns1:GlobalVariables/PantherBW/Shared/Email/from
+ <strong>to</strong> = $_globalVariables/ns1:GlobalVariables/PantherBW/Shared/Email/to
+ <strong>subject</strong> = "test"
+ <strong>bodyElement</strong>
+  <strong>bodyText</strong> = $Start/pfx:SendEmailRequest/pfx:message</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="raw"><p class="caption">Source code</p>
+
+<div class="tablenoborder"><table summary="" cellspacing="0" cellpadding="4" class="data" frame="border" border="1" rules="all"><thead align="left"><tr><th class="cellrowborder" valign="top" id="N10556">Mapping</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" headers="N10556 "><pre>
+            &lt;ns:mailActivityInput xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/mail" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx="http://www.tibco.com/schemas/pantherbw/PantherBW/ProcessDefinitions/Schema/Schema.xsd" xmlns:ns2="http://xmlns.tibco.com/body" xmlns:ns1="http://www.tibco.com/pe/DeployedVarsType" xmlns:ns3="http://www.tibco.com/pe/EngineTypes"&gt;
+                &lt;from&gt;
+                    &lt;xsl:value-of select="$_globalVariables/ns1:GlobalVariables/PantherBW/Shared/Email/from"/&gt;
+                &lt;/from&gt;
+                &lt;to&gt;
+                    &lt;xsl:value-of select="$_globalVariables/ns1:GlobalVariables/PantherBW/Shared/Email/to"/&gt;
+                &lt;/to&gt;
+                &lt;subject&gt;
+                    &lt;xsl:value-of select="&amp;quot;test&amp;quot;"/&gt;
+                &lt;/subject&gt;
+                &lt;ns2:bodyElement&gt;
+                    &lt;bodyText&gt;
+                        &lt;xsl:value-of select="$Start/pfx:SendEmailRequest/pfx:message"/&gt;
+                    &lt;/bodyText&gt;
+                &lt;/ns2:bodyElement&gt;
+            &lt;/ns:mailActivityInput&gt;
+        </pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="nested1" xml:lang="en-us" id="Transitions"><a name="Transitions"><!-- --></a><h2 class="topictitle2">Transitions:</h2>
+<div><a name="Transitions__Null_End"><!-- --></a><ul id="Transitions__Null_End"><li>
+								From:
+								<strong><em>Null</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Send_Mail_End"><!-- --></a><ul id="Transitions__Send_Mail_End"><li>
+								From:
+								<strong><em>Send Mail</em></strong>
+								-To:
+								<strong><em>End</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Send_Mail_Null"><!-- --></a><ul id="Transitions__Send_Mail_Null"><li>
+								From:
+								<strong><em>Send Mail</em></strong>
+								-To:
+								<strong><em>Null</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Error</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+<a name="Transitions__Start_Send_Mail"><!-- --></a><ul id="Transitions__Start_Send_Mail"><li>
+								From:
+								<strong><em>Start</em></strong>
+								-To:
+								<strong><em>Send Mail</em></strong><div class="nomargin"><ul><li>
+											Label:
+											</li>
+<li>
+											Condition:
+											<em>Success</em></li>
+<li>
+											Description:
+											</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="../../../../../projects/Benefits/common/process.html">Processes</a><img alt="parent-topic-arrow" src="../../../../../images/parent-topic-arrow.png" /></div>
+</div>
+
+</body>
+</html>
