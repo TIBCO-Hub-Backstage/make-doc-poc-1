@@ -1,6 +1,7 @@
 # Enterprise
 
 -   [Introduction](intro.md)
+
 -   [Project documentation](projects/projects.md)
     -   [HelloWorld.application](projects/HelloWorld.application/HelloWorld.application.md)
         -   [Module Properties](projects/HelloWorld.application/common/substvar.md)
