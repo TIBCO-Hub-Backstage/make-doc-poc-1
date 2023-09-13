@@ -2,7 +2,9 @@
 
 Chapter contains projects and their violations of rule 'Value Contains' - 'Check for Global Variables Values'.
 
--   **[EMS\_Play1](../../qa/rules/Value_Contains/violation1.md)**  
+-   **[HelloWorld](../../qa/rules/Value_Contains/violation2.md)**  
+
+-   **[HelloWorld.application](../../qa/rules/Value_Contains/violation1.md)**  
 
 
 **Parent topic:**[Violations by rules](../../qa/common/violationsByRules.md)

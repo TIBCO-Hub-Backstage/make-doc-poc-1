@@ -1,4 +1,4 @@
-# EMS\_Play1 {#violation1 .concept}
+# HelloWorld.application {#violation1 .concept}
 
 Description of rule: Directory structure check failed
 
@@ -8,5 +8,5 @@ Violation appeared in following files:
 
 ## Directories {#Directories}
 
--   [/](../../../projects/EMS_Play1/EMS_Play1.md) - does not contain required directories: '/ProcessDefinitions' '/SharedConnections' '/SharedResources'
+-   [/](../../../projects/HelloWorld.application/HelloWorld.application.md) - does not contain required directories: '/ProcessDefinitions' '/SharedConnections' '/SharedResources'
 
