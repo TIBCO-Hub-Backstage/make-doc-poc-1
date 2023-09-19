@@ -1,0 +1,447 @@
+Buildfile: C:\MakeDoc\ws\TestBW6\build.xml
+
+trySetProdPath:
+Setting the production classpath
+
+storage.createRecord:
+2023-09-19 12:49:49 INFO [main] creating table 'records'
+2023-09-19 12:49:49 INFO [main] executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `records` (`close_date` TIMESTAMP , `create_date` TIMESTAMP , `html` INTEGER , `id` BIGINT AUTO_INCREMENT , `module` VARCHAR(255) , `pdf` TINYINT(1) , `dita` TINYINT(1) , `group` VARCHAR(255) , `repository` VARCHAR(255) , `type` VARCHAR(255) , `uri` VARCHAR(255) , `docx` TINYINT(1) , `depends` VARCHAR(255) , `stats` VARCHAR(255) , PRIMARY KEY (`id`) )
+2023-09-19 12:49:49 INFO [main] New record : 1695127787064 created
+
+checkTask.check.generic:
+Testing MakeDoc config - general
+
+checkTask.check.module:
+Testing MakeDoc config - eagle
+
+setEagleProdEnv:
+Setting Eagle production environment
+
+getIconsProd:
+Created dir: C:\MakeDoc\cfg\storage\default\1695127787064\tmp\icons\com\pike\commons\wsdl
+Copying 10 files to C:\MakeDoc\cfg\storage\default\1695127787064\tmp\icons\com\pike\commons\wsdl
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.core.design.process.editor_6.3.3300.006.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.core.model.eclipse_6.3.3000.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.file.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.ftp.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.generalactivities.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.http.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.java.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.jdbc.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.jms.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.mail.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.parse.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.rescue.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.restjson.model_6.4.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.rv.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.tcp.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+Expanding: C:\TIBCO_BW691\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.bw.palette.xml.model_6.3.2700.005.jar into C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+
+bw2dita:
+*****************************************************************************
+         MakeDoc NG - TIBCO BusinessWorks6 module (codename Eagle)
+*****************************************************************************
+2023-09-19 12:49:53 INFO [main] --------------------------- BW DIRECTOR ARGUMENTS ---------------------------
+2023-09-19 12:49:53 INFO [main] Input Data: {"projects":[{"uri":"Projects/HelloWorld.application.project"},{"uri":"Projects/HelloWorld.project"}]}
+2023-09-19 12:49:53 INFO [main] Snapshot Directory: C:\MakeDoc\cfg\storage\default\1695127787064
+2023-09-19 12:49:53 INFO [main] Project Directory: C:\MakeDoc\ws\TestBW6
+2023-09-19 12:49:53 INFO [main] MakeDoc Home: /C:/MakeDoc/bin/
+2023-09-19 12:49:53 INFO [main] Templates Directory: C:\MakeDoc\ws\TestBW6/Templates
+2023-09-19 12:49:53 INFO [main] BW6 Profile Name: Enterprise
+2023-09-19 12:49:53 INFO [main] QA Profile Name: Profiles/Enterprise.qa
+2023-09-19 12:49:53 INFO [main] Replace GV: true
+2023-09-19 12:49:53 INFO [main] Replace GV In CrossReference: true
+2023-09-19 12:49:53 INFO [main] DTD Directory: C:/MakeDoc/cfg/dtd
+2023-09-19 12:49:53 INFO [main] DTD Validate: true
+2023-09-19 12:49:53 INFO [main] Storage Record Path: C:\MakeDoc\cfg\storage\default\1695127787064
+2023-09-19 12:49:53 INFO [main] Generate CrossReference: true
+2023-09-19 12:49:53 INFO [main] Licence File: C:/Users/Administrator/Downloads/makedoc_bobo_jecmen.key
+2023-09-19 12:49:53 INFO [main] Filter: Filters/FullDetail.filter
+2023-09-19 12:49:53 INFO [main] Temporary Directory: C:\MakeDoc\cfg\storage\default\1695127787064/tmp
+2023-09-19 12:49:53 INFO [main] Logback configuration file: C:/MakeDoc/cfg/log/snapshot.xml
+2023-09-19 12:49:53 INFO [main] MakeDoc Configuration folder: C:/MakeDoc/cfg
+2023-09-19 12:49:53 INFO [main] Initializing config manager C:/MakeDoc/cfg/eagle/engine.properties
+2023-09-19 12:49:59 INFO [main] --------------------------- PREPROCESSING ---------------------------
+2023-09-19 12:49:59 INFO [main] --------------------------- PREPROCESSING FINISHED ---------------------------
+2023-09-19 12:49:59 INFO [main] --------------------------- PROCESSING ---------------------------
+2023-09-19 12:49:59 INFO [main] --------------------------- PROCESSING BW2DITA ---------------------------
+2023-09-19 12:49:59 INFO [main] Using temp dir C:\MakeDoc\cfg\storage\default\1695127787064/tmp
+2023-09-19 12:49:59 INFO [main] Reading project Projects/HelloWorld.application.project
+2023-09-19 12:49:59 INFO [main] Project url: C:/MKDocPoc/make-doc-poc-1/HelloWorld.application
+2023-09-19 12:49:59 INFO [main] Reading project Projects/HelloWorld.project
+2023-09-19 12:49:59 INFO [main] Project url: C:/MKDocPoc/make-doc-poc-1/HelloWorld
+2023-09-19 12:49:59 INFO [main] Adding property profile: default - key: HelloWorld.application#/HelloWorld/BW.HOST.NAME for application: HelloWorld.application with value: localhost
+2023-09-19 12:49:59 INFO [main] Adding property profile: default - key: HelloWorld.application#/HelloWorld/BW.CLOUD.PORT for application: HelloWorld.application with value: 8080
+2023-09-19 12:49:59 INFO [main] Adding property profile: default - key: HelloWorld.application#/HelloWorld/KUB_MOD_PROPERTY for application: HelloWorld.application with value: test
+2023-09-19 12:49:59 INFO [main] Scanning meta C:/MKDocPoc/make-doc-poc-1/HelloWorld.application/META-INF/default.substvar
+2023-09-19 12:49:59 INFO [main] Adding property profile: default - key: HelloWorld#BW.HOST.NAME for application: HelloWorld with value: localhost
+2023-09-19 12:49:59 INFO [main] Adding property profile: default - key: HelloWorld#BW.CLOUD.PORT for application: HelloWorld with value: 8080
+2023-09-19 12:49:59 INFO [main] Adding property profile: default - key: HelloWorld#KUB_MOD_PROPERTY for application: HelloWorld with value: test
+2023-09-19 12:49:59 INFO [main] Scanning meta C:/MKDocPoc/make-doc-poc-1/HelloWorld/META-INF/default.substvar
+2023-09-19 12:50:00 INFO [main] +++ XSD C:/MKDocPoc/make-doc-poc-1/HelloWorld/Schemas/ProcessSchema.xsd XSD
+2023-09-19 12:50:00 INFO [main] Scanning meta C:/MKDocPoc/make-doc-poc-1/HelloWorld/Schemas/ProcessSchema.xsd
+2023-09-19 12:50:00 INFO [main] +++ XSD C:/MKDocPoc/make-doc-poc-1/HelloWorld/Schemas/ResourceParameterSchema.xsd XSD
+2023-09-19 12:50:00 INFO [main] Scanning meta C:/MKDocPoc/make-doc-poc-1/HelloWorld/Schemas/ResourceParameterSchema.xsd
+2023-09-19 12:50:00 INFO [main] +++ XSD C:/MKDocPoc/make-doc-poc-1/HelloWorld/Schemas/RESTSchema.xsd XSD
+2023-09-19 12:50:00 INFO [main] Scanning meta C:/MKDocPoc/make-doc-poc-1/HelloWorld/Schemas/RESTSchema.xsd
+2023-09-19 12:50:00 INFO [main] http://www.example.org/wsdl/1677594270335::WSDL
+2023-09-19 12:50:00 INFO [main] Added reference http://www.example.org/schema/1677594270393::XSD to http://www.example.org/wsdl/1677594270335::WSDL
+2023-09-19 12:50:00 INFO [main] http://www.example.org/schema/1677594270393::XSD is referenced from http://www.example.org/wsdl/1677594270335::WSDL
+2023-09-19 12:50:00 INFO [main] Scanning meta C:/MKDocPoc/make-doc-poc-1/HelloWorld/Service Descriptors/Process.wsdl
+2023-09-19 12:50:00 INFO [main] httpconnector:HttpConnectorConfiguration - helloworld.Resource - localhost:8080
+2023-09-19 12:50:00 INFO [main] Scanning resources C:/MKDocPoc/make-doc-poc-1/HelloWorld/Resources/helloworld/Resource.httpConnResource
+2023-09-19 12:50:00 ERROR [main] Error during xml parsing
+2023-09-19 12:50:00 INFO [main] Scanning resources C:/MKDocPoc/make-doc-poc-1/HelloWorld/.WebResources/Resource
+2023-09-19 12:50:00 INFO [main] Added reference http://www.example.org/wsdl/1677594270335::WSDL to helloworld.Process
+2023-09-19 12:50:00 INFO [main] http://www.example.org/wsdl/1677594270335::WSDL is referenced from helloworld.Process
+2023-09-19 12:50:00 INFO [main] Added reference http://tns.tibco.com/bw/REST::WSDL to helloworld.Process
+2023-09-19 12:50:00 INFO [main] http://tns.tibco.com/bw/REST::WSDL is referenced from helloworld.Process
+2023-09-19 12:50:00 INFO [main] Added reference http://xmlns.example.com/Resource/parameters::WSDL to helloworld.Process
+2023-09-19 12:50:00 INFO [main] http://xmlns.example.com/Resource/parameters::WSDL is referenced from helloworld.Process
+2023-09-19 12:50:00 INFO [main] Scanning project files C:/MKDocPoc/make-doc-poc-1/HelloWorld/Processes/helloworld/Process.bwp
+2023-09-19 12:50:00 ERROR [main] Error during xml parsing
+2023-09-19 12:50:00 INFO [main] Scanning project files C:/MKDocPoc/make-doc-poc-1/HelloWorld/.WebResources/Resource
+2023-09-19 12:50:00 INFO [main] httpconnector:HttpConnectorConfiguration - helloworld.Resource - localhost:8080
+2023-09-19 12:50:00 INFO [main] Scanning project files C:/MKDocPoc/make-doc-poc-1/HelloWorld/Resources/helloworld/Resource.httpConnResource
+2023-09-19 12:50:00 INFO [main] Register Process reference helloworld.Process
+2023-09-19 12:50:00 INFO [main] ComponentProcess/greeting is referenced from helloworld.Process
+2023-09-19 12:50:00 INFO [main] Scanning module configuration file C:/MKDocPoc/make-doc-poc-1/HelloWorld/META-INF/module.bwm
+2023-09-19 12:50:00 INFO [main] Processing application: HelloWorld.application
+2023-09-19 12:50:00 INFO [main] wsdlFolder:wsdl/
+2023-09-19 12:50:00 INFO [main] processesFolder:Processes/
+2023-09-19 12:50:00 INFO [main] schemasFolder:Schemas/
+2023-09-19 12:50:00 INFO [main] policiesFolder:Policies/
+2023-09-19 12:50:00 INFO [main] resourcesFolder:Resources/
+2023-09-19 12:50:00 INFO [1] Handling file: default.substvar
+2023-09-19 12:50:00 INFO [2] Handling file: TIBCO.xml
+2023-09-19 12:50:01 INFO [main] Processing global variables.
+2023-09-19 12:50:02 INFO [main] Copying dependency files...
+2023-09-19 12:50:02 INFO [main] Processing application: HelloWorld
+2023-09-19 12:50:02 INFO [main] wsdlFolder:wsdl/
+2023-09-19 12:50:02 INFO [main] processesFolder:Processes/
+2023-09-19 12:50:02 INFO [main] schemasFolder:Schemas/
+2023-09-19 12:50:02 INFO [main] policiesFolder:Policies/
+2023-09-19 12:50:02 INFO [main] resourcesFolder:Resources/
+2023-09-19 12:50:02 INFO [1] Handling file: default.substvar
+2023-09-19 12:50:02 INFO [2] Handling file: module.bwm
+2023-09-19 12:50:02 INFO [3] Handling file: module.jsv
+2023-09-19 12:50:02 INFO [1] Handling file: module.msv
+2023-09-19 12:50:02 INFO [2] Handling file: Process.bwp
+2023-09-19 12:50:02 INFO [2] Generating diagram from: C:\MKDocPoc\make-doc-poc-1\HelloWorld\Processes\helloworld\Process.bwp to: C:/MakeDoc/cfg/storage/default/1695127787064/dita/projects/HelloWorld/Processes/helloworld/Process.bwp.png - record: C:\MakeDoc\cfg\storage\default\1695127787064
+2023-09-19 12:50:02 INFO [3] Handling file: Resource.httpConnResource
+2023-09-19 12:50:02 INFO [1] Handling file: ProcessSchema.xsd
+2023-09-19 12:50:03 WARN [2] Unsupported TIBCO BusinessWorks product version 2.8.1 V47 2023-02-15 for process: C:\MKDocPoc\make-doc-poc-1\HelloWorld\Processes\helloworld\Process.bwp
+2023-09-19 12:50:03 INFO [3] Handling file: ResourceParameterSchema.xsd
+2023-09-19 12:50:04 INFO [1] Handling file: RESTSchema.xsd
+2023-09-19 12:50:04 INFO [3] Handling file: Process.wsdl
+SystemId Unknown; Line #0; Column #0; Extra illegal tokens: ',', '/', '*', '[', 'local-name', '(', ')', '=', ''definitions'', ']'
+2023-09-19 12:50:05 INFO [main] Processing global variables.
+2023-09-19 12:50:05 INFO [main] Copying dependency files...
+2023-09-19 12:50:06 INFO [main] Creating report file 'C:\MakeDoc\cfg\storage\default\1695127787064/dita\projects\projects_DITA.ditamap'.
+2023-09-19 12:50:06 INFO [main] Starting generating projects ditamap file: C:\MakeDoc\cfg\storage\default\1695127787064\dita\projects\projects_DITA.ditamap
+2023-09-19 12:50:06 INFO [main] --------------------------- PROCESSING BW2DITA FINISHED ---------------------------
+2023-09-19 12:50:06 INFO [main] ------------------------------- CROSSREFERENCE --------------------------------
+2023-09-19 12:50:06 INFO [main] Analyzing projects...
+2023-09-19 12:50:06 INFO [main] Creating cross-reference graph model.
+2023-09-19 12:50:06 INFO [main] Creating dependencies and dataflow subgraphs.
+2023-09-19 12:50:06 INFO [main] Generating cross-reference reports...
+2023-09-19 12:50:06 INFO [main] Generating main ditamaps.
+2023-09-19 12:50:06 INFO [main] Generating dependencies...
+2023-09-19 12:50:06 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\cross_DITA.ditamap
+2023-09-19 12:50:06 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\wsdls\content_DITA.ditamap
+2023-09-19 12:50:07 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\wsdls\wsdls.dita
+2023-09-19 12:50:07 INFO [main] Wrote cross-reference graph image C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\wsdls/cross_http___xmlns.example.com_Resource_parameters__WSDL.png
+2023-09-19 12:50:07 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\wsdls\cross_http___xmlns.example.com_Resource_parameters__WSDL.dita
+2023-09-19 12:50:07 INFO [main] Wrote cross-reference graph image C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\wsdls/cross_http___tns.tibco.com_bw_REST__WSDL.png
+2023-09-19 12:50:08 INFO [main] Wrote cross-reference graph image C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\wsdls/cross_http___www.example.org_wsdl_1677594270335__WSDL.png
+2023-09-19 12:50:08 INFO [main] Wrote cross-reference graph image C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\xsds/cross_http___www.example.org_schema_1677594270393__XSD.png
+2023-09-19 12:50:08 INFO [main] Wrote cross-reference graph image C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\processes/cross_helloworld.Process.png
+2023-09-19 12:50:08 INFO [main] Generating dataflow report...
+2023-09-19 12:50:08 INFO [main] Generating dependencies and dataflow ditamps...
+2023-09-19 12:50:08 INFO [main] Saving cross-reference graph
+2023-09-19 12:50:08 INFO [main] -------------------------- PROCESSING CROSSREFERENCE FINISHED -----------------------------------
+2023-09-19 12:50:08 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\wsdls\cross_http___tns.tibco.com_bw_REST__WSDL.dita
+2023-09-19 12:50:08 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\wsdls\cross_http___www.example.org_wsdl_1677594270335__WSDL.dita
+2023-09-19 12:50:08 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\xsds\content_DITA.ditamap
+2023-09-19 12:50:08 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\xsds\xsds.dita
+2023-09-19 12:50:09 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\xsds\cross_http___www.example.org_schema_1677594270393__XSD.dita
+2023-09-19 12:50:09 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\processes\content_DITA.ditamap
+2023-09-19 12:50:09 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\processes\processes.dita
+2023-09-19 12:50:09 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\processes\cross_helloworld.Process.dita
+2023-09-19 12:50:09 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\dependencies.dita
+2023-09-19 12:50:09 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dataflow\dataflow.dita
+2023-09-19 12:50:09 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dependencies\dependencies.ditamap
+2023-09-19 12:50:09 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\dataflow\dataflow.ditamap
+2023-09-19 12:50:09 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\cross\cross.dita
+2023-09-19 12:50:13 INFO [main] --------------------------- PROCESSING QA  ---------------------------
+2023-09-19 12:50:20 INFO [main] Starting Quality Assurance check
+2023-09-19 12:50:21 ERROR [main] Skipping ruleCheckerInstance[25] of unknown type: XpathRuleCheckerComplex. All rulechecker types must be registered in the config file.
+2023-09-19 12:50:21 INFO [main] Preprocessing source C:\MKDocPoc\make-doc-poc-1\HelloWorld.application
+2023-09-19 12:50:21 INFO [main] Preprocessing source C:\MKDocPoc\make-doc-poc-1\HelloWorld
+2023-09-19 12:50:21 INFO [main] Performing checks on source C:\MKDocPoc\make-doc-poc-1\HelloWorld.application
+2023-09-19 12:50:22 INFO [main] Performing checks on source C:\MKDocPoc\make-doc-poc-1\HelloWorld
+2023-09-19 12:50:22 INFO [main] Finished all checks
+2023-09-19 12:50:22 INFO [main] Building report
+2023-09-19 12:50:22 INFO [main] Initializing config manager C:/MakeDoc/cfg/general.properties
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Hardcoded_connection_parameters\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Hardcoded_connection_parameters.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Hardcoded_destination_parameter\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Hardcoded_destination_parameter.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Counter_Objects\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Counter_Objects.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Value_Contains\violation2.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Value_Contains\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Value_Contains.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Value_Ends_With\violation2.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Value_Ends_With\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Value_Ends_With.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_description\violation2.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_description\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_description.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_directory_structure\violation2.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_directory_structure\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_directory_structure.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_schema_-_element_name_too_long\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_schema_-_element_name_too_long.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_Schema_-_missing_header\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_Schema_-_missing_header.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_schema_-_missing_type_suffix\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_schema_-_missing_type_suffix.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_Schema_-_missing_version\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_Schema_-_missing_version.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_Structure\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_Structure\violation2.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Incorrect_Structure.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Missing_XSD_Annotation\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Missing_XSD_Annotation.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Unused_properties\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\rules\Unused_properties.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation2.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation3.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation4.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation5.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation6.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation7.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation9.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation8.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation10.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation11.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld\violation12.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld.ditamap'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld.application\violation1.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld.application\violation2.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld.application\violation4.dita'
+2023-09-19 12:50:22 INFO [main] Generating violation dita topic file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld.application\violation3.dita'
+2023-09-19 12:50:22 INFO [main] Generating dita map file: 'C:\MakeDoc\cfg\storage\default\1695127787064/dita/qa\projects\HelloWorld.application.ditamap'
+2023-09-19 12:50:22 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\qa\common\invalidQARule.dita
+2023-09-19 12:50:22 INFO [main] --------------------------- PROCESSING QA  FINISHED ---------------------------
+2023-09-19 12:50:22 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\intro.dita
+2023-09-19 12:50:22 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\output.ditamap
+2023-09-19 12:50:22 INFO [1] Writing file C:\MakeDoc\cfg\storage\default\1695127787064\dita\output.dita
+2023-09-19 12:50:22 INFO [main] --------------------------- PROCESSING FINISHED ---------------------------
+2023-09-19 12:50:22 INFO [main] --------------------------- POSTROCESSING  ---------------------------
+2023-09-19 12:50:22 INFO [main] --------------------------- POSTROCESSING FINISHES ---------------------------
+
+trySetProdPath:
+Setting the production classpath
+
+deployLogo:
+Copying 1 file to C:\MakeDoc\cfg\portal\src\local\multistep\images
+Copying C:\MakeDoc\cfg\img\LogoCustomer.png to C:\MakeDoc\cfg\portal\src\local\multistep\images\logoCustomer.png
+Copying 1 file to C:\MakeDoc\cfg\portal\src\local\one-page\images
+Copying C:\MakeDoc\cfg\img\LogoCustomer.png to C:\MakeDoc\cfg\portal\src\local\one-page\images\logoCustomer.png
+Copying 1 file to C:\MakeDoc\cfg\portal\src\srv\multistep\images
+Copying C:\MakeDoc\cfg\img\LogoCustomer.png to C:\MakeDoc\cfg\portal\src\srv\multistep\images\logoCustomer.png
+Copying 1 file to C:\MakeDoc\cfg\portal\src\srv\one-page\images
+Copying C:\MakeDoc\cfg\img\LogoCustomer.png to C:\MakeDoc\cfg\portal\src\srv\one-page\images\logoCustomer.png
+Copying 1 file to C:\MakeDoc\bin\plugins\com.pike.packages_4.4.0.v1673871347000\packages\dita\md_internal\images
+Copying C:\MakeDoc\cfg\img\LogoCustomer.png to C:\MakeDoc\bin\plugins\com.pike.packages_4.4.0.v1673871347000\packages\dita\md_internal\images\logoCustomer.png
+
+createTempDir:
+Created dir: C:\MakeDoc\cfg\storage\default\1695127787064\tmp\html
+
+job:
+======================================================================
+                            Dita 2 HTML
+DOCUMENT_FILE : C:\MakeDoc\cfg\storage\default\1695127787064\dita\output.ditamap
+OUTPUT_DIR    : C:\MakeDoc\cfg\storage\default\1695127787064\html
+                                                           Starting...
+======================================================================
+[debug] ANT_XMX=1024m
+Created dir: C:\MakeDoc\cfg\storage\default\1695127787064\html
+Using XERCES in SUN JDK 1.5
+Unable to locate tools.jar. Expected to find it in C:\Program Files\Java\jre1.8.0_202\lib\tools.jar
+Buildfile: C:\MakeDoc\bin\plugins\com.pike.packages_4.4.0.v1673871347000\packages\dita\dita\build.xml
+  [taskdef] Could not load definitions from resource net/sf/antcontrib/antcontrib.properties. It could not be found.
+  [taskdef] Could not load definitions from resource net/sf/antcontrib/antcontrib.properties. It could not be found.
+Processing started...
+Initialize log directory and file name...
+Validate and init input arguments...
+  [echo] *****************************************************************
+  [echo] * basedir = C:\MakeDoc\bin\plugins\com.pike.packages_4.4.0.v1673871347000\packages\dita\bat
+  [echo] * dita.dir = C:\MakeDoc\bin\plugins\com.pike.packages_4.4.0.v1673871347000\packages\dita\dita
+  [echo] * input = C:\MakeDoc\cfg\storage\default\1695127787064\dita\output.ditamap
+  [echo] * transtype = xhtml
+  [echo] * tempdir = C:\MakeDoc\cfg\storage\default\1695127787064/tmp/html
+  [echo] * outputdir = C:\MakeDoc\cfg\storage\default\1695127787064\html
+  [echo] * extname = .xml
+  [echo] * clean.temp = ${clean.temp}
+  [echo] * xslt.parser = XALAN
+  [echo] * xslt.processor = trax
+  [echo] * ant.java.version = 1.7
+  [echo] *****************************************************************
+Preprocessing started...
+Clean temp directory...
+  [pipeline] Using XERCES.
+  [pipeline] [Fatal Error] :7:259: XML document structures must start and end within the same entity.
+  [pipeline] [DOTJ013E][ERROR] Failed to parse the referenced file 'projects\HelloWorld\META-INF\module.bwm.dita' due to below exception. Please correct the reference base on the exception message.
+  [pipeline] org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 259; XML document structures must start and end within the same entity.
+  [pipeline] [Error] :69:1400: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+Generate file list...
+Debug input files...
+  [pipeline] [Error] Process.bwp.dita:69:1400: The content of element type "concept" is incomplete, it must match "(title,titlealts?,(shortdesc|abstract)?,prolog?,conbody?,related-links?,concept*)".
+Debug and filter input files...
+Set debug-filter properties...
+Copy image files...
+  [copy] Copying 9 files to C:\MakeDoc\cfg\storage\default\1695127787064\html
+Copy html files...
+Copy flag files...
+Copy generated files...
+  [copy] Copying 2 files to C:\MakeDoc\cfg\storage\default\1695127787064\html
+Move index entries...
+Resolve conref in input files...
+Pull the navtitle and topicmeta from topics to ditamap using sax...
+  [pike-preproc] log4j:WARN No appenders could be found for logger (com.pikeelectronic.dita.map.MapHandlerRoot).
+  [pike-preproc] log4j:WARN Please initialize the log4j system properly.
+  [copy] Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\tmp\html
+Find and generate related link information...
+Move the related link information to topics...
+Skipping pull metadata for link and xref element...
+Copy CSS files...
+  [mkdir] Created dir: C:\MakeDoc\cfg\storage\default\1695127787064\html\css
+  [copy] Copying 2 files to C:\MakeDoc\cfg\storage\default\1695127787064\html\css
+  [taskdef] Could not load definitions from resource net/sf/antcontrib/antcontrib.properties. It could not be found.
+Build XHTML output from dita topics...
+Processing ended.
+BUILD SUCCESSFUL
+Total time: 10 seconds
+Log file 'output_xhtml.log' was generated successfully in directory 'C:\MakeDoc\cfg\storage\default\1695127787064\html'.
+Created dir: C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+Created dir: C:\MakeDoc\cfg\storage\default\1695127787064\html\images
+==========================================
+              Creating menu file
+Created dir: C:\MakeDoc\cfg\storage\default\1695127787064\html\menu
+==========================================
+              Creating header
+C:\MakeDoc\bin\plugins\com.pike.packages_4.4.0.v1673871347000\packages\dita\md_internal\xsl\xslhtml\ditamap2header.xsl
+C:\MakeDoc\cfg\storage\default\1695127787064\html\header.html
+==========================================
+           Copying files (.css)
+Copying 14 files to C:\MakeDoc\cfg\storage\default\1695127787064\html\css
+==========================================
+           Copying files (.html)
+Copying 4 files to C:\MakeDoc\cfg\storage\default\1695127787064\html
+==========================================
+           Copying files (.js)
+Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+
+copyLicense:
+Copying 1 file to C:\MakeDoc\cfg\storage\default\1695127787064\html\js
+==========================================
+             Copying images
+Copying 35 files to C:\MakeDoc\cfg\storage\default\1695127787064\html\images
+==========================================
+             Copying jsp files
+Copying 10 files to C:\MakeDoc\cfg\storage\default\1695127787064\html
+
+generateIndex:
+======================================================================
+Generating index to C:\MakeDoc\cfg\storage\default\1695127787064\html/index
+
+doCleanUp:
+==========================================
+            Deleting directory Temp
+Deleting directory C:\MakeDoc\cfg\storage\default\1695127787064\tmp\html
+
+trySetProdPath:
+Setting the production classpath
+
+copyWsdlXsdAe2Html:
+Copying 5 files to C:\MakeDoc\cfg\storage\default\1695127787064\html\projects
+
+storage.cleanRecordTmp:
+Deleting directory C:\MakeDoc\cfg\storage\default\1695127787064\tmp
+
+storage.portal:
+- Executing: local\multistep\groups.html
+2023-09-19 12:50:47 INFO [main] creating table 'records'
+2023-09-19 12:50:47 INFO [main] executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `records` (`close_date` TIMESTAMP , `create_date` TIMESTAMP , `html` INTEGER , `id` BIGINT AUTO_INCREMENT , `module` VARCHAR(255) , `pdf` TINYINT(1) , `dita` TINYINT(1) , `group` VARCHAR(255) , `repository` VARCHAR(255) , `type` VARCHAR(255) , `uri` VARCHAR(255) , `docx` TINYINT(1) , `depends` VARCHAR(255) , `stats` VARCHAR(255) , PRIMARY KEY (`id`) )
+- Copying: local\mult...\header-row-background-image.png
+- Copying: local\multistep\images\logoCustomer.png
+- Copying: local\mu...\small-makedoc-logos-pageTitle.png
+- Copying: local\multistep...\title-background-image.png
+- Executing: local\multistep\index.html
+2023-09-19 12:50:48 INFO [main] creating table 'records'
+2023-09-19 12:50:48 INFO [main] executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `records` (`close_date` TIMESTAMP , `create_date` TIMESTAMP , `html` INTEGER , `id` BIGINT AUTO_INCREMENT , `module` VARCHAR(255) , `pdf` TINYINT(1) , `dita` TINYINT(1) , `group` VARCHAR(255) , `repository` VARCHAR(255) , `type` VARCHAR(255) , `uri` VARCHAR(255) , `docx` TINYINT(1) , `depends` VARCHAR(255) , `stats` VARCHAR(255) , PRIMARY KEY (`id`) )
+- Executing: local\multistep\storages.html
+2023-09-19 12:50:48 INFO [main] creating table 'records'
+2023-09-19 12:50:48 INFO [main] executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `records` (`close_date` TIMESTAMP , `create_date` TIMESTAMP , `html` INTEGER , `id` BIGINT AUTO_INCREMENT , `module` VARCHAR(255) , `pdf` TINYINT(1) , `dita` TINYINT(1) , `group` VARCHAR(255) , `repository` VARCHAR(255) , `type` VARCHAR(255) , `uri` VARCHAR(255) , `docx` TINYINT(1) , `depends` VARCHAR(255) , `stats` VARCHAR(255) , PRIMARY KEY (`id`) )
+- Copying: local\one-...\header-row-background-image.png
+- Copying: local\one-page\images\logoCustomer.png
+- Copying: local\on...\small-makedoc-logos-pageTitle.png
+- Copying: local\one-page\...\title-background-image.png
+- Executing: local\one-page\index.html
+2023-09-19 12:50:48 INFO [main] creating table 'records'
+2023-09-19 12:50:48 INFO [main] executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `records` (`close_date` TIMESTAMP , `create_date` TIMESTAMP , `html` INTEGER , `id` BIGINT AUTO_INCREMENT , `module` VARCHAR(255) , `pdf` TINYINT(1) , `dita` TINYINT(1) , `group` VARCHAR(255) , `repository` VARCHAR(255) , `type` VARCHAR(255) , `uri` VARCHAR(255) , `docx` TINYINT(1) , `depends` VARCHAR(255) , `stats` VARCHAR(255) , PRIMARY KEY (`id`) )
+- Executing: srv\multistep\groups.html
+2023-09-19 12:50:49 INFO [main] creating table 'records'
+2023-09-19 12:50:49 INFO [main] executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `records` (`close_date` TIMESTAMP , `create_date` TIMESTAMP , `html` INTEGER , `id` BIGINT AUTO_INCREMENT , `module` VARCHAR(255) , `pdf` TINYINT(1) , `dita` TINYINT(1) , `group` VARCHAR(255) , `repository` VARCHAR(255) , `type` VARCHAR(255) , `uri` VARCHAR(255) , `docx` TINYINT(1) , `depends` VARCHAR(255) , `stats` VARCHAR(255) , PRIMARY KEY (`id`) )
+- Copying: srv\multis...\header-row-background-image.png
+- Copying: srv\multistep\images\logoCustomer.png
+- Copying: srv\mult...\small-makedoc-logos-pageTitle.png
+- Copying: srv\multistep\i...\title-background-image.png
+- Executing: srv\multistep\index.html
+2023-09-19 12:50:49 INFO [main] creating table 'records'
+2023-09-19 12:50:49 INFO [main] executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `records` (`close_date` TIMESTAMP , `create_date` TIMESTAMP , `html` INTEGER , `id` BIGINT AUTO_INCREMENT , `module` VARCHAR(255) , `pdf` TINYINT(1) , `dita` TINYINT(1) , `group` VARCHAR(255) , `repository` VARCHAR(255) , `type` VARCHAR(255) , `uri` VARCHAR(255) , `docx` TINYINT(1) , `depends` VARCHAR(255) , `stats` VARCHAR(255) , PRIMARY KEY (`id`) )
+- Executing: srv\multistep\storages.html
+2023-09-19 12:50:49 INFO [main] creating table 'records'
+2023-09-19 12:50:49 INFO [main] executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `records` (`close_date` TIMESTAMP , `create_date` TIMESTAMP , `html` INTEGER , `id` BIGINT AUTO_INCREMENT , `module` VARCHAR(255) , `pdf` TINYINT(1) , `dita` TINYINT(1) , `group` VARCHAR(255) , `repository` VARCHAR(255) , `type` VARCHAR(255) , `uri` VARCHAR(255) , `docx` TINYINT(1) , `depends` VARCHAR(255) , `stats` VARCHAR(255) , PRIMARY KEY (`id`) )
+- Copying: srv\one-pa...\header-row-background-image.png
+- Copying: srv\one-page\images\logoCustomer.png
+- Copying: srv\one-...\small-makedoc-logos-pageTitle.png
+- Copying: srv\one-page\im...\title-background-image.png
+- Executing: srv\one-page\index.html
+2023-09-19 12:50:49 INFO [main] creating table 'records'
+2023-09-19 12:50:49 INFO [main] executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `records` (`close_date` TIMESTAMP , `create_date` TIMESTAMP , `html` INTEGER , `id` BIGINT AUTO_INCREMENT , `module` VARCHAR(255) , `pdf` TINYINT(1) , `dita` TINYINT(1) , `group` VARCHAR(255) , `repository` VARCHAR(255) , `type` VARCHAR(255) , `uri` VARCHAR(255) , `docx` TINYINT(1) , `depends` VARCHAR(255) , `stats` VARCHAR(255) , PRIMARY KEY (`id`) )
+Summary: 8 exe. + 0 xml. + 16 cop. = 24 succ.; 0 warn.; 0 failed
+
+select-last-modified:
+Last modified file: C:\MakeDoc\cfg\storage\default\1695127787064
+
+delete-symlink:
+Removing symlink: C:\MakeDoc\cfg\storage\default\1695127787064\..\ws\TestBW6-Profiles-Enterprise\last
+Deleting directory C:\MakeDoc\cfg\storage\default\ws\TestBW6-Profiles-Enterprise
+
+prepare-windows-symlink:
+Symlink for windows
+Created dir: C:\MakeDoc\cfg\storage\default\ws\TestBW6-Profiles-Enterprise\last
+Copying 1 file to C:\MakeDoc\cfg\storage\default\ws\TestBW6-Profiles-Enterprise\last
+Created dir: C:\MakeDoc\cfg\storage\default\ws\TestBW6-Profiles-Enterprise\last\images
+Copying 3 files to C:\MakeDoc\cfg\storage\default\ws\TestBW6-Profiles-Enterprise\last\images
+
+storage.create-symlink:
+Operation system Windows Server 2016
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL
+Total time: 1 minute 6 seconds
